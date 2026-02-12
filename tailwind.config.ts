@@ -9,8 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bg: "var(--bg)",
+        "bg-alt": "var(--bg-alt)",
+        "bg-elevated": "var(--bg-elevated)",
+        surface: "var(--surface)",
+        border: "var(--border)",
+        "border-light": "var(--border-light)",
+        text: "var(--text)",
+        "text-muted": "var(--text-muted)",
+        amber: "var(--amber)",
+        "amber-dark": "var(--amber-dark)",
+        "amber-dim": "var(--amber-dim)",
+        "amber-glow": "var(--amber-glow)",
+        green: "var(--green)",
+        "fb-blue": "var(--fb-blue)",
+      },
+      fontFamily: {
+        body: ["var(--font-body)"],
+        mono: ["var(--font-mono)"],
       },
     },
   },

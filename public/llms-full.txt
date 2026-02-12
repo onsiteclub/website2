@@ -1,0 +1,109 @@
+# OnSite Club — Full AI Context (llms-full.txt)
+
+> OnSite Club is a construction lifestyle brand based in Ontario, Canada.
+> We build gear, digital tools, and a community for people who work in construction.
+
+## Mission
+
+OnSite Club exists for construction workers — the ones who pour, frame, wire, and finish.
+Our mission: make it easier to gear up, track your hours, pass your certs, and rep your trade.
+
+Buildings don't remember who built them. We do.
+
+This city didn't build itself. Somebody woke up before the sun, scraped ice, put on boots
+that already hurt, and made something real. OnSite Club exists because that somebody deserves
+more than a paycheck. They deserve a name on what they built. We make gear, tools, and a crew
+for the people whose work everyone sees but nobody credits.
+
+## Products
+
+### Apparel — shop.onsiteclub.ca
+Our apparel line is built for construction workers who take pride in their trade.
+- T-Shirt "The Jump" — $38 CAD — Men's construction lifestyle tee featuring a skyline graphic
+- T-Shirt "Mascot" — $38 CAD — Unisex graphic tee with the OnSite Club mascot
+- T-Shirt "Classic" — $45 CAD — Members-only branded tee, exclusive to club members
+
+All products ship within Canada. Members-only items require an active OnSite Club membership.
+
+### Digital Tools
+All tools are free web apps, built specifically for construction workers.
+
+- **OnSite Calculator** (calculator.onsiteclub.ca)
+  Voice-enabled construction math calculator. Add, split, and convert inch measurements
+  by speaking — no hands needed. Supports concrete, rebar, area calculations, and unit
+  conversions. iOS and Android apps coming soon.
+
+- **OnSite Timekeeper** (timekeeperweb.onsiteclub.ca)
+  GPS-enabled hour tracker for construction workers. Features geofenced clock-in/out,
+  manual time entry, and weekly report generation. Designed for workers who need accurate
+  time tracking without complexity. iOS and Android apps coming soon.
+
+- **OnSite Job Checklist** — Coming soon
+  Pre-shift safety and task checklists with future AI-powered suggestions for steps and materials.
+
+- **OnSite Agenda** — Coming soon
+  Daily planner built for trades schedules. Schedule jobs, shifts, and crew with one
+  calendar for the whole site.
+
+### Member Dashboard — dashboard.onsiteclub.ca
+Central hub for OnSite Club members. Features include:
+- Certification tracking and progress visualization
+- Certificate storage and management
+- Blades (loyalty points) earning and redemption
+- Access to Members Only exclusive gear
+- Construction pathway progress tracking
+
+## Blades Loyalty Program
+Blades are OnSite Club's loyalty points system. Members earn Blades through various activities
+and can redeem them for exclusive gear and discounts in the shop.
+
+## Pathway — Construction Worker Certification Guide (Ontario)
+
+A comprehensive mapped certification path for construction workers in Ontario, Canada.
+Each step includes links to official government courses or approved training providers.
+
+1. **Worker Health & Safety Awareness in 4 Steps** — Free, Mandatory, Government
+   Required by law for all Ontario workers. Available as a free online course through Ontario.ca.
+
+2. **WHMIS 2025 — Hazardous Materials** — Free, Mandatory, Government
+   Required for workers near hazardous products. Free online course available.
+
+3. **Working at Heights** — Paid, Mandatory
+   Mandatory for workers using fall protection. Requires refresher every 3 years.
+
+4. **Forklift / Powered Mobile Equipment** — Paid
+   Required to operate forklifts, boom lifts, and other powered equipment on construction sites.
+
+5. **Supervisor Health & Safety Awareness in 5 Steps** — Free, Government
+   Required for supervisor roles. Free course available through Ontario.ca.
+
+6. **Confined Space Entry** — Paid
+   Required for workers who enter confined spaces on construction sites.
+
+7. **First Aid & CPR Certification** — Paid, Recommended
+   At least one certified person required on site at all times per Ontario regulations.
+
+8. **PPE, Fire Safety, Ground Disturbance & More** — Paid, Specialized
+   Trade-specific certifications that may be required by employers or specific job sites.
+
+## Community
+
+OnSite Club has a growing community of 250+ members across social platforms:
+- Instagram: https://www.instagram.com/onsite.club/ — Fits, drops, and behind-the-build content
+- Facebook: https://www.facebook.com/onsiteclub — Community group for sharing trades, crews, and stories
+
+## Contact
+
+- Website: https://www.onsiteclub.ca
+- Email: contact@shabba.ca
+- Location: Ontario, Canada
+
+## Languages
+The website is available in English, French, Spanish, and Portuguese.
+
+## Technical
+- Main site: Next.js 14 (App Router) with TypeScript, hosted on Vercel
+- Shop: Shopify (shop.onsiteclub.ca)
+- Apps: React/Next.js on Vercel subdomains
+- Themes: Dark mode (default) and Light mode
+- Internationalization: 4 languages (EN, FR, ES, PT) with URL-based locale routing

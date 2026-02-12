@@ -1,0 +1,180 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "OnSite Club — Wear What You Build",
+    "description": "OnSite Club — construction lifestyle brand. Gear, digital tools, and a community for people who actually build. Based in Ontario, Canada."
+  },
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "tools": "Tools",
+    "contact": "Contact",
+    "earn_blades": "Earn Blades",
+    "member_area": "Member Area"
+  },
+  "hero": {
+    "kicker": "Construction Lifestyle",
+    "title": "Wear What You Build",
+    "subtitle": "Premium jobsite culture, essential tools, and a club for people who actually build.",
+    "cta_shop": "Shop Now"
+  },
+  "shop": {
+    "label": "THE SHOP",
+    "title": "Gear that reps the <highlight>trade</highlight>"
+  },
+  "tools": {
+    "label": "DIGITAL TOOLKIT",
+    "title": "OnSite <highlight>Tools</highlight>",
+    "description": "Built for jobsite speed. No noise. Just things that work.",
+    "calculator": {
+      "name": "Voice Inch Calculator",
+      "description": "Add, split and convert inch measurements just by speaking. No hands needed.",
+      "cta": "Open Calculator →"
+    },
+    "timekeeper": {
+      "name": "Hour Tracker",
+      "description": "GPS time tracking with geofence. Clock in when you arrive, out when you leave.",
+      "cta": "Start Timer →"
+    },
+    "checklist": {
+      "name": "Job Checklist",
+      "description": "Checklist per job. Soon with AI suggestions for steps and materials.",
+      "tag": "Coming Soon",
+      "cta": "Coming Soon"
+    },
+    "agenda": {
+      "name": "OnSite Agenda",
+      "description": "Schedule jobs, shifts, and crew. One calendar for the whole site.",
+      "tag": "Coming Soon",
+      "cta": "Coming Soon"
+    }
+  },
+  "pathway": {
+    "label": "YOUR ROAD",
+    "title": "Know what you need.<br></br><highlight>Get there.</highlight>",
+    "description": "Ontario requires specific training before you step on site. Some are free, some aren't — we mapped the path so you don't have to figure it out alone.",
+    "trigger_title": "Construction Worker Pathway — Ontario",
+    "trigger_desc": "Required certifications, free government courses, and partner training",
+    "explore": "Explore the path →",
+    "badge": "8 Steps",
+    "intro": "Every construction worker in Ontario needs certain certifications to work legally and safely. Here's the roadmap — from your first day on site to specialized credentials.",
+    "badge_mandatory": "Mandatory",
+    "badge_free": "Free",
+    "badge_gov": "Government",
+    "badge_recommended": "Recommended",
+    "badge_specialized": "Specialized",
+    "status_not_started": "Not Started",
+    "status_completed": "Completed",
+    "status_expired": "Expired",
+    "certificate": "Certificate",
+    "steps": {
+      "step1": {
+        "title": "Worker Health & Safety Awareness in 4 Steps",
+        "description": "Required by law for all Ontario workers. Free online.",
+        "link": "Take Free Course (Ontario.ca) →"
+      },
+      "step2": {
+        "title": "WHMIS 2025 — Hazardous Materials",
+        "description": "Required near hazardous products. Free online.",
+        "link": "Take Free Course →"
+      },
+      "step3": {
+        "title": "Working at Heights",
+        "description": "Mandatory with fall protection. Refresher every 3 years.",
+        "link": "Find Approved Provider →"
+      },
+      "step4": {
+        "title": "Forklift / Powered Mobile Equipment",
+        "description": "Required to operate forklifts, boom lifts, and powered equipment.",
+        "link": "View Training Options →"
+      },
+      "step5": {
+        "title": "Supervisor Health & Safety Awareness in 5 Steps",
+        "description": "For supervisor roles. Free government course.",
+        "link": "Take Free Course (Ontario.ca) →"
+      },
+      "step6": {
+        "title": "Confined Space Entry",
+        "description": "Required for confined space work on construction sites.",
+        "link": "View Course →"
+      },
+      "step7": {
+        "title": "First Aid & CPR Certification",
+        "description": "At least one certified person required on site at all times.",
+        "link": "Find Provider →"
+      },
+      "step8": {
+        "title": "PPE, Fire Safety, Ground Disturbance & More",
+        "description": "Trade-specific. May be required by your employer.",
+        "link": "Browse All Courses →"
+      }
+    },
+    "cta_title": "Save your progress — sign up as Member",
+    "cta_desc": "Track your certifications, store certificates, and see your progress. All in one place, without jumping between sites.",
+    "cta_button": "Member Area"
+  },
+  "community": {
+    "label": "CONNECT",
+    "title": "Join the <highlight>Crew</highlight>",
+    "description": "Follow the movement. Share your builds. Be part of the culture.",
+    "manifesto_lead": "Buildings don't remember who built them. We do.",
+    "manifesto_body": "This city didn't build itself. Somebody woke up before the sun, scraped ice, put on boots that already hurt, and made something real. OnSite Club exists because that somebody deserves more than a paycheck. They deserve a name on what they built. We make gear, tools, and a crew for the people whose work everyone sees but nobody credits. If you've ever looked at a skyline and known your hands are in it — this is your club.",
+    "counter_number": "250+",
+    "counter_label": "Members and growing",
+    "fb_title": "Be the Voice",
+    "fb_desc": "Join our Facebook community. Share your trade, your crew, your story.",
+    "fb_cta": "Join Group →",
+    "ig_title": "Stay in the Drops",
+    "ig_desc": "Follow on Instagram for fits, drops, and behind-the-build content.",
+    "ig_cta": "Open Instagram →"
+  },
+  "contact": {
+    "label": "GET IN TOUCH",
+    "title": "Contact <highlight>Us</highlight>",
+    "description": "Questions, feedback, or just want to say hi? We'd love to hear from you.",
+    "name_label": "Name",
+    "email_label": "Email",
+    "message_label": "Message",
+    "name_placeholder": "Your name",
+    "email_placeholder": "you@example.com",
+    "message_placeholder": "How can we help?",
+    "submit": "Send Message",
+    "note": "We'll get back to you as soon as possible.",
+    "info_location_label": "Location",
+    "info_location": "Ontario, Canada",
+    "info_email_label": "Email",
+    "info_social_label": "Social"
+  },
+  "blades": {
+    "title": "Earn Blades, Get Rewards",
+    "description": "Join the club and start earning <strong>Blades</strong>. Stack them up. Redeem for exclusive gear and discounts.",
+    "cta": "Join Now"
+  },
+  "sitemap": {
+    "nav_heading": "Navigation",
+    "shop_heading": "Shop",
+    "tools_heading": "Apps & Tools",
+    "legal_heading": "Legal",
+    "connect_heading": "Connect",
+    "home": "Home",
+    "clubroom": "Clubroom",
+    "contact": "Contact",
+    "all_products": "All Products",
+    "men": "Men",
+    "women": "Women",
+    "members_only": "Members Only",
+    "member_hub": "Member Hub",
+    "calculator": "Calculator",
+    "timekeeper": "Timekeeper",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "email_us": "Email Us"
+  },
+  "footer": {
+    "copyright": "© 2025 OnSite Club",
+    "sitemap": "Site Map",
+    "tagline": "Built for those who build."
+  }
+}

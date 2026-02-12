@@ -1,0 +1,58 @@
+# OnSite Club — llms.txt
+
+> OnSite Club is a construction lifestyle brand based in Ontario, Canada.
+> We build gear, digital tools, and a community for people who work in construction.
+
+## About
+
+OnSite Club exists for construction workers — the ones who pour, frame, wire, and finish.
+Our mission: make it easier to gear up, track your hours, pass your certs, and rep your trade.
+
+## Products
+
+### Apparel — shop.onsiteclub.ca
+- T-Shirt "The Jump" — $38 CAD — Men's construction lifestyle tee
+- T-Shirt "Mascot" — $38 CAD — Unisex graphic tee with OnSite mascot
+- T-Shirt "Classic" — $45 CAD — Members-only branded tee
+
+### Digital Tools
+- **OnSite Calculator** (calculator.onsiteclub.ca) — Construction math calculator. Concrete, rebar, area, conversions. Free web app, iOS and Android coming soon.
+- **OnSite Timekeeper** (timekeeperweb.onsiteclub.ca) — Hour tracker for construction workers. Manual entry, geofenced clock-in, weekly reports. Free web app, iOS and Android coming soon.
+- **OnSite Job Checklist** — Coming soon. Pre-shift safety and task checklists.
+- **OnSite Agenda** — Coming soon. Daily planner built for trades schedules.
+
+### Member Dashboard — dashboard.onsiteclub.ca
+Track certifications, store certificates, earn Blades (loyalty points), and access Members Only gear.
+
+## Pathway — Construction Worker Certification Guide (Ontario)
+
+We mapped the full certification path for construction workers in Ontario:
+1. Worker Health & Safety Awareness in 4 Steps (Free, Mandatory)
+2. WHMIS 2025 — Hazardous Materials (Free, Mandatory)
+3. Working at Heights (Paid, Mandatory)
+4. Forklift / Powered Mobile Equipment (Paid)
+5. Supervisor Health & Safety Awareness in 5 Steps (Free)
+6. Confined Space Entry (Paid)
+7. First Aid & CPR Certification (Paid, Recommended)
+8. PPE, Fire Safety, Ground Disturbance & More (Paid, Specialized)
+
+## Community
+
+- Instagram: https://www.instagram.com/onsite.club/
+- Facebook: https://www.facebook.com/onsiteclub
+- 250+ members and growing
+
+## Contact
+
+- Website: https://www.onsiteclub.ca
+- Email: hello@onsiteclub.ca
+- Location: Ontario, Canada
+
+## Technical
+
+- Main site: Next.js 14 (App Router) with TypeScript, hosted on Vercel
+- Shop: Shopify (shop.onsiteclub.ca)
+- Apps: React/Next.js on Vercel subdomains
+- Languages: English, French, Spanish, Portuguese
+- Themes: Dark mode (default) and Light mode available
+- Full context: /llms-full.txt

@@ -1,0 +1,180 @@
+{
+  "lang": "pt",
+  "meta": {
+    "title": "OnSite Club — Vista o Que Voce Constroi",
+    "description": "OnSite Club — marca lifestyle da construcao. Roupas, ferramentas digitais e uma comunidade pra quem realmente constroi. Sediada em Ontario, Canada."
+  },
+  "nav": {
+    "home": "Inicio",
+    "shop": "Loja",
+    "tools": "Ferramentas",
+    "contact": "Contato",
+    "earn_blades": "Ganhe Blades",
+    "member_area": "Area do Membro"
+  },
+  "hero": {
+    "kicker": "Lifestyle da Construcao",
+    "title": "Vista o Que Voce Constroi",
+    "subtitle": "Cultura premium de obra, ferramentas essenciais e um clube pra quem realmente constroi.",
+    "cta_shop": "Comprar Agora"
+  },
+  "shop": {
+    "label": "A LOJA",
+    "title": "Roupas que representam o <highlight>oficio</highlight>"
+  },
+  "tools": {
+    "label": "KIT DIGITAL",
+    "title": "OnSite <highlight>Ferramentas</highlight>",
+    "description": "Feito pra velocidade da obra. Sem enrolacao. So o que funciona.",
+    "calculator": {
+      "name": "Calculadora de Polegadas por Voz",
+      "description": "Some, divida e converta medidas em polegadas apenas falando. Sem usar as maos.",
+      "cta": "Abrir Calculadora →"
+    },
+    "timekeeper": {
+      "name": "Controle de Horas",
+      "description": "Registro de horas com GPS e geocerca. Bate o ponto ao chegar e ao sair.",
+      "cta": "Iniciar Relogio →"
+    },
+    "checklist": {
+      "name": "Checklist de Obra",
+      "description": "Checklist por obra. Em breve com sugestoes de IA para etapas e materiais.",
+      "tag": "Em Breve",
+      "cta": "Em Breve"
+    },
+    "agenda": {
+      "name": "OnSite Agenda",
+      "description": "Agende obras, turnos e equipe. Um calendario pra toda a obra.",
+      "tag": "Em Breve",
+      "cta": "Em Breve"
+    }
+  },
+  "pathway": {
+    "label": "SEU CAMINHO",
+    "title": "Saiba o que voce precisa.<br></br><highlight>Chegue la.</highlight>",
+    "description": "Ontario exige treinamentos especificos antes de voce pisar na obra. Alguns sao gratuitos, outros nao — mapeamos o caminho pra voce nao ter que descobrir sozinho.",
+    "trigger_title": "Caminho do Trabalhador da Construcao — Ontario",
+    "trigger_desc": "Certificacoes obrigatorias, cursos gratuitos do governo e treinamentos parceiros",
+    "explore": "Explorar o caminho →",
+    "badge": "8 Etapas",
+    "intro": "Todo trabalhador da construcao em Ontario precisa de certas certificacoes pra trabalhar legal e com seguranca. Aqui esta o roteiro — do seu primeiro dia na obra ate credenciais especializadas.",
+    "badge_mandatory": "Obrigatorio",
+    "badge_free": "Gratuito",
+    "badge_gov": "Governo",
+    "badge_recommended": "Recomendado",
+    "badge_specialized": "Especializado",
+    "status_not_started": "Não Iniciado",
+    "status_completed": "Concluído",
+    "status_expired": "Vencido",
+    "certificate": "Certificado",
+    "steps": {
+      "step1": {
+        "title": "Conscientizacao de Saude e Seguranca do Trabalhador em 4 Etapas",
+        "description": "Obrigatório por lei para todos os trabalhadores de Ontario. Gratuito online.",
+        "link": "Fazer Curso Gratuito (Ontario.ca) →"
+      },
+      "step2": {
+        "title": "WHMIS 2025 — Materiais Perigosos",
+        "description": "Obrigatório perto de produtos perigosos. Gratuito online.",
+        "link": "Fazer Curso Gratuito →"
+      },
+      "step3": {
+        "title": "Trabalho em Altura",
+        "description": "Obrigatório com proteção contra quedas. Renovação a cada 3 anos.",
+        "link": "Encontrar Provedor Aprovado →"
+      },
+      "step4": {
+        "title": "Empilhadeira / Equipamento Movel Motorizado",
+        "description": "Necessário para operar empilhadeiras e equipamentos motorizados.",
+        "link": "Ver Opcoes de Treinamento →"
+      },
+      "step5": {
+        "title": "Conscientizacao de Saude e Seguranca do Supervisor em 5 Etapas",
+        "description": "Para supervisores. Curso governamental gratuito.",
+        "link": "Fazer Curso Gratuito (Ontario.ca) →"
+      },
+      "step6": {
+        "title": "Entrada em Espaco Confinado",
+        "description": "Necessário para trabalho em espaço confinado.",
+        "link": "Ver Curso →"
+      },
+      "step7": {
+        "title": "Primeiros Socorros e Certificacao de RCP",
+        "description": "Pelo menos uma pessoa certificada necessária na obra o tempo todo.",
+        "link": "Encontrar Provedor →"
+      },
+      "step8": {
+        "title": "EPI, Seguranca contra Incendio, Escavacao e Mais",
+        "description": "Específico do ofício. Pode ser exigido pelo empregador.",
+        "link": "Ver Todos os Cursos →"
+      }
+    },
+    "cta_title": "Salve seu progresso — cadastre-se como Membro",
+    "cta_desc": "Acompanhe suas certificacoes, armazene certificados e veja seu progresso. Tudo em um so lugar, sem ficar pulando entre sites.",
+    "cta_button": "Area do Membro"
+  },
+  "community": {
+    "label": "CONECTE-SE",
+    "title": "Entre pra <highlight>Equipe</highlight>",
+    "description": "Siga o movimento. Compartilhe suas obras. Faca parte da cultura.",
+    "manifesto_lead": "Os predios nao lembram quem os construiu. Nos lembramos.",
+    "manifesto_body": "Essa cidade nao se construiu sozinha. Alguem acordou antes do sol, raspou o gelo, calcou botas que ja doiam e fez algo real. O OnSite Club existe porque esse alguem merece mais do que um salario. Merece ter seu nome no que construiu. Nos fazemos roupas, ferramentas e uma equipe pra quem tem o trabalho visto por todos, mas nunca recebe o credito. Se voce ja olhou pro horizonte da cidade e soube que suas maos estao nele — esse e o seu clube.",
+    "counter_number": "250+",
+    "counter_label": "Membros e crescendo",
+    "fb_title": "Seja a Voz",
+    "fb_desc": "Entre na nossa comunidade no Facebook. Compartilhe seu oficio, sua equipe, sua historia.",
+    "fb_cta": "Entrar no Grupo →",
+    "ig_title": "Fique por Dentro",
+    "ig_desc": "Siga no Instagram pra looks, lancamentos e conteudo dos bastidores da obra.",
+    "ig_cta": "Abrir Instagram →"
+  },
+  "contact": {
+    "label": "FALE CONOSCO",
+    "title": "Fale <highlight>Conosco</highlight>",
+    "description": "Duvidas, sugestoes ou so quer mandar um oi? Adorariamos ouvir voce.",
+    "name_label": "Nome",
+    "email_label": "Email",
+    "message_label": "Mensagem",
+    "name_placeholder": "Seu nome",
+    "email_placeholder": "voce@exemplo.com",
+    "message_placeholder": "Como podemos ajudar?",
+    "submit": "Enviar Mensagem",
+    "note": "Retornaremos o mais rapido possivel.",
+    "info_location_label": "Localizacao",
+    "info_location": "Ontario, Canada",
+    "info_email_label": "Email",
+    "info_social_label": "Redes Sociais"
+  },
+  "blades": {
+    "title": "Ganhe Blades, Receba Recompensas",
+    "description": "Entre pro clube e comece a ganhar <strong>Blades</strong>. Acumule e troque por roupas exclusivas e descontos.",
+    "cta": "Entrar Agora"
+  },
+  "sitemap": {
+    "nav_heading": "Navegacao",
+    "shop_heading": "Loja",
+    "tools_heading": "Apps e Ferramentas",
+    "legal_heading": "Legal",
+    "connect_heading": "Conecte-se",
+    "home": "Inicio",
+    "clubroom": "Sala do Clube",
+    "contact": "Contato",
+    "all_products": "Todos os Produtos",
+    "men": "Masculino",
+    "women": "Feminino",
+    "members_only": "Somente Membros",
+    "member_hub": "Central do Membro",
+    "calculator": "Calculadora",
+    "timekeeper": "Controle de Horas",
+    "privacy": "Politica de Privacidade",
+    "terms": "Termos de Servico",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "email_us": "Envie um Email"
+  },
+  "footer": {
+    "copyright": "© 2025 OnSite Club",
+    "sitemap": "Mapa do Site",
+    "tagline": "Feito pra quem constroi."
+  }
+}

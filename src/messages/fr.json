@@ -1,0 +1,180 @@
+{
+  "lang": "fr",
+  "meta": {
+    "title": "OnSite Club — Porte ce que tu construis",
+    "description": "OnSite Club — marque lifestyle pour la construction. Vêtements, outils numériques et une communauté pour ceux qui bâtissent vraiment. Basé en Ontario, Canada."
+  },
+  "nav": {
+    "home": "Accueil",
+    "shop": "Boutique",
+    "tools": "Outils",
+    "contact": "Contact",
+    "earn_blades": "Gagner des Blades",
+    "member_area": "Espace Membre"
+  },
+  "hero": {
+    "kicker": "Culture de chantier",
+    "title": "Porte ce que tu construis",
+    "subtitle": "Culture de chantier haut de gamme, outils essentiels et un club pour ceux qui bâtissent vraiment.",
+    "cta_shop": "Magasiner"
+  },
+  "shop": {
+    "label": "LA BOUTIQUE",
+    "title": "Du gear qui représente le <highlight>métier</highlight>"
+  },
+  "tools": {
+    "label": "OUTILS NUMÉRIQUES",
+    "title": "OnSite <highlight>Outils</highlight>",
+    "description": "Conçus pour la vitesse du chantier. Pas de bruit. Juste ce qui marche.",
+    "calculator": {
+      "name": "Calculateur vocal de pouces",
+      "description": "Additionne, divise et convertis des mesures en pouces juste en parlant. Pas besoin des mains.",
+      "cta": "Ouvrir le calculateur →"
+    },
+    "timekeeper": {
+      "name": "Suivi des heures",
+      "description": "Suivi du temps par GPS avec géorepérage. Pointe à l'arrivée, dépointe au départ.",
+      "cta": "Démarrer le chrono →"
+    },
+    "checklist": {
+      "name": "Liste de tâches",
+      "description": "Liste de vérification par projet. Bientôt avec suggestions IA pour les étapes et matériaux.",
+      "tag": "Bientôt disponible",
+      "cta": "Bientôt disponible"
+    },
+    "agenda": {
+      "name": "OnSite Agenda",
+      "description": "Planifie tes projets, quarts et équipes. Un seul calendrier pour tout le chantier.",
+      "tag": "Bientôt disponible",
+      "cta": "Bientôt disponible"
+    }
+  },
+  "pathway": {
+    "label": "TON PARCOURS",
+    "title": "Sache ce qu'il te faut.<br></br><highlight>Rends-toi là.</highlight>",
+    "description": "L'Ontario exige des formations spécifiques avant de mettre les pieds sur un chantier. Certaines sont gratuites, d'autres non — on a tracé le chemin pour que tu n'aies pas à tout chercher seul.",
+    "trigger_title": "Parcours du travailleur de la construction — Ontario",
+    "trigger_desc": "Certifications requises, cours gouvernementaux gratuits et formations partenaires",
+    "explore": "Explorer le parcours →",
+    "badge": "8 étapes",
+    "intro": "Chaque travailleur de la construction en Ontario a besoin de certaines certifications pour travailler légalement et en sécurité. Voici la feuille de route — de ton premier jour sur le chantier jusqu'aux accréditations spécialisées.",
+    "badge_mandatory": "Obligatoire",
+    "badge_free": "Gratuit",
+    "badge_gov": "Gouvernement",
+    "badge_recommended": "Recommandé",
+    "badge_specialized": "Spécialisé",
+    "status_not_started": "Non commencé",
+    "status_completed": "Terminé",
+    "status_expired": "Expiré",
+    "certificate": "Certificat",
+    "steps": {
+      "step1": {
+        "title": "Sensibilisation des travailleurs à la santé et sécurité en 4 étapes",
+        "description": "Obligatoire pour tous les travailleurs en Ontario. Gratuit en ligne.",
+        "link": "Suivre le cours gratuit (Ontario.ca) →"
+      },
+      "step2": {
+        "title": "WHMIS 2025 — Matières dangereuses",
+        "description": "Obligatoire près de produits dangereux. Gratuit en ligne.",
+        "link": "Suivre le cours gratuit →"
+      },
+      "step3": {
+        "title": "Travail en hauteur",
+        "description": "Obligatoire avec protection contre les chutes. Rappel tous les 3 ans.",
+        "link": "Trouver un fournisseur agréé →"
+      },
+      "step4": {
+        "title": "Chariot élévateur / Équipement mobile motorisé",
+        "description": "Requis pour opérer chariots élévateurs et équipements motorisés.",
+        "link": "Voir les options de formation →"
+      },
+      "step5": {
+        "title": "Sensibilisation des superviseurs à la santé et sécurité en 5 étapes",
+        "description": "Pour les superviseurs. Cours gouvernemental gratuit.",
+        "link": "Suivre le cours gratuit (Ontario.ca) →"
+      },
+      "step6": {
+        "title": "Entrée en espace clos",
+        "description": "Requis pour le travail en espace clos sur les chantiers.",
+        "link": "Voir le cours →"
+      },
+      "step7": {
+        "title": "Certification premiers soins et RCR",
+        "description": "Au moins une personne certifiée requise sur le chantier en tout temps.",
+        "link": "Trouver un fournisseur →"
+      },
+      "step8": {
+        "title": "ÉPI, sécurité incendie, perturbation du sol et plus",
+        "description": "Spécifique au métier. Peut être requis par votre employeur.",
+        "link": "Parcourir tous les cours →"
+      }
+    },
+    "cta_title": "Sauvegarde ta progression — inscris-toi comme Membre",
+    "cta_desc": "Suis tes certifications, conserve tes certificats et vois ta progression. Tout au même endroit, sans sauter d'un site à l'autre.",
+    "cta_button": "Espace Membre"
+  },
+  "community": {
+    "label": "CONNECTER",
+    "title": "Rejoins l'<highlight>équipe</highlight>",
+    "description": "Suis le mouvement. Partage tes projets. Fais partie de la culture.",
+    "manifesto_lead": "Les bâtiments ne se souviennent pas de qui les a construits. Nous, oui.",
+    "manifesto_body": "Cette ville ne s'est pas construite toute seule. Quelqu'un s'est levé avant le soleil, a gratté la glace, a enfilé des bottes qui faisaient déjà mal, et a bâti quelque chose de vrai. OnSite Club existe parce que cette personne mérite plus qu'un chèque de paie. Elle mérite que son nom soit sur ce qu'elle a construit. On crée du gear, des outils et une équipe pour ceux dont tout le monde voit le travail, mais que personne ne reconnaît. Si tu as déjà regardé un horizon urbain en sachant que tes mains sont dedans — c'est ton club.",
+    "counter_number": "250+",
+    "counter_label": "Membres et ça grandit",
+    "fb_title": "Fais-toi entendre",
+    "fb_desc": "Rejoins notre communauté Facebook. Partage ton métier, ton équipe, ton histoire.",
+    "fb_cta": "Rejoindre le groupe →",
+    "ig_title": "Reste dans le coup",
+    "ig_desc": "Suis-nous sur Instagram pour les looks, les sorties et le contenu en coulisses.",
+    "ig_cta": "Ouvrir Instagram →"
+  },
+  "contact": {
+    "label": "NOUS JOINDRE",
+    "title": "Contacte-<highlight>nous</highlight>",
+    "description": "Questions, commentaires, ou juste envie de dire bonjour? On aimerait avoir de tes nouvelles.",
+    "name_label": "Nom",
+    "email_label": "Courriel",
+    "message_label": "Message",
+    "name_placeholder": "Ton nom",
+    "email_placeholder": "toi@exemple.com",
+    "message_placeholder": "Comment peut-on t'aider?",
+    "submit": "Envoyer le message",
+    "note": "On te revient le plus vite possible.",
+    "info_location_label": "Emplacement",
+    "info_location": "Ontario, Canada",
+    "info_email_label": "Courriel",
+    "info_social_label": "Réseaux sociaux"
+  },
+  "blades": {
+    "title": "Gagne des Blades, obtiens des récompenses",
+    "description": "Rejoins le club et commence à accumuler des <strong>Blades</strong>. Empile-les. Échange-les contre du gear exclusif et des rabais.",
+    "cta": "Rejoindre"
+  },
+  "sitemap": {
+    "nav_heading": "Navigation",
+    "shop_heading": "Boutique",
+    "tools_heading": "Applis et outils",
+    "legal_heading": "Légal",
+    "connect_heading": "Connecter",
+    "home": "Accueil",
+    "clubroom": "Salle du club",
+    "contact": "Contact",
+    "all_products": "Tous les produits",
+    "men": "Hommes",
+    "women": "Femmes",
+    "members_only": "Membres seulement",
+    "member_hub": "Espace Membre",
+    "calculator": "Calculateur",
+    "timekeeper": "Suivi des heures",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "email_us": "Nous écrire"
+  },
+  "footer": {
+    "copyright": "© 2025 OnSite Club",
+    "sitemap": "Plan du site",
+    "tagline": "Bâti pour ceux qui bâtissent."
+  }
+}
