@@ -2,8 +2,14 @@
 
 import { useState, useRef, useEffect, useCallback, KeyboardEvent } from 'react';
 import { useTranslations } from 'next-intl';
-import { SHOP_URL } from '@/lib/constants';
-import { useAccessibility } from '@/providers/AccessibilityProvider';
+import {
+  SHOP_URL,
+  DASHBOARD_URL,
+  CALCULATOR_URL,
+  TIMEKEEPER_URL,
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+} from '@/lib/constants';
 
 /* ── Types ── */
 interface Message {
@@ -16,63 +22,23 @@ interface ChatWidgetProps {
   locale: string;
 }
 
-/* ── Action parser ── */
-const ACTION_REGEX = /\[ACTION:([A-Z_]+)(?::([a-z-]+))?\]/g;
-
-interface ActionHandlers {
-  toggleHighContrast: () => void;
-  toggleLargeFont: () => void;
-  toggleTTS: () => void;
+interface ChatAction {
+  id: string;
+  name: string;
+  args: Record<string, string | boolean>;
 }
 
-function createActionParser(handlers: ActionHandlers) {
-  return function parseAndExecuteActions(text: string): string {
-    let cleaned = text;
-    let match: RegExpExecArray | null;
-
-    ACTION_REGEX.lastIndex = 0;
-
-    while ((match = ACTION_REGEX.exec(text)) !== null) {
-      const [fullMatch, action, param] = match;
-      cleaned = cleaned.replace(fullMatch, '');
-
-      switch (action) {
-        case 'SCROLL_TO':
-          if (param) {
-            const el = document.getElementById(param);
-            el?.scrollIntoView({ behavior: 'smooth' });
-          }
-          break;
-        case 'TOGGLE_THEME':
-          document.documentElement.classList.toggle('light-mode');
-          localStorage.setItem(
-            'onsite-theme',
-            document.documentElement.classList.contains('light-mode') ? 'light' : 'dark'
-          );
-          break;
-        case 'HIGH_CONTRAST':
-          handlers.toggleHighContrast();
-          break;
-        case 'LARGE_FONT':
-          handlers.toggleLargeFont();
-          break;
-        case 'READ_ALOUD':
-          handlers.toggleTTS();
-          break;
-        case 'OPEN_SHOP':
-          window.open(SHOP_URL, '_blank');
-          break;
-        case 'OPEN_BLADES': {
-          const bladesPill = document.getElementById('bladesPill');
-          bladesPill?.click();
-          break;
-        }
-      }
-    }
-
-    return cleaned.trim();
-  };
-}
+/* ── External URL map ── */
+const EXTERNAL_URLS: Record<string, string> = {
+  shop: SHOP_URL,
+  dashboard: DASHBOARD_URL,
+  calculator_android: 'https://play.google.com/store/apps/details?id=com.onsiteclub.calculator',
+  calculator_ios: CALCULATOR_URL,
+  timekeeper_android: 'https://play.google.com/store/apps/details?id=com.onsiteclub.timekeeper',
+  timekeeper_ios: TIMEKEEPER_URL,
+  facebook: FACEBOOK_URL,
+  instagram: INSTAGRAM_URL,
+};
 
 /* ── Session storage helpers ── */
 const STORAGE_KEY = 'onsite-chat-history';
@@ -154,17 +120,6 @@ function TypingDots() {
 /* ── Main Component ── */
 export default function ChatWidget({ locale }: ChatWidgetProps) {
   const t = useTranslations('chat');
-  const a11y = useAccessibility();
-
-  const parseAndExecuteActions = useCallback(
-    (text: string) =>
-      createActionParser({
-        toggleHighContrast: a11y.toggleHighContrast,
-        toggleLargeFont: a11y.toggleLargeFont,
-        toggleTTS: a11y.toggleTTS,
-      })(text),
-    [a11y.toggleHighContrast, a11y.toggleLargeFont, a11y.toggleTTS]
-  );
 
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -181,6 +136,48 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const lastSendRef = useRef(0);
+
+  /* ── Action executor (structured tool calls) ── */
+  const executeActions = useCallback((actions: ChatAction[]) => {
+    for (const action of actions) {
+      switch (action.name) {
+        case 'scroll_to_section': {
+          const el = document.getElementById(action.args.section_id as string);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+            if (window.innerWidth < 768) setOpen(false);
+          }
+          break;
+        }
+        case 'toggle_theme': {
+          window.dispatchEvent(new CustomEvent('toggle-theme'));
+          break;
+        }
+        case 'set_accessibility': {
+          window.dispatchEvent(new CustomEvent('set-accessibility', {
+            detail: { feature: action.args.feature, enabled: action.args.enabled },
+          }));
+          break;
+        }
+        case 'open_external_link': {
+          const url = EXTERNAL_URLS[action.args.destination as string];
+          if (url) window.open(url, '_blank', 'noopener,noreferrer');
+          break;
+        }
+        case 'open_popup': {
+          if (action.args.popup_id === 'blades') {
+            window.dispatchEvent(new CustomEvent('open-blades'));
+          }
+          break;
+        }
+        case 'cannot_do':
+          // The AI includes the reason in its text response — no UI action needed
+          break;
+        default:
+          console.warn(`Unknown action: ${action.name}`);
+      }
+    }
+  }, []);
 
   // Load history from sessionStorage
   useEffect(() => {
@@ -274,15 +271,30 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
         if (!res.ok) throw new Error('API error');
 
         const data = await res.json();
-        const rawText: string = data.response || '';
-        const cleanText = parseAndExecuteActions(rawText);
 
-        const assistantMsg: Message = {
-          role: 'assistant',
-          content: cleanText,
-          timestamp: Date.now(),
-        };
-        setMessages((prev) => [...prev, assistantMsg]);
+        // Execute structured actions before showing response
+        if (data.actions?.length > 0) {
+          executeActions(data.actions);
+        }
+
+        // Show text response in chat
+        const responseText: string = data.response || '';
+        if (responseText) {
+          const assistantMsg: Message = {
+            role: 'assistant',
+            content: responseText,
+            timestamp: Date.now(),
+          };
+          setMessages((prev) => [...prev, assistantMsg]);
+        } else if (data.actions?.length > 0) {
+          // Tool call with no text — OpenAI sometimes returns only tool_calls
+          const assistantMsg: Message = {
+            role: 'assistant',
+            content: '\u2713',
+            timestamp: Date.now(),
+          };
+          setMessages((prev) => [...prev, assistantMsg]);
+        }
       } catch {
         const errorMsg: Message = {
           role: 'assistant',
@@ -294,7 +306,7 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
         setLoading(false);
       }
     },
-    [messages, loading, t, parseAndExecuteActions]
+    [messages, loading, t, executeActions]
   );
 
   // Handle enter key

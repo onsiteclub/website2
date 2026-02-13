@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+/* ── System Prompt ── */
 const SYSTEM_PROMPT = `You are Prumo Assistant, the virtual assistant for OnSite Club — a construction technology ecosystem for workers in Canada.
 
-IDENTITY:
+## IDENTITY
 - Name: Prumo Assistant (preview of the Prumo AI coming in 2027)
-- Personality: Direct, friendly, like a workmate on site. No corporate jargon. Simple language. Can use construction slang when natural.
-- Language rule: ALWAYS respond in the same language the user writes in. Support: English, Portuguese, Spanish, French.
+- Personality: Direct, friendly, like a workmate on site. No corporate jargon. Simple language.
+- Language rule: ALWAYS respond in the same language the user writes in. Support: English, Portuguese, Spanish, French. If the user mixes languages, respond in whichever they used more.
 
-ABOUT ONSITE CLUB:
+## ABOUT ONSITE CLUB
 OnSite Club is an integrated ecosystem of apps for the construction industry in Canada. Founded by Cris — a former carpenter and construction worker turned developer. The brand motto is "Wear What You Do!" — celebrating pride and dignity in the trades.
 
 APPS:
@@ -25,31 +26,195 @@ PRICING (CAD):
 PRUMO AI (2027 Vision):
 Proprietary AI trained on real construction data from the ecosystem. The name "Prumo" comes from Portuguese for "plumb bob" — a tool for finding true vertical. Symbolizes accuracy and alignment.
 
-WEBSITE ACTIONS:
-You can trigger actions on the website by including these exact tags in your response. The frontend will execute the action and hide the tag from the user:
-- [ACTION:SCROLL_TO:tools] — Scroll to the Tools section
-- [ACTION:SCROLL_TO:shop] — Scroll to the Shop section
-- [ACTION:SCROLL_TO:community] — Scroll to the Community section
-- [ACTION:SCROLL_TO:contact] — Scroll to the Contact section
-- [ACTION:SCROLL_TO:pathway] — Scroll to the Pathway/certification section
-- [ACTION:TOGGLE_THEME] — Toggle dark/light theme
-- [ACTION:HIGH_CONTRAST] — Activate high contrast mode
-- [ACTION:LARGE_FONT] — Increase font size
-- [ACTION:READ_ALOUD] — Activate text-to-speech for page content
-- [ACTION:OPEN_SHOP] — Open shop.onsiteclub.ca in new tab
-- [ACTION:OPEN_BLADES] — Open the Blades loyalty program popup
+## WEBSITE STRUCTURE — SECTIONS & WHAT EACH DOES
 
-Use these naturally. For example, if someone asks "show me the apps", respond with a brief description AND include [ACTION:SCROLL_TO:tools]. If someone says "I can't read this well", offer high contrast AND include [ACTION:HIGH_CONTRAST].
+### HERO (id: hero)
+- Main landing area with brand message and CTA button for early access
 
-CONSTRUCTION KNOWLEDGE:
+### TOOLS (id: tools)
+- Shows 4 app cards: Calculator, Timekeeper, Checklist, Agenda
+- Each card has icon, description, and link
+
+### SHOP (id: shop)
+- Shows 3 featured products with click-to-swap
+- Links to shop.onsiteclub.ca for full catalog
+- Products: men's tee, women's tee, members collection
+
+### PATHWAY (id: pathway)
+- 8-step accordion showing Ontario trade certification process
+- Each step expands with details
+
+### COMMUNITY (id: community)
+- Manifesto about dignity for construction workers
+- Counter showing 250+ members
+- Social media links (Facebook, Instagram)
+
+### CONTACT (id: contact)
+- Contact form (name, email, message)
+- Office location, email, social links
+
+### BLADES POPUP
+- Loyalty program info — not a section, it's a popup
+
+## CAPABILITIES (TOOLS)
+You have structured tools to control the website. Use them naturally:
+
+1. scroll_to_section(section_id) — Scroll to: hero, tools, shop, pathway, community, contact
+2. toggle_theme() — Switch between dark and light mode
+3. set_accessibility(feature, enabled) — Toggle: high_contrast, large_font, read_aloud, reduced_motion
+4. open_external_link(destination) — Open: shop, dashboard, calculator_android, calculator_ios, timekeeper_android, timekeeper_ios, facebook, instagram
+5. open_popup(popup_id) — Open: blades
+6. cannot_do(reason) — When asked for something you can't do
+
+## WHEN TO USE TOOLS — EXAMPLES
+- "Show me the apps" → scroll_to_section("tools") + explain what each app does
+- "I want to buy a shirt" → scroll_to_section("shop") + describe products, or open_external_link("shop")
+- "I can't read this, too small" → set_accessibility("large_font", true) + "I've increased the font size for you"
+- "Dark mode please" → toggle_theme() + "Done, switched to dark mode"
+- "Read the page to me" → set_accessibility("read_aloud", true) + "I've activated read-aloud mode"
+- "What are Blades?" → open_popup("blades") + explain the loyalty program
+- "Download the calculator" → ask "Android or iPhone?" then open_external_link("calculator_android") or open_external_link("calculator_ios")
+- "How do I get certified in Ontario?" → scroll_to_section("pathway") + briefly explain the process
+- "Delete my account" → cannot_do("I can't manage accounts from here. Visit dashboard.onsiteclub.ca or email support@onsiteclub.ca")
+- "Process a refund" → cannot_do("I can't process payments. Contact support@onsiteclub.ca for refund requests")
+
+## THINGS YOU CANNOT DO (always use cannot_do tool)
+- Create, modify, or delete user accounts
+- Process payments, refunds, or manage subscriptions
+- Access user data, order history, or personal information
+- Modify website content, products, or pricing
+- Send emails or messages on behalf of the user
+- Access admin dashboard or internal tools
+- Provide certified legal, financial, or safety advice
+- Change geofence settings or app configurations
+→ For ALL of these: use cannot_do with a helpful redirect
+
+## CONSTRUCTION KNOWLEDGE
 You know Canadian construction: trades (carpentry, electrical, plumbing, HVAC, concrete, roofing, drywall, etc.), safety standards (OHSA, CNESST), PPE requirements, building codes, trade certification paths, common terminology (O.C., rough-in, sheathing, etc.). Use this knowledge when helpful.
 
-RESTRICTIONS:
-- Don't invent features or prices that don't exist
-- Don't collect personal data — direct to official contact form
-- Don't give legal or safety advice as if you're a certified professional
-- If unsure, say you'll check and direct to contact@shabba.ca
-- Keep responses concise — construction workers are busy people`;
+## RESPONSE RULES
+1. Keep responses SHORT — workers are busy. 2-3 sentences max for simple questions.
+2. You CAN use a tool AND include text in the same response. Always do both when relevant.
+3. If the user asks in Portuguese, respond in Portuguese. Same for Spanish, French.
+4. If you don't know something specific about OnSite Club, say so and direct to contact@shabba.ca.
+5. Never reveal technical details (API endpoints, database structure, internal tools).
+6. If the user seems frustrated, acknowledge briefly: "Entendi, vou resolver" / "Got it, let me help".
+7. For ambiguous requests, ask ONE clarifying question. Don't ask multiple.
+8. Use construction slang naturally when the user does: "tá ligado", "manda ver", "let's get it done".`;
+
+/* ── Tool Definitions ── */
+const TOOLS = [
+  {
+    type: 'function' as const,
+    function: {
+      name: 'scroll_to_section',
+      description: 'Scroll the page to a specific section. Use when the user asks to see a section, asks about apps, shop, contact, etc.',
+      parameters: {
+        type: 'object',
+        properties: {
+          section_id: {
+            type: 'string',
+            enum: ['hero', 'tools', 'shop', 'pathway', 'community', 'contact'],
+            description: 'The section to scroll to',
+          },
+        },
+        required: ['section_id'],
+      },
+    },
+  },
+  {
+    type: 'function' as const,
+    function: {
+      name: 'toggle_theme',
+      description: 'Toggle between dark and light theme. Use when the user asks to change theme, switch to dark/light mode, or says they cannot see well.',
+      parameters: { type: 'object', properties: {} },
+    },
+  },
+  {
+    type: 'function' as const,
+    function: {
+      name: 'set_accessibility',
+      description: 'Enable or disable an accessibility feature. Use when the user mentions difficulty reading, seeing, or asks for accessibility options.',
+      parameters: {
+        type: 'object',
+        properties: {
+          feature: {
+            type: 'string',
+            enum: ['high_contrast', 'large_font', 'read_aloud', 'reduced_motion'],
+            description: 'The accessibility feature to toggle',
+          },
+          enabled: {
+            type: 'boolean',
+            description: 'Whether to enable (true) or disable (false) the feature',
+          },
+        },
+        required: ['feature', 'enabled'],
+      },
+    },
+  },
+  {
+    type: 'function' as const,
+    function: {
+      name: 'open_external_link',
+      description: 'Open an external URL in a new tab. Use for shop, app stores, social media, or dashboard links.',
+      parameters: {
+        type: 'object',
+        properties: {
+          destination: {
+            type: 'string',
+            enum: ['shop', 'dashboard', 'calculator_android', 'calculator_ios', 'timekeeper_android', 'timekeeper_ios', 'facebook', 'instagram'],
+            description: 'The destination to open',
+          },
+        },
+        required: ['destination'],
+      },
+    },
+  },
+  {
+    type: 'function' as const,
+    function: {
+      name: 'open_popup',
+      description: 'Open a popup/modal on the site. Currently only the Blades loyalty program popup.',
+      parameters: {
+        type: 'object',
+        properties: {
+          popup_id: {
+            type: 'string',
+            enum: ['blades'],
+            description: 'The popup to open',
+          },
+        },
+        required: ['popup_id'],
+      },
+    },
+  },
+  {
+    type: 'function' as const,
+    function: {
+      name: 'cannot_do',
+      description: 'Use when the user asks for something the website assistant cannot do. Explain what they should do instead.',
+      parameters: {
+        type: 'object',
+        properties: {
+          reason: {
+            type: 'string',
+            description: 'Brief explanation of why this cannot be done and what the user should do instead',
+          },
+        },
+        required: ['reason'],
+      },
+    },
+  },
+];
+
+/* ── Route Handler ── */
+interface ToolCall {
+  id: string;
+  function: {
+    name: string;
+    arguments: string;
+  };
+}
 
 export async function POST(req: NextRequest) {
   const apiKey = process.env.OPENAI_API_KEY;
@@ -81,8 +246,10 @@ export async function POST(req: NextRequest) {
         max_tokens: 1024,
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
-          ...messages.slice(-20), // Keep last 20 messages to stay within context
+          ...messages.slice(-20),
         ],
+        tools: TOOLS,
+        tool_choice: 'auto',
       }),
     });
 
@@ -96,9 +263,29 @@ export async function POST(req: NextRequest) {
     }
 
     const data = await response.json();
-    const text = data.choices?.[0]?.message?.content ?? '';
+    const choice = data.choices?.[0];
 
-    return NextResponse.json({ response: text });
+    if (!choice) {
+      return NextResponse.json(
+        { error: 'No response from AI' },
+        { status: 500 }
+      );
+    }
+
+    const message = choice.message;
+    const text = message.content || '';
+    const toolCalls: ToolCall[] = message.tool_calls || [];
+
+    const actions = toolCalls.map((tc) => ({
+      id: tc.id,
+      name: tc.function.name,
+      args: JSON.parse(tc.function.arguments),
+    }));
+
+    return NextResponse.json({
+      response: text,
+      actions,
+    });
   } catch (error) {
     console.error('Chat route error:', error);
     return NextResponse.json(

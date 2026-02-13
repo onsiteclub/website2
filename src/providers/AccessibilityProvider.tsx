@@ -116,6 +116,37 @@ export function AccessibilityProvider({ children }: { children: ReactNode }) {
     }
   }, [state.ttsActive, stopTTS, speakText]);
 
+  // Listen for set-accessibility CustomEvent from ChatWidget
+  useEffect(() => {
+    function handleSetA11y(e: Event) {
+      const { feature, enabled } = (e as CustomEvent).detail as {
+        feature: string;
+        enabled: boolean;
+      };
+      switch (feature) {
+        case 'high_contrast':
+          setState((s) => ({ ...s, highContrast: enabled }));
+          break;
+        case 'large_font':
+          setState((s) => ({ ...s, largeFont: enabled }));
+          break;
+        case 'reduced_motion':
+          setState((s) => ({ ...s, reducedMotion: enabled }));
+          break;
+        case 'read_aloud':
+          if (enabled) {
+            const main = document.querySelector('main') || document.body;
+            speakText(main.textContent || '');
+          } else {
+            stopTTS();
+          }
+          break;
+      }
+    }
+    window.addEventListener('set-accessibility', handleSetA11y);
+    return () => window.removeEventListener('set-accessibility', handleSetA11y);
+  }, [speakText, stopTTS]);
+
   return (
     <AccessibilityContext.Provider
       value={{

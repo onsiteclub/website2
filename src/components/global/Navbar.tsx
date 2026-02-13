@@ -32,11 +32,17 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ''; };
   }, [menuOpen]);
 
-  const handleThemeToggle = () => {
+  const handleThemeToggle = useCallback(() => {
     document.documentElement.classList.toggle('light-mode');
     const isLight = document.documentElement.classList.contains('light-mode');
     localStorage.setItem('onsite-theme', isLight ? 'light' : 'dark');
-  };
+  }, []);
+
+  // Listen for toggle-theme CustomEvent from ChatWidget
+  useEffect(() => {
+    window.addEventListener('toggle-theme', handleThemeToggle);
+    return () => window.removeEventListener('toggle-theme', handleThemeToggle);
+  }, [handleThemeToggle]);
 
   const handleLangCycle = () => {
     const locales = routing.locales;
