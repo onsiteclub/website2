@@ -15,6 +15,21 @@ that already hurt, and made something real. OnSite Club exists because that some
 more than a paycheck. They deserve a name on what they built. We make gear, tools, and a crew
 for the people whose work everyone sees but nobody credits.
 
+## Website Structure (Single-Page Homepage)
+
+The homepage is a single-page layout with sections in this order:
+
+1. **Hero** — Main landing section with brand intro and CTA
+2. **Tools** — Digital tools showcase (Calculator, Timekeeper, etc.)
+3. **Gear** — Apparel and merchandise (links to shop.onsiteclub.ca). Previously labeled "Shop" on the homepage.
+4. **Manifesto** — Standalone emotional break section featuring the quote: "Buildings don't remember who built them. We do."
+5. **LearnTeaser** — Three cards linking to educational articles: /learn/construction-steps, /learn/safety-equipment, and /learn/trades-guide
+6. **Contact** — Contact information and social links
+
+**Removed from homepage:**
+- The **Pathway** section (construction certification guide) is no longer displayed on the single-page homepage. The content still exists and may be used on a dedicated page in the future.
+- The **Community** section is no longer displayed on the single-page homepage. The 250+ members counter has been removed from the homepage and is saved for a future /community page.
+
 ## Products
 
 ### Apparel — shop.onsiteclub.ca
@@ -88,7 +103,8 @@ Each step includes links to official government courses or approved training pro
 
 ## Community
 
-OnSite Club has a growing community of 250+ members across social platforms:
+OnSite Club has a growing community across social platforms.
+The Community section was removed from the single-page homepage and is planned for a future dedicated /community page.
 - Instagram: https://www.instagram.com/onsite.club/ — Fits, drops, and behind-the-build content
 - Facebook: https://www.facebook.com/onsiteclub — Community group for sharing trades, crews, and stories
 
@@ -137,15 +153,29 @@ The website includes an accessibility toolbar with:
 
 The website features Prumo Assistant, an AI chatbot powered by GPT-4o. It supports:
 - Text and voice input (via OpenAI Whisper)
-- Website navigation actions (scroll to sections, toggle theme, accessibility)
+- Website navigation actions (scroll to sections, trade personalization, accessibility)
 - Construction knowledge (Canadian standards, trades, safety)
 - Multi-language responses (EN, FR, ES, PT)
+
+## Trade Personalization
+
+The website features a trade-based visual theme system. Users can personalize the site
+to match their construction trade, changing colors, typography weight, and hero imagery:
+
+- **Default** — Dark theme, gold accent. For all trades.
+- **Wood & Framing** — Warm light theme, cedar/orange accent. Bold 800-weight headings. For carpenters, framers.
+- **Drywall & Finishing** — Clean light theme, slate accent. Light 600-weight headings. For finishers.
+- **Electrical** — Sharp light theme, blue accent. Precise feel. For electricians.
+- **Plumbing & HVAC** — Deep dark theme, teal accent. Fluid feel. For plumbers, HVAC techs.
+- **Concrete & Masonry** — Heavy dark theme, stone accent. Ultra-bold 900-weight headings. For concrete workers, masons.
+
+Trade selection persists across sessions via localStorage.
 
 ## Technical
 - Main site: Next.js 14 (App Router) with TypeScript, hosted on Vercel
 - Shop: Shopify (shop.onsiteclub.ca)
 - Apps: React/Next.js on Vercel subdomains
-- Themes: Dark mode (default) and Light mode
+- Themes: 6 trade-based visual themes (default, wood, drywall, electrical, plumbing, concrete)
 - Internationalization: 4 languages (EN, FR, ES, PT) with URL-based locale routing
 - Accessibility: High contrast, large font, reduced motion, TTS
-- AI: Prumo Assistant (GPT-4o + Whisper)
+- AI: Prumo Assistant (GPT-4o + Whisper) with structured tool calls for site navigation, trade selection, and accessibility

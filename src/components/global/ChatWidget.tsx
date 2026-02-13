@@ -149,8 +149,10 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
           }
           break;
         }
-        case 'toggle_theme': {
-          window.dispatchEvent(new CustomEvent('toggle-theme'));
+        case 'set_trade': {
+          document.dispatchEvent(new CustomEvent('set-trade', {
+            detail: { trade: action.args.trade },
+          }));
           break;
         }
         case 'set_accessibility': {

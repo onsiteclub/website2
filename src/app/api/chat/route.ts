@@ -60,7 +60,7 @@ Proprietary AI trained on real construction data from the ecosystem. The name "P
 You have structured tools to control the website. Use them naturally:
 
 1. scroll_to_section(section_id) — Scroll to: hero, tools, shop, pathway, community, contact
-2. toggle_theme() — Switch between dark and light mode
+2. set_trade(trade) — Change the site theme to a specific trade: default, wood, drywall, electrical, plumbing, concrete
 3. set_accessibility(feature, enabled) — Toggle: high_contrast, large_font, read_aloud, reduced_motion
 4. open_external_link(destination) — Open: shop, dashboard, calculator_android, calculator_ios, timekeeper_android, timekeeper_ios, facebook, instagram
 5. open_popup(popup_id) — Open: blades
@@ -70,7 +70,8 @@ You have structured tools to control the website. Use them naturally:
 - "Show me the apps" → scroll_to_section("tools") + explain what each app does
 - "I want to buy a shirt" → scroll_to_section("shop") + describe products, or open_external_link("shop")
 - "I can't read this, too small" → set_accessibility("large_font", true) + "I've increased the font size for you"
-- "Dark mode please" → toggle_theme() + "Done, switched to dark mode"
+- "I'm a carpenter" → set_trade("wood") + "I've switched to the Wood & Framing theme for you"
+- "Change to electrical theme" → set_trade("electrical") + "Done, switched to the Electrical theme"
 - "Read the page to me" → set_accessibility("read_aloud", true) + "I've activated read-aloud mode"
 - "What are Blades?" → open_popup("blades") + explain the loyalty program
 - "Download the calculator" → ask "Android or iPhone?" then open_external_link("calculator_android") or open_external_link("calculator_ios")
@@ -125,9 +126,19 @@ const TOOLS = [
   {
     type: 'function' as const,
     function: {
-      name: 'toggle_theme',
-      description: 'Toggle between dark and light theme. Use when the user asks to change theme, switch to dark/light mode, or says they cannot see well.',
-      parameters: { type: 'object', properties: {} },
+      name: 'set_trade',
+      description: 'Change the site visual theme to match a specific construction trade. Use when the user mentions their trade, asks to change the theme, or asks for personalization.',
+      parameters: {
+        type: 'object',
+        properties: {
+          trade: {
+            type: 'string',
+            enum: ['default', 'wood', 'drywall', 'electrical', 'plumbing', 'concrete'],
+            description: 'The trade theme to apply',
+          },
+        },
+        required: ['trade'],
+      },
     },
   },
   {

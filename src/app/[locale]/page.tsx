@@ -6,9 +6,9 @@ import ScrollAssembly from '@/components/global/ScrollAssembly';
 import Interactions from '@/components/global/Interactions';
 import Hero from '@/components/sections/Hero';
 import Tools from '@/components/sections/Tools';
-import Shop from '@/components/sections/Shop';
-import Pathway from '@/components/sections/Pathway';
-import Community from '@/components/sections/Community';
+import Gear from '@/components/sections/Gear';
+import Manifesto from '@/components/sections/Manifesto';
+import LearnTeaser from '@/components/sections/LearnTeaser';
 import Contact from '@/components/sections/Contact';
 
 const SITE_URL = 'https://www.onsiteclub.ca';
@@ -236,9 +236,9 @@ export default function Home() {
         <div className="connector assemble" aria-hidden="true"></div>
         <div className="connector assemble" aria-hidden="true"></div>
         <Tools />
-        <Shop />
-        <Pathway />
-        <Community />
+        <Gear />
+        <Manifesto />
+        <LearnTeaser />
         <Contact />
       </main>
 

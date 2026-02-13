@@ -2,11 +2,15 @@
 
 import { useEffect } from 'react';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { SHOP_URL } from '@/lib/constants';
+import { useTrade, TRADES, TradeId } from '@/providers/TradeProvider';
+import { getTradeText } from '@/data/tradeContent';
 
 export default function Hero() {
   const t = useTranslations('hero');
+  const locale = useLocale();
+  const { trade } = useTrade();
 
   /* Staggered hero assembly on page load */
   useEffect(() => {
@@ -47,10 +51,23 @@ export default function Hero() {
   const words = title.split(' ');
   const lastIdx = words.length - 1;
 
+  /* Trade-specific subtitle from centralised data */
+  const subtitle = getTradeText(trade, 'hero_subtitle', locale);
+
   return (
     <div className="hero" id="home">
+      {/* Hero backgrounds — crossfade on trade change */}
       <div className="hero-bg assemble" id="heroBg">
-        <Image src="/images/hero-bg.webp" alt="" fill priority />
+        {(Object.keys(TRADES) as TradeId[]).map((tid) => (
+          <Image
+            key={tid}
+            src={TRADES[tid].heroImage}
+            alt=""
+            fill
+            priority={tid === 'default'}
+            className={`hero-bg-img${trade === tid ? ' hero-bg-img-active' : ''}`}
+          />
+        ))}
       </div>
 
       <div className="hero-kicker assemble delay-1">
@@ -70,12 +87,18 @@ export default function Hero() {
         ))}
       </h1>
 
-      <p className="hero-sub assemble delay-4">{t('subtitle')}</p>
+      <p className="hero-sub assemble delay-4">{subtitle}</p>
 
       <div className="hero-cta assemble delay-5">
         <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
           {t('cta_shop')}
         </a>
+        <button
+          className="btn-secondary"
+          onClick={() => document.dispatchEvent(new Event('open-trade-selector'))}
+        >
+          {t('cta_explore')}
+        </button>
       </div>
     </div>
   );

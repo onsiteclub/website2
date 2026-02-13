@@ -6,6 +6,7 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import { AccessibilityProvider } from '@/providers/AccessibilityProvider';
+import { TradeProvider } from '@/providers/TradeProvider';
 import '../globals.css';
 
 const ChatWidget = dynamic(() => import('@/components/global/ChatWidget'), {
@@ -79,12 +80,12 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-/* Anti-FOUC: apply saved theme + accessibility prefs before first paint */
+/* Anti-FOUC: apply saved trade + accessibility prefs before first paint */
 const themeScript = `
 (function(){
   try {
-    var t = localStorage.getItem('onsite-theme');
-    if (t === 'light') document.documentElement.classList.add('light-mode');
+    var t = localStorage.getItem('onsite-trade') || 'default';
+    document.documentElement.setAttribute('data-trade', t);
     var a = localStorage.getItem('onsite-a11y');
     if (a) {
       var p = JSON.parse(a);
@@ -122,11 +123,13 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <AccessibilityProvider>
-            {children}
-            <ChatWidget locale={locale} />
-            <AccessibilityToolbar />
-          </AccessibilityProvider>
+          <TradeProvider>
+            <AccessibilityProvider>
+              {children}
+              <ChatWidget locale={locale} />
+              <AccessibilityToolbar />
+            </AccessibilityProvider>
+          </TradeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

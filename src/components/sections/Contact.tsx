@@ -49,12 +49,12 @@ export default function Contact() {
         <div className="assemble delay-4" style={{ paddingTop: '20px' }}>
           <div style={{ marginBottom: '32px' }}>
             <span className="section-label" style={{ marginBottom: '8px' }}>{t('info_location_label')}</span>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>{t('info_location')}</p>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>{t('info_location')}</p>
           </div>
           <div style={{ marginBottom: '32px' }}>
             <span className="section-label" style={{ marginBottom: '8px' }}>{t('info_email_label')}</span>
             <p>
-              <a href="mailto:contact@shabba.ca" style={{ color: 'var(--amber)', fontSize: '0.95rem' }}>
+              <a href="mailto:contact@shabba.ca" style={{ color: 'var(--accent)', fontSize: '0.95rem' }}>
                 contact@shabba.ca
               </a>
             </p>
@@ -62,10 +62,10 @@ export default function Contact() {
           <div>
             <span className="section-label" style={{ marginBottom: '8px' }}>{t('info_social_label')}</span>
             <div style={{ display: 'flex', gap: '16px', marginTop: '8px' }}>
-              <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }}>
+              <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)' }}>
                 Facebook
               </a>
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }}>
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)' }}>
                 Instagram
               </a>
             </div>

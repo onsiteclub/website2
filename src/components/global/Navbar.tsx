@@ -1,20 +1,27 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, useRouter, usePathname, routing } from '@/i18n/routing';
+import { useTrade, TRADES } from '@/providers/TradeProvider';
+
+const TradeSelector = dynamic(() => import('@/components/global/TradeSelector'), { ssr: false });
 
 export default function Navbar() {
   const t = useTranslations('nav');
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const { trade } = useTrade();
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [tradeOpen, setTradeOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen((v) => !v);
   const closeMenu = useCallback(() => setMenuOpen(false), []);
+  const closeTradeSelector = useCallback(() => setTradeOpen(false), []);
 
   // Close on ESC
   useEffect(() => {
@@ -32,17 +39,12 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ''; };
   }, [menuOpen]);
 
-  const handleThemeToggle = useCallback(() => {
-    document.documentElement.classList.toggle('light-mode');
-    const isLight = document.documentElement.classList.contains('light-mode');
-    localStorage.setItem('onsite-theme', isLight ? 'light' : 'dark');
-  }, []);
-
-  // Listen for toggle-theme CustomEvent from ChatWidget
+  // Listen for set-trade event from ChatWidget
   useEffect(() => {
-    window.addEventListener('toggle-theme', handleThemeToggle);
-    return () => window.removeEventListener('toggle-theme', handleThemeToggle);
-  }, [handleThemeToggle]);
+    const handler = () => setTradeOpen(true);
+    document.addEventListener('open-trade-selector', handler);
+    return () => document.removeEventListener('open-trade-selector', handler);
+  }, []);
 
   const handleLangCycle = () => {
     const locales = routing.locales;
@@ -52,6 +54,8 @@ export default function Navbar() {
   };
 
   const handleNavClick = () => closeMenu();
+
+  const tradeInfo = TRADES[trade];
 
   return (
     <>
@@ -100,6 +104,15 @@ export default function Navbar() {
             {t('member_area')}
           </a>
 
+          {/* Trade indicator */}
+          <button
+            className="trade-indicator"
+            onClick={() => setTradeOpen(true)}
+            aria-label="Choose trade"
+          >
+            <span className="trade-indicator-icon">{tradeInfo.icon}</span>
+          </button>
+
           <button className="lang-toggle" id="langToggle" aria-label="Change language" onClick={handleLangCycle}>
             <svg className="lang-icon" viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="12" cy="12" r="10" />
@@ -109,22 +122,6 @@ export default function Navbar() {
             <span className="lang-code">{locale.toUpperCase()}</span>
           </button>
 
-          <button className="theme-toggle" id="themeToggle" aria-label="Toggle theme" onClick={handleThemeToggle}>
-            <svg className="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-            </svg>
-            <svg className="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="5" />
-              <line x1="12" y1="1" x2="12" y2="3" />
-              <line x1="12" y1="21" x2="12" y2="23" />
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-              <line x1="1" y1="12" x2="3" y2="12" />
-              <line x1="21" y1="12" x2="23" y2="12" />
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-            </svg>
-          </button>
         </div>
       </nav>
 
@@ -154,6 +151,9 @@ export default function Navbar() {
           <li><a href="#contact" onClick={handleNavClick}>{t('contact')}</a></li>
         </ul>
       </div>
+
+      {/* Trade Selector Modal */}
+      <TradeSelector open={tradeOpen} onClose={closeTradeSelector} />
     </>
   );
 }

@@ -16,18 +16,43 @@
   },
   "hero": {
     "kicker": "Culture de chantier",
-    "title": "Porte ce que tu construis",
-    "subtitle": "Culture de chantier haut de gamme, outils essentiels et un club pour ceux qui bâtissent vraiment.",
-    "cta_shop": "Magasiner"
+    "title": "Fait pour ceux qui batissent",
+    "subtitle": "Culture de chantier haut de gamme, outils essentiels et un club pour ceux qui batissent vraiment.",
+    "subtitle_wood": "Pour les charpentiers et tous ceux qui connaissent le grain du bois.",
+    "subtitle_drywall": "Pour les finisseurs qui transforment les murs bruts en surfaces lisses.",
+    "subtitle_electrical": "Pour les electriciens qui connectent le monde, un fil a la fois.",
+    "subtitle_plumbing": "Pour les plombiers et techniciens CVC — ceux qui travaillent derriere les murs.",
+    "subtitle_concrete": "Pour les betoneurs et macons qui batissent depuis les fondations.",
+    "cta_shop": "Magasiner",
+    "cta_explore": "Choisis ton métier"
   },
   "shop": {
     "label": "LA BOUTIQUE",
     "title": "Du gear qui représente le <highlight>métier</highlight>"
   },
+  "gear": {
+    "label": "L'EQUIPEMENT",
+    "title": "Du gear qui represente le <highlight>metier</highlight>",
+    "see_all": "Voir toute la collection"
+  },
+  "manifesto": {
+    "line1": "Les batiments ne se souviennent pas de qui les a construits.",
+    "line2": "Nous, oui."
+  },
+  "learn_teaser": {
+    "label": "DEVELOPPEZ VOTRE CARRIERE",
+    "heading": "Commencez a apprendre",
+    "card_steps": "Comment commencer dans la construction",
+    "card_safety": "Equipement de securite essentiel",
+    "card_trades": "Trouvez votre specialite",
+    "card_cta": "Lire le guide",
+    "see_all": "Voir tous les guides"
+  },
   "tools": {
     "label": "OUTILS NUMÉRIQUES",
     "title": "<highlight>Outils</highlight>",
     "description": "Conçus pour la vitesse du chantier. Pas de bruit. Juste ce qui marche.",
+    "available": "Disponible maintenant",
     "calculator": {
       "name": "Calculateur vocal de pouces",
       "description": "Additionne, divise et convertis des mesures en pouces juste en parlant. Pas besoin des mains.",
@@ -147,6 +172,24 @@
     "info_email_label": "Courriel",
     "info_social_label": "Réseaux sociaux"
   },
+  "trade_selector": {
+    "title": "Choisis ton metier",
+    "description": "Personnalise le site selon ton metier. Couleurs, contenu et ambiance — tout s'adapte.",
+    "default": "Tous les metiers",
+    "default_desc": "L'experience par defaut pour tous.",
+    "wood": "Bois & Charpente",
+    "wood_desc": "Tons chauds pour charpentiers et menuisiers.",
+    "drywall": "Platre & Finition",
+    "drywall_desc": "Propre et lisse, comme un mur fini.",
+    "electrical": "Electricite",
+    "electrical_desc": "Precis et net, comme un circuit.",
+    "plumbing": "Plomberie & CVC",
+    "plumbing_desc": "Profond et fluide, comme les tuyaux derriere les murs.",
+    "concrete": "Beton & Maconnerie",
+    "concrete_desc": "Lourd et brut, comme une fondation coulee.",
+    "apply": "Appliquer",
+    "close": "Fermer"
+  },
   "blades": {
     "title": "Gagne des Blades, obtiens des récompenses",
     "description": "Rejoins le club et commence à accumuler des <strong>Blades</strong>. Empile-les. Échange-les contre du gear exclusif et des rabais.",
@@ -161,6 +204,8 @@
     "home": "Accueil",
     "clubroom": "Salle du club",
     "contact": "Contact",
+    "tools_link": "Outils",
+    "gear_link": "Equipement",
     "all_products": "Tous les produits",
     "men": "Hommes",
     "women": "Femmes",

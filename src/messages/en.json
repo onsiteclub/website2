@@ -16,18 +16,43 @@
   },
   "hero": {
     "kicker": "Construction Lifestyle",
-    "title": "Wear What You Build",
+    "title": "Built for Those Who Build",
     "subtitle": "Premium jobsite culture, essential tools, and a club for people who actually build.",
-    "cta_shop": "Shop Now"
+    "subtitle_wood": "For framers, carpenters, and everyone who knows the grain.",
+    "subtitle_drywall": "For finishers who make rough walls smooth and clean.",
+    "subtitle_electrical": "For electricians who wire the world, one connection at a time.",
+    "subtitle_plumbing": "For plumbers and HVAC techs — the ones behind the walls.",
+    "subtitle_concrete": "For concrete workers and masons who build from the ground up.",
+    "cta_shop": "Shop Now",
+    "cta_explore": "Choose Your Trade"
   },
   "shop": {
     "label": "THE SHOP",
     "title": "Gear that reps the <highlight>trade</highlight>"
   },
+  "gear": {
+    "label": "THE GEAR",
+    "title": "Gear that reps the <highlight>trade</highlight>",
+    "see_all": "See Full Collection"
+  },
+  "manifesto": {
+    "line1": "Buildings don't remember who built them.",
+    "line2": "We do."
+  },
+  "learn_teaser": {
+    "label": "GROW YOUR CAREER",
+    "heading": "Start Learning",
+    "card_steps": "How to Start Working in Construction",
+    "card_safety": "Essential Safety Equipment",
+    "card_trades": "Find Your Specialty",
+    "card_cta": "Read Guide",
+    "see_all": "See All Guides"
+  },
   "tools": {
     "label": "DIGITAL TOOLKIT",
     "title": "<highlight>Tools</highlight>",
     "description": "Built for jobsite speed. No noise. Just things that work.",
+    "available": "Available Now",
     "calculator": {
       "name": "Voice Inch Calculator",
       "description": "Add, split and convert inch measurements just by speaking. No hands needed.",
@@ -147,6 +172,24 @@
     "info_email_label": "Email",
     "info_social_label": "Social"
   },
+  "trade_selector": {
+    "title": "Choose Your Trade",
+    "description": "Personalize the site to your craft. Colors, content, and vibe — all adapted.",
+    "default": "All Trades",
+    "default_desc": "The default experience for everyone.",
+    "wood": "Wood & Framing",
+    "wood_desc": "Warm tones for framers and carpenters.",
+    "drywall": "Drywall & Finishing",
+    "drywall_desc": "Clean and smooth, like a taped wall.",
+    "electrical": "Electrical",
+    "electrical_desc": "Sharp and precise, like a circuit.",
+    "plumbing": "Plumbing & HVAC",
+    "plumbing_desc": "Deep and fluid, like pipes behind walls.",
+    "concrete": "Concrete & Masonry",
+    "concrete_desc": "Heavy and raw, like poured foundation.",
+    "apply": "Apply",
+    "close": "Close"
+  },
   "blades": {
     "title": "Earn Blades, Get Rewards",
     "description": "Join the club and start earning <strong>Blades</strong>. Stack them up. Redeem for exclusive gear and discounts.",
@@ -161,6 +204,8 @@
     "home": "Home",
     "clubroom": "Clubroom",
     "contact": "Contact",
+    "tools_link": "Tools",
+    "gear_link": "Gear",
     "all_products": "All Products",
     "men": "Men",
     "women": "Women",

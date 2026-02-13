@@ -69,43 +69,6 @@ function AgendaIcon() {
   );
 }
 
-function AppleSvg() {
-  return (
-    <svg viewBox="0 0 24 24">
-      <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-    </svg>
-  );
-}
-
-function GooglePlaySvg() {
-  return (
-    <svg viewBox="0 0 24 24">
-      <path d="M3.61 1.02L13.43 12 3.61 22.98c-.38-.22-.61-.63-.61-1.09V2.11c0-.46.23-.87.61-1.09zM14.85 13.43l2.62 1.48-9.85 5.51 7.23-6.99zM14.85 10.57L7.62 3.58l9.85 5.51-2.62 1.48zM18.73 12.93l-2.46 1.38L14.08 12l2.19-2.31 2.46 1.38c.78.44.78 1.42 0 1.86z" />
-    </svg>
-  );
-}
-
-function StoreBadges() {
-  return (
-    <div className="store-badges">
-      <a href="#" className="store-badge" target="_blank" rel="noopener noreferrer">
-        <AppleSvg />
-        <div className="store-badge-text">
-          <small>Download on the</small>
-          <span>App Store</span>
-        </div>
-      </a>
-      <a href="#" className="store-badge" target="_blank" rel="noopener noreferrer">
-        <GooglePlaySvg />
-        <div className="store-badge-text">
-          <small>Get it on</small>
-          <span>Google Play</span>
-        </div>
-      </a>
-    </div>
-  );
-}
-
 export default function Tools() {
   const t = useTranslations('tools');
 
@@ -126,6 +89,7 @@ export default function Tools() {
       </h2>
       <p className="section-desc assemble delay-2">{t('description')}</p>
 
+      {/* Available Now — full-featured cards */}
       <div className="tools-grid">
         <div className="tool-card assemble delay-1">
           <div className="tool-card-header">
@@ -137,7 +101,7 @@ export default function Tools() {
               <p>{t('calculator.description')}</p>
             </div>
           </div>
-          <StoreBadges />
+          <span className="tool-availability">{t('available')}</span>
           <div className="app-screenshots">
             <div className="app-screenshot"><Image src="/images/calc1.jpeg" alt="OnSite Calculator" width={240} height={520} /></div>
             <div className="app-screenshot"><Image src="/images/calc2.jpeg" alt="OnSite Easy-Square" width={240} height={520} /></div>
@@ -154,13 +118,16 @@ export default function Tools() {
               <p>{t('timekeeper.description')}</p>
             </div>
           </div>
-          <StoreBadges />
+          <span className="tool-availability">{t('available')}</span>
           <div className="app-screenshots">
             <div className="app-screenshot"><Image src="/images/time1.jpeg" alt="OnSite Timer" width={240} height={520} /></div>
             <div className="app-screenshot"><Image src="/images/time2.jpeg" alt="OnSite Reports" width={240} height={520} /></div>
           </div>
         </div>
+      </div>
 
+      {/* Coming Soon — compact secondary cards */}
+      <div className="tools-coming-soon">
         <div className="tool-card coming-soon assemble delay-3">
           <div className="tool-card-header">
             <div className="tool-icon"><ChecklistIcon /></div>

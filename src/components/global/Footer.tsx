@@ -24,7 +24,8 @@ export default function Footer() {
           <div className="sitemap-col">
             <h5>{s('nav_heading')}</h5>
             <a href="#home">{s('home')}</a>
-            <a href="./clubroom.html">{s('clubroom')}</a>
+            <a href="#tools">{s('tools_link')}</a>
+            <a href="#gear">{s('gear_link')}</a>
             <a href="#contact">{s('contact')}</a>
           </div>
           <div className="sitemap-col">
@@ -51,8 +52,8 @@ export default function Footer() {
           </div>
           <div className="sitemap-col">
             <h5>{s('legal_heading')}</h5>
-            <a href="./privacy.html">{s('privacy')}</a>
-            <a href="./terms.html">{s('terms')}</a>
+            <a href="/privacy">{s('privacy')}</a>
+            <a href="/terms">{s('terms')}</a>
           </div>
           <div className="sitemap-col">
             <h5>{s('connect_heading')}</h5>

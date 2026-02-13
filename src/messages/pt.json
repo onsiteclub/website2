@@ -16,18 +16,43 @@
   },
   "hero": {
     "kicker": "Lifestyle da Construcao",
-    "title": "Vista o Que Voce Constroi",
+    "title": "Feito pra quem constroi",
     "subtitle": "Cultura premium de obra, ferramentas essenciais e um clube pra quem realmente constroi.",
-    "cta_shop": "Comprar Agora"
+    "subtitle_wood": "Pra carpinteiros e todos que conhecem o veio da madeira.",
+    "subtitle_drywall": "Pra acabadores que transformam paredes brutas em superficies limpas.",
+    "subtitle_electrical": "Pra eletricistas que conectam o mundo, uma conexao de cada vez.",
+    "subtitle_plumbing": "Pra encanadores e tecnicos de climatizacao — os que trabalham atras das paredes.",
+    "subtitle_concrete": "Pra concreteiros e pedreiros que constroem desde a fundacao.",
+    "cta_shop": "Comprar Agora",
+    "cta_explore": "Escolha seu ofício"
   },
   "shop": {
     "label": "A LOJA",
     "title": "Roupas que representam o <highlight>oficio</highlight>"
   },
+  "gear": {
+    "label": "O EQUIPAMENTO",
+    "title": "Roupas que representam o <highlight>oficio</highlight>",
+    "see_all": "Ver toda a colecao"
+  },
+  "manifesto": {
+    "line1": "Os predios nao lembram quem os construiu.",
+    "line2": "Nos lembramos."
+  },
+  "learn_teaser": {
+    "label": "CRESÇA NA CARREIRA",
+    "heading": "Comece a aprender",
+    "card_steps": "Como comecar a trabalhar na construcao",
+    "card_safety": "Equipamento de seguranca essencial",
+    "card_trades": "Encontre sua especialidade",
+    "card_cta": "Ler guia",
+    "see_all": "Ver todos os guias"
+  },
   "tools": {
     "label": "KIT DIGITAL",
     "title": "<highlight>Ferramentas</highlight>",
     "description": "Feito pra velocidade da obra. Sem enrolacao. So o que funciona.",
+    "available": "Disponivel agora",
     "calculator": {
       "name": "Calculadora de Polegadas por Voz",
       "description": "Some, divida e converta medidas em polegadas apenas falando. Sem usar as maos.",
@@ -147,6 +172,24 @@
     "info_email_label": "Email",
     "info_social_label": "Redes Sociais"
   },
+  "trade_selector": {
+    "title": "Escolha seu oficio",
+    "description": "Personalize o site pro seu oficio. Cores, conteudo e vibe — tudo se adapta.",
+    "default": "Todos os oficios",
+    "default_desc": "A experiencia padrao pra todos.",
+    "wood": "Madeira & Estrutura",
+    "wood_desc": "Tons quentes pra carpinteiros e estruturadores.",
+    "drywall": "Drywall & Acabamento",
+    "drywall_desc": "Limpo e liso, como uma parede acabada.",
+    "electrical": "Eletrica",
+    "electrical_desc": "Preciso e neto, como um circuito.",
+    "plumbing": "Encanamento & HVAC",
+    "plumbing_desc": "Profundo e fluido, como tubulacao atras das paredes.",
+    "concrete": "Concreto & Alvenaria",
+    "concrete_desc": "Pesado e bruto, como fundacao recem concretada.",
+    "apply": "Aplicar",
+    "close": "Fechar"
+  },
   "blades": {
     "title": "Ganhe Blades, Receba Recompensas",
     "description": "Entre pro clube e comece a ganhar <strong>Blades</strong>. Acumule e troque por roupas exclusivas e descontos.",
@@ -161,6 +204,8 @@
     "home": "Inicio",
     "clubroom": "Sala do Clube",
     "contact": "Contato",
+    "tools_link": "Ferramentas",
+    "gear_link": "Equipamento",
     "all_products": "Todos os Produtos",
     "men": "Masculino",
     "women": "Feminino",
