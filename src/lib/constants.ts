@@ -101,6 +101,17 @@ export const PATHWAY_STEPS: PathwayStep[] = [
   },
 ];
 
+export const LEARN_SLUGS = [
+  'construction-steps',
+  'safety-equipment',
+  'trades-guide',
+  'calculator-guide',
+  'timekeeper-setup',
+  'construction-terminology',
+] as const;
+
+export type LearnSlug = (typeof LEARN_SLUGS)[number];
+
 export const SHOP_URL = 'https://shop.onsiteclub.ca';
 export const DASHBOARD_URL = 'https://dashboard.onsiteclub.ca';
 export const CALCULATOR_URL = 'https://calculator.onsiteclub.ca';

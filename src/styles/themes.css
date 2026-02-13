@@ -276,3 +276,81 @@
 .lang-toggle .lang-code {
   line-height: 1;
 }
+
+/* ═══════════════════════════════════
+   HIGH CONTRAST MODE
+   ═══════════════════════════════════ */
+.high-contrast {
+  --bg: #000000;
+  --bg-alt: #0A0A0A;
+  --bg-elevated: #111111;
+  --surface: #1A1A1A;
+  --border: #FFFFFF;
+  --border-light: #CCCCCC;
+  --text: #FFFFFF;
+  --text-muted: #E0E0E0;
+  --amber: #FFD700;
+  --amber-dark: #FFC400;
+  --amber-dim: #FFD70030;
+  --amber-glow: #FFD70060;
+  --nav-bg: rgba(0,0,0,0.95);
+  --nav-bg-scrolled: rgba(0,0,0,0.98);
+  --overlay-dark: rgba(0,0,0,0.95);
+  --shadow-color: rgba(255,255,255,0.1);
+  --noise-opacity: 0;
+  --grid-opacity: 0;
+}
+.high-contrast.light-mode {
+  --bg: #FFFFFF;
+  --bg-alt: #F5F5F5;
+  --bg-elevated: #FFFFFF;
+  --surface: #EEEEEE;
+  --border: #000000;
+  --border-light: #333333;
+  --text: #000000;
+  --text-muted: #1A1A1A;
+  --amber: #B8860B;
+  --amber-dark: #8B6914;
+  --amber-dim: #B8860B30;
+  --amber-glow: #B8860B60;
+  --nav-bg: rgba(255,255,255,0.98);
+  --nav-bg-scrolled: rgba(255,255,255,1);
+  --overlay-dark: rgba(255,255,255,0.95);
+  --shadow-color: rgba(0,0,0,0.2);
+}
+.high-contrast a,
+.high-contrast button { text-decoration-thickness: 2px; }
+.high-contrast *:focus-visible {
+  outline: 3px solid var(--amber) !important;
+  outline-offset: 2px !important;
+}
+
+/* ═══════════════════════════════════
+   LARGE FONT MODE
+   ═══════════════════════════════════ */
+.large-font { font-size: 120%; }
+.large-font h1 { font-size: 3rem; }
+.large-font h2 { font-size: 2.4rem; }
+.large-font h3 { font-size: 1.5rem; }
+.large-font p,
+.large-font li,
+.large-font span,
+.large-font label { font-size: 1.15rem; }
+.large-font .chat-msg-content { font-size: 1rem; }
+.large-font .chat-chip { font-size: 0.95rem; }
+.large-font nav { font-size: 1rem; }
+
+/* ═══════════════════════════════════
+   REDUCED MOTION MODE
+   ═══════════════════════════════════ */
+.reduced-motion,
+.reduced-motion *,
+.reduced-motion *::before,
+.reduced-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+.reduced-motion .cursor-glow { display: none; }
+.reduced-motion .chat-fab { animation: none; }

@@ -1,10 +1,20 @@
 import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import { Montserrat, Space_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
+import { AccessibilityProvider } from '@/providers/AccessibilityProvider';
 import '../globals.css';
+
+const ChatWidget = dynamic(() => import('@/components/global/ChatWidget'), {
+  ssr: false,
+});
+const AccessibilityToolbar = dynamic(
+  () => import('@/components/global/AccessibilityToolbar'),
+  { ssr: false }
+);
 
 const SITE_URL = 'https://www.onsiteclub.ca';
 
@@ -53,20 +63,11 @@ export async function generateMetadata({
       siteName: 'OnSite Club',
       locale,
       type: 'website',
-      images: [
-        {
-          url: '/images/og-image.png',
-          width: 1200,
-          height: 630,
-          alt: 'OnSite Club — Wear What You Build',
-        },
-      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: ['/images/og-image.png'],
     },
     other: {
       'ai-content-declaration': 'This site provides llms.txt for AI crawlers',
@@ -78,12 +79,19 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-/* Anti-FOUC: apply saved theme before first paint */
+/* Anti-FOUC: apply saved theme + accessibility prefs before first paint */
 const themeScript = `
 (function(){
   try {
     var t = localStorage.getItem('onsite-theme');
     if (t === 'light') document.documentElement.classList.add('light-mode');
+    var a = localStorage.getItem('onsite-a11y');
+    if (a) {
+      var p = JSON.parse(a);
+      if (p.highContrast) document.documentElement.classList.add('high-contrast');
+      if (p.largeFont) document.documentElement.classList.add('large-font');
+      if (p.reducedMotion) document.documentElement.classList.add('reduced-motion');
+    }
   } catch(e){}
 })();
 `;
@@ -114,7 +122,11 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <AccessibilityProvider>
+            {children}
+            <ChatWidget locale={locale} />
+            <AccessibilityToolbar />
+          </AccessibilityProvider>
         </NextIntlClientProvider>
       </body>
     </html>

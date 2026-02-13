@@ -40,6 +40,15 @@ export default function Footer() {
             <a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer">{s('timekeeper')}</a>
           </div>
           <div className="sitemap-col">
+            <h5>{s('learn_heading')}</h5>
+            <a href="/learn/construction-steps">{s('learn_construction_steps')}</a>
+            <a href="/learn/safety-equipment">{s('learn_safety_equipment')}</a>
+            <a href="/learn/trades-guide">{s('learn_trades_guide')}</a>
+            <a href="/learn/calculator-guide">{s('learn_calculator_guide')}</a>
+            <a href="/learn/timekeeper-setup">{s('learn_timekeeper_setup')}</a>
+            <a href="/learn/construction-terminology">{s('learn_terminology')}</a>
+          </div>
+          <div className="sitemap-col">
             <h5>{s('legal_heading')}</h5>
             <a href="./privacy.html">{s('privacy')}</a>
             <a href="./terms.html">{s('terms')}</a>

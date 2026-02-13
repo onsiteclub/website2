@@ -101,9 +101,51 @@ OnSite Club has a growing community of 250+ members across social platforms:
 ## Languages
 The website is available in English, French, Spanish, and Portuguese.
 
+## Learn — Educational Articles
+
+OnSite Club publishes educational content for construction workers:
+
+- **/learn/construction-steps** — How to Start Working in Construction in Ontario
+  Step-by-step guide covering required certifications, training, PPE, and getting your first job.
+
+- **/learn/safety-equipment** — Essential Safety Equipment for Construction Workers
+  Complete PPE guide: hard hats, boots, safety glasses, harnesses, respiratory protection.
+
+- **/learn/trades-guide** — Construction Trades Guide: Find Your Specialty
+  Overview of major trades (carpentry, electrical, plumbing, HVAC, ironwork) with pay, requirements.
+
+- **/learn/calculator-guide** — OnSite Calculator: Voice-Powered Construction Math
+  How to use voice input, fraction math, imperial/metric conversion, and material estimation.
+
+- **/learn/timekeeper-setup** — OnSite Timekeeper: GPS Time Tracking Setup Guide
+  Setting up geofence zones, offline mode, weekly reports, and privacy.
+
+- **/learn/construction-terminology** — Construction Terminology: 50+ Essential Terms
+  Glossary of terms used on Canadian job sites: layout, framing, concrete, tools, safety.
+
+All articles available in English, French, Spanish, and Portuguese.
+
+## Accessibility
+
+The website includes an accessibility toolbar with:
+- High Contrast mode (dark and light variants)
+- Large Font mode (120% base size)
+- Reduced Motion mode (disables all animations)
+- Text-to-Speech (Web Speech API)
+
+## AI Assistant — Prumo
+
+The website features Prumo Assistant, an AI chatbot powered by GPT-4o. It supports:
+- Text and voice input (via OpenAI Whisper)
+- Website navigation actions (scroll to sections, toggle theme, accessibility)
+- Construction knowledge (Canadian standards, trades, safety)
+- Multi-language responses (EN, FR, ES, PT)
+
 ## Technical
 - Main site: Next.js 14 (App Router) with TypeScript, hosted on Vercel
 - Shop: Shopify (shop.onsiteclub.ca)
 - Apps: React/Next.js on Vercel subdomains
 - Themes: Dark mode (default) and Light mode
 - Internationalization: 4 languages (EN, FR, ES, PT) with URL-based locale routing
+- Accessibility: High contrast, large font, reduced motion, TTS
+- AI: Prumo Assistant (GPT-4o + Whisper)
