@@ -5,9 +5,11 @@
     "description": "OnSite Club — marque lifestyle pour la construction. Vêtements, outils numériques et une communauté pour ceux qui bâtissent vraiment. Basé en Ontario, Canada."
   },
   "nav": {
+    "menu": "Menu",
     "home": "Accueil",
     "shop": "Boutique",
     "tools": "Outils",
+    "learn": "Apprendre",
     "contact": "Contact",
     "earn_blades": "Gagner des Blades",
     "member_area": "Espace Membre"
@@ -24,7 +26,7 @@
   },
   "tools": {
     "label": "OUTILS NUMÉRIQUES",
-    "title": "OnSite <highlight>Outils</highlight>",
+    "title": "<highlight>Outils</highlight>",
     "description": "Conçus pour la vitesse du chantier. Pas de bruit. Juste ce qui marche.",
     "calculator": {
       "name": "Calculateur vocal de pouces",

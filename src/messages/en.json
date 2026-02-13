@@ -5,9 +5,11 @@
     "description": "OnSite Club — construction lifestyle brand. Gear, digital tools, and a community for people who actually build. Based in Ontario, Canada."
   },
   "nav": {
+    "menu": "Menu",
     "home": "Home",
     "shop": "Shop",
     "tools": "Tools",
+    "learn": "Learn",
     "contact": "Contact",
     "earn_blades": "Earn Blades",
     "member_area": "Member Area"
@@ -24,7 +26,7 @@
   },
   "tools": {
     "label": "DIGITAL TOOLKIT",
-    "title": "OnSite <highlight>Tools</highlight>",
+    "title": "<highlight>Tools</highlight>",
     "description": "Built for jobsite speed. No noise. Just things that work.",
     "calculator": {
       "name": "Voice Inch Calculator",

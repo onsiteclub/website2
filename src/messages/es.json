@@ -5,9 +5,11 @@
     "description": "OnSite Club — marca de estilo de vida para la construccion. Ropa, herramientas digitales y una comunidad para los que realmente construyen. Con base en Ontario, Canada."
   },
   "nav": {
+    "menu": "Menú",
     "home": "Inicio",
     "shop": "Tienda",
     "tools": "Herramientas",
+    "learn": "Aprender",
     "contact": "Contacto",
     "earn_blades": "Gana Blades",
     "member_area": "Area de Miembros"
@@ -24,7 +26,7 @@
   },
   "tools": {
     "label": "HERRAMIENTAS DIGITALES",
-    "title": "OnSite <highlight>Tools</highlight>",
+    "title": "<highlight>Herramientas</highlight>",
     "description": "Hechas para la velocidad de la obra. Sin ruido. Solo cosas que funcionan.",
     "calculator": {
       "name": "Calculadora de Pulgadas por Voz",

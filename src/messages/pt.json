@@ -5,9 +5,11 @@
     "description": "OnSite Club — marca lifestyle da construcao. Roupas, ferramentas digitais e uma comunidade pra quem realmente constroi. Sediada em Ontario, Canada."
   },
   "nav": {
+    "menu": "Menu",
     "home": "Inicio",
     "shop": "Loja",
     "tools": "Ferramentas",
+    "learn": "Aprender",
     "contact": "Contato",
     "earn_blades": "Ganhe Blades",
     "member_area": "Area do Membro"
@@ -24,7 +26,7 @@
   },
   "tools": {
     "label": "KIT DIGITAL",
-    "title": "OnSite <highlight>Ferramentas</highlight>",
+    "title": "<highlight>Ferramentas</highlight>",
     "description": "Feito pra velocidade da obra. Sem enrolacao. So o que funciona.",
     "calculator": {
       "name": "Calculadora de Polegadas por Voz",

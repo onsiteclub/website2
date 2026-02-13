@@ -114,54 +114,73 @@ export default function Tools() {
       <div className="section-label assemble">
         <span className="num">01</span> <span>{t('label')}</span>
       </div>
-      <h2 className="section-title assemble delay-1">
+      <h2 className="section-title section-title-logo assemble delay-1">
+        <Image
+          src="/images/logo-onsite-club-01.jpg"
+          alt="OnSite Club"
+          width={150}
+          height={45}
+          className="section-logo"
+        />
         {t.rich('title', richTags)}
       </h2>
       <p className="section-desc assemble delay-2">{t('description')}</p>
 
       <div className="tools-grid">
         <div className="tool-card assemble delay-1">
-          <div className="tool-icon"><CalculatorIcon /></div>
-          <h3>{t('calculator.name')}</h3>
-          <p>{t('calculator.description')}</p>
-          <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="tool-cta">
-            {t('calculator.cta')}
-          </a>
+          <div className="tool-card-header">
+            <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link">
+              <div className="tool-icon"><CalculatorIcon /></div>
+            </a>
+            <div className="tool-card-text">
+              <h3>{t('calculator.name')}</h3>
+              <p>{t('calculator.description')}</p>
+            </div>
+          </div>
           <StoreBadges />
           <div className="app-screenshots">
-            <div className="app-screenshot"><Image src="/images/calc1.jpeg" alt="OnSite Calculator" width={300} height={650} /></div>
-            <div className="app-screenshot"><Image src="/images/calc2.jpeg" alt="OnSite Easy-Square" width={300} height={650} /></div>
+            <div className="app-screenshot"><Image src="/images/calc1.jpeg" alt="OnSite Calculator" width={240} height={520} /></div>
+            <div className="app-screenshot"><Image src="/images/calc2.jpeg" alt="OnSite Easy-Square" width={240} height={520} /></div>
           </div>
         </div>
 
         <div className="tool-card assemble delay-2">
-          <div className="tool-icon"><ClockIcon /></div>
-          <h3>{t('timekeeper.name')}</h3>
-          <p>{t('timekeeper.description')}</p>
-          <a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer" className="tool-cta">
-            {t('timekeeper.cta')}
-          </a>
+          <div className="tool-card-header">
+            <a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link">
+              <div className="tool-icon"><ClockIcon /></div>
+            </a>
+            <div className="tool-card-text">
+              <h3>{t('timekeeper.name')}</h3>
+              <p>{t('timekeeper.description')}</p>
+            </div>
+          </div>
           <StoreBadges />
           <div className="app-screenshots">
-            <div className="app-screenshot"><Image src="/images/time1.jpeg" alt="OnSite Timer" width={300} height={650} /></div>
-            <div className="app-screenshot"><Image src="/images/time2.jpeg" alt="OnSite Reports" width={300} height={650} /></div>
+            <div className="app-screenshot"><Image src="/images/time1.jpeg" alt="OnSite Timer" width={240} height={520} /></div>
+            <div className="app-screenshot"><Image src="/images/time2.jpeg" alt="OnSite Reports" width={240} height={520} /></div>
           </div>
         </div>
 
         <div className="tool-card coming-soon assemble delay-3">
-          <div className="tool-icon"><ChecklistIcon /></div>
-          <h3>{t('checklist.name')}</h3>
-          <p>{t('checklist.description')}</p>
+          <div className="tool-card-header">
+            <div className="tool-icon"><ChecklistIcon /></div>
+            <div className="tool-card-text">
+              <h3>{t('checklist.name')}</h3>
+              <p>{t('checklist.description')}</p>
+            </div>
+          </div>
           <span className="tool-tag">{t('checklist.tag')}</span>
-          <span className="tool-cta disabled">{t('checklist.cta')}</span>
         </div>
 
         <div className="tool-card coming-soon assemble delay-4">
-          <div className="tool-icon"><AgendaIcon /></div>
-          <h3>{t('agenda.name')}</h3>
-          <p>{t('agenda.description')}</p>
+          <div className="tool-card-header">
+            <div className="tool-icon"><AgendaIcon /></div>
+            <div className="tool-card-text">
+              <h3>{t('agenda.name')}</h3>
+              <p>{t('agenda.description')}</p>
+            </div>
+          </div>
           <span className="tool-tag">{t('agenda.tag')}</span>
-          <span className="tool-cta disabled">{t('agenda.cta')}</span>
         </div>
       </div>
     </section>
