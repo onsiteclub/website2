@@ -19,7 +19,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className={`sitemap-panel${sitemapOpen ? ' open' : ''}`} id="sitemapPanel">
+      <div className={`sitemap-panel${sitemapOpen ? ' open' : ''}`} id="sitemapPanel" role="navigation" aria-label="Sitemap">
         <div className="sitemap-grid">
           <div className="sitemap-col">
             <h5>{s('nav_heading')}</h5>
@@ -66,7 +66,14 @@ export default function Footer() {
       <footer>
         <div className="footer-bar">
           <div className="footer-left">{f('copyright')}</div>
-          <button className="footer-toggle" id="footerToggle" onClick={() => setSitemapOpen((v) => !v)}>
+          <button
+            className="footer-toggle"
+            id="footerToggle"
+            onClick={() => setSitemapOpen((v) => !v)}
+            aria-label="Toggle sitemap"
+            aria-expanded={sitemapOpen}
+            aria-controls="sitemapPanel"
+          >
             {f('sitemap')}
           </button>
           <div className="footer-center">{f('tagline')}</div>

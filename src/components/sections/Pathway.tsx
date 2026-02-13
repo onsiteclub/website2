@@ -6,7 +6,7 @@ import { richTags } from '@/lib/richText';
 import { PATHWAY_STEPS, DASHBOARD_URL } from '@/lib/constants';
 
 const DownloadSvg = () => (
-  <svg viewBox="0 0 24 24">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
     <polyline points="7 10 12 15 17 10" />
     <line x1="12" y1="15" x2="12" y2="3" />
@@ -27,8 +27,7 @@ function HardHatIcon() {
   );
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function PathwayStepRow({ step, t }: { step: (typeof PATHWAY_STEPS)[number]; t: any }) {
+function PathwayStepRow({ step, t }: { step: (typeof PATHWAY_STEPS)[number]; t: ReturnType<typeof useTranslations> }) {
   return (
     <div className="pathway-step">
       <div className="pathway-step-content">
@@ -93,7 +92,12 @@ export default function Pathway() {
         <div
           className={`pathway-trigger assemble${panelOpen ? ' active' : ''}`}
           id="pathwayTrigger"
+          role="button"
+          tabIndex={0}
           onClick={() => setPanelOpen((v) => !v)}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setPanelOpen((v) => !v); } }}
+          aria-expanded={panelOpen}
+          aria-controls="pathwayPanel"
         >
           <div className="pathway-icon"><HardHatIcon /></div>
           <div className="pathway-trigger-middle">
@@ -103,7 +107,7 @@ export default function Pathway() {
           </div>
           <span className="pathway-badge">{t('badge')}</span>
           <div className="pathway-trigger-arrow">
-            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" /></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
           </div>
         </div>
 
@@ -118,7 +122,7 @@ export default function Pathway() {
             </div>
 
             <div className="pathway-cta">
-              <svg className="pathway-cta-icon" viewBox="0 0 24 24">
+              <svg className="pathway-cta-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 <polyline points="9 12 11 14 15 10" />
               </svg>

@@ -19,18 +19,27 @@ export default function Contact() {
 
       <div className="contact-grid">
         <div className="assemble delay-3">
-          <form className="contact-form" action="mailto:contact@shabba.ca" method="post" encType="text/plain">
+          <form className="contact-form" onSubmit={(e) => {
+            e.preventDefault();
+            const formData = new FormData(e.currentTarget);
+            const name = formData.get('name') || '';
+            const email = formData.get('email') || '';
+            const message = formData.get('message') || '';
+            const subject = encodeURIComponent(`Contact from ${name}`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+            window.location.href = `mailto:contact@shabba.ca?subject=${subject}&body=${body}`;
+          }}>
             <div className="form-group">
-              <label htmlFor="name">{t('name_label')}</label>
-              <input type="text" id="name" name="name" placeholder={t('name_placeholder')} required />
+              <label htmlFor="contact-name">{t('name_label')}</label>
+              <input type="text" id="contact-name" name="name" placeholder={t('name_placeholder')} required />
             </div>
             <div className="form-group">
-              <label htmlFor="email">{t('email_label')}</label>
-              <input type="email" id="email" name="email" placeholder={t('email_placeholder')} required />
+              <label htmlFor="contact-email">{t('email_label')}</label>
+              <input type="email" id="contact-email" name="email" placeholder={t('email_placeholder')} required />
             </div>
             <div className="form-group">
-              <label htmlFor="message">{t('message_label')}</label>
-              <textarea id="message" name="message" placeholder={t('message_placeholder')} required />
+              <label htmlFor="contact-message">{t('message_label')}</label>
+              <textarea id="contact-message" name="message" placeholder={t('message_placeholder')} required />
             </div>
             <button type="submit" className="btn-primary">{t('submit')}</button>
             <span className="form-note">{t('note')}</span>

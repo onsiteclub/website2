@@ -98,7 +98,7 @@ function saveHistory(messages: Message[]) {
 /* ── SVG Icons ── */
 function ChatIcon() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
     </svg>
   );
@@ -106,7 +106,7 @@ function ChatIcon() {
 
 function CloseIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <line x1="18" y1="6" x2="6" y2="18" />
       <line x1="6" y1="6" x2="18" y2="18" />
     </svg>
@@ -115,7 +115,7 @@ function CloseIcon() {
 
 function SendIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
     </svg>
   );
@@ -123,7 +123,7 @@ function SendIcon() {
 
 function MicIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
       <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
       <line x1="12" y1="19" x2="12" y2="23" />
@@ -134,7 +134,7 @@ function MicIcon() {
 
 function StopIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <rect x="6" y="6" width="12" height="12" rx="1" />
     </svg>
   );
@@ -211,11 +211,32 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
     if (open) inputRef.current?.focus();
   }, [open]);
 
-  // ESC to close
+  // ESC to close + focus trap
   useEffect(() => {
     if (!open) return;
+    const panel = panelRef.current;
+    if (!panel) return;
+
     function handleKey(e: globalThis.KeyboardEvent) {
-      if (e.key === 'Escape') setOpen(false);
+      if (e.key === 'Escape') {
+        setOpen(false);
+        return;
+      }
+      if (e.key === 'Tab') {
+        const focusable = panel!.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
     }
     document.addEventListener('keydown', handleKey);
     return () => document.removeEventListener('keydown', handleKey);
@@ -382,7 +403,7 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
         </div>
 
         {/* Messages */}
-        <div className="chat-messages" aria-live="polite">
+        <div className="chat-messages" role="log" aria-live="polite" aria-atomic="false">
           {messages.length === 0 && (
             <div className="chat-chips">
               {chips.map((chip) => (
@@ -419,7 +440,7 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
           )}
 
           {transcribing && (
-            <div className="chat-status">{t('transcribing')}</div>
+            <div className="chat-status" role="status" aria-live="polite">{t('transcribing')}</div>
           )}
 
           <div ref={messagesEndRef} />
@@ -428,7 +449,7 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
         {/* Input */}
         <div className="chat-input-bar">
           {sessionLimitReached ? (
-            <div className="chat-status">{t('session_limit')}</div>
+            <div className="chat-status" role="status" aria-live="polite">{t('session_limit')}</div>
           ) : (
             <>
               {hasVoice && (
@@ -449,6 +470,7 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder={t('placeholder')}
+                aria-label={t('placeholder')}
                 disabled={loading}
               />
               <button

@@ -50,7 +50,7 @@ export default function Hero() {
   return (
     <div className="hero" id="home">
       <div className="hero-bg assemble" id="heroBg">
-        <Image src="/images/hero-bg.png" alt="" fill priority />
+        <Image src="/images/hero-bg.webp" alt="" fill priority />
       </div>
 
       <div className="hero-kicker assemble delay-1">

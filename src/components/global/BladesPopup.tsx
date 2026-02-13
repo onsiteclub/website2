@@ -38,6 +38,10 @@ export default function BladesPopup({ open, onClose }: BladesPopupProps) {
       ref={ref}
       className={`blades-popup${open ? ' open' : ''}`}
       id="bladesPopup"
+      role="dialog"
+      aria-label="Blades loyalty program"
+      aria-modal="true"
+      aria-hidden={!open}
     >
       <h4>{t('title')}</h4>
       <p>{t.rich('description', richTags)}</p>

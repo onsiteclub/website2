@@ -49,9 +49,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav id="mainNav">
+      <nav id="mainNav" aria-label="Main navigation">
         {/* Logo */}
-        <a href="#home" className="logo">
+        <a href="#home" className="logo" aria-label="OnSite Club home">
           <Image src="/images/logo-onsite-club-02.png" alt="OnSite Club" width={150} height={40} priority />
         </a>
 
@@ -61,8 +61,9 @@ export default function Navbar() {
           onClick={toggleMenu}
           aria-label="Menu"
           aria-expanded={menuOpen}
+          aria-controls="navDropdown"
         >
-          <svg className="nav-menu-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg className="nav-menu-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             {menuOpen ? (
               <>
                 <line x1="18" y1="6" x2="6" y2="18" />
@@ -94,7 +95,7 @@ export default function Navbar() {
           </a>
 
           <button className="lang-toggle" id="langToggle" aria-label="Change language" onClick={handleLangCycle}>
-            <svg className="lang-icon" viewBox="0 0 24 24">
+            <svg className="lang-icon" viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="12" cy="12" r="10" />
               <line x1="2" y1="12" x2="22" y2="12" />
               <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
@@ -103,10 +104,10 @@ export default function Navbar() {
           </button>
 
           <button className="theme-toggle" id="themeToggle" aria-label="Toggle theme" onClick={handleThemeToggle}>
-            <svg className="icon-moon" viewBox="0 0 24 24">
+            <svg className="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
             </svg>
-            <svg className="icon-sun" viewBox="0 0 24 24">
+            <svg className="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="12" cy="12" r="5" />
               <line x1="12" y1="1" x2="12" y2="3" />
               <line x1="12" y1="21" x2="12" y2="23" />
@@ -130,6 +131,7 @@ export default function Navbar() {
 
       {/* Dropdown panel */}
       <div
+        id="navDropdown"
         className={`nav-dropdown${menuOpen ? ' nav-dropdown-open' : ''}`}
         role="navigation"
         aria-label="Main menu"

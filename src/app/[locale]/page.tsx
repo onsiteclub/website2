@@ -86,7 +86,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'T-Shirt — The Jump',
       description: "Men's construction lifestyle tee featuring a skyline graphic. Part of OnSite Club's construction workwear line.",
-      image: `${SITE_URL}/images/product-men.png`,
+      image: `${SITE_URL}/images/product-men.webp`,
       brand: { '@id': `${SITE_URL}/#organization` },
       offers: {
         '@type': 'Offer',
@@ -100,7 +100,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'T-Shirt — Mascot',
       description: 'Unisex graphic tee with the OnSite Club mascot. Construction lifestyle apparel.',
-      image: `${SITE_URL}/images/product-women.png`,
+      image: `${SITE_URL}/images/product-women.webp`,
       brand: { '@id': `${SITE_URL}/#organization` },
       offers: {
         '@type': 'Offer',
@@ -114,7 +114,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'T-Shirt — Classic',
       description: 'Members-only branded tee exclusive to OnSite Club members.',
-      image: `${SITE_URL}/images/product-members.png`,
+      image: `${SITE_URL}/images/product-members.webp`,
       brand: { '@id': `${SITE_URL}/#organization` },
       offers: {
         '@type': 'Offer',
@@ -223,18 +223,24 @@ export default function Home() {
       />
       <CursorGlow />
       <BuildProgress />
-      <div className="grid-overlay"></div>
-      <Navbar />
+      <div className="grid-overlay" aria-hidden="true"></div>
+
+      <header>
+        <Navbar />
+      </header>
+
       <ScrollAssembly />
 
-      <Hero />
-      <div className="connector assemble"></div>
-      <div className="connector assemble"></div>
-      <Tools />
-      <Shop />
-      <Pathway />
-      <Community />
-      <Contact />
+      <main>
+        <Hero />
+        <div className="connector assemble" aria-hidden="true"></div>
+        <div className="connector assemble" aria-hidden="true"></div>
+        <Tools />
+        <Shop />
+        <Pathway />
+        <Community />
+        <Contact />
+      </main>
 
       <Footer />
       <Interactions />
