@@ -96,7 +96,8 @@
 }
 
 /* 3. Logo — black text, preserve amber dot */
-.light-mode .logo img {
+.light-mode .logo img,
+.light-mode .section-logo {
   filter: invert(1) sepia(1) saturate(5) brightness(1.05) hue-rotate(2deg);
 }
 

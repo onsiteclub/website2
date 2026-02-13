@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname, routing } from '@/i18n/routing';
+import { Link, useRouter, usePathname, routing } from '@/i18n/routing';
 
 export default function Navbar() {
   const t = useTranslations('nav');
@@ -142,7 +142,7 @@ export default function Navbar() {
             </a>
           </li>
           <li><a href="#tools" onClick={handleNavClick}>{t('tools')}</a></li>
-          <li><a href="/learn/construction-steps" onClick={handleNavClick}>{t('learn')}</a></li>
+          <li><Link href="/learn/construction-steps" onClick={handleNavClick}>{t('learn')}</Link></li>
           <li><a href="#contact" onClick={handleNavClick}>{t('contact')}</a></li>
         </ul>
       </div>

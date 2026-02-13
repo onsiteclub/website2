@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import {
   SHOP_URL,
   DASHBOARD_URL,
@@ -41,12 +42,12 @@ export default function Footer() {
           </div>
           <div className="sitemap-col">
             <h5>{s('learn_heading')}</h5>
-            <a href="/learn/construction-steps">{s('learn_construction_steps')}</a>
-            <a href="/learn/safety-equipment">{s('learn_safety_equipment')}</a>
-            <a href="/learn/trades-guide">{s('learn_trades_guide')}</a>
-            <a href="/learn/calculator-guide">{s('learn_calculator_guide')}</a>
-            <a href="/learn/timekeeper-setup">{s('learn_timekeeper_setup')}</a>
-            <a href="/learn/construction-terminology">{s('learn_terminology')}</a>
+            <Link href="/learn/construction-steps">{s('learn_construction_steps')}</Link>
+            <Link href="/learn/safety-equipment">{s('learn_safety_equipment')}</Link>
+            <Link href="/learn/trades-guide">{s('learn_trades_guide')}</Link>
+            <Link href="/learn/calculator-guide">{s('learn_calculator_guide')}</Link>
+            <Link href="/learn/timekeeper-setup">{s('learn_timekeeper_setup')}</Link>
+            <Link href="/learn/construction-terminology">{s('learn_terminology')}</Link>
           </div>
           <div className="sitemap-col">
             <h5>{s('legal_heading')}</h5>

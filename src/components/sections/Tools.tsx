@@ -116,10 +116,10 @@ export default function Tools() {
       </div>
       <h2 className="section-title section-title-logo assemble delay-1">
         <Image
-          src="/images/logo-onsite-club-01.jpg"
+          src="/images/logo-onsite-club-02.png"
           alt="OnSite Club"
-          width={150}
-          height={45}
+          width={140}
+          height={38}
           className="section-logo"
         />
         {t.rich('title', richTags)}

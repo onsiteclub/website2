@@ -671,9 +671,8 @@ section {
 }
 
 .section-logo {
-  height: 36px;
+  height: 32px;
   width: auto;
-  border-radius: 4px;
   object-fit: contain;
 }
 
