@@ -489,6 +489,58 @@ nav.scrolled {
   color: var(--accent);
 }
 
+/* Dropdown extras — hidden on desktop, visible on mobile */
+.nav-dropdown-extras {
+  display: none;
+}
+
+.nav-dropdown-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 6px 8px;
+}
+
+.nav-dropdown-tool {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-dropdown-tool:hover {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+.nav-dropdown-cta {
+  display: block;
+  margin: 4px 8px 8px;
+  padding: 12px 16px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 700;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.nav-dropdown-cta:hover {
+  background: var(--accent-hover);
+}
+
 /* ═══════════════════════════════════
    ASSEMBLY ANIMATIONS
    ═══════════════════════════════════ */
@@ -2501,16 +2553,38 @@ section {
    RESPONSIVE
    ═══════════════════════════════════ */
 @media (max-width: 768px) {
-  nav { padding: 14px 20px; }
-  .nav-menu-label { display: none; }
-  .nav-menu-btn { padding: 7px 10px; margin-left: 12px; }
-  .nav-cta { font-size: 0.65rem; padding: 7px 12px; }
-  .nav-tools { display: none; }
-  .search-wrapper { margin: 0 8px; }
-  .nav-search-bar { padding: 6px 12px; font-size: 0.7rem; }
+  nav { padding: 14px 16px; gap: 6px; }
+
+  /* Logo: left, shrink allowed */
+  .logo { order: 1; margin-right: auto; }
+  .logo img { height: 28px; }
+
+  /* Lang icon: order 2, icon-only */
+  .nav-actions { order: 2; gap: 4px; }
+  .nav-cta { display: none; }
+  .lang-toggle { margin-right: 0; padding: 0 6px; border: none; }
+  .lang-code { display: none; }
+
+  /* Search icon: order 3, icon-only */
+  .search-wrapper { order: 3; flex: 0; margin: 0; max-width: none; }
+  .nav-search-bar { padding: 6px; border: none; background: none; gap: 0; cursor: pointer; }
+  .nav-search-bar:hover, .nav-search-bar-active { border: none; box-shadow: none; }
+  .nav-search-bar svg { color: var(--text-secondary); }
   .nav-search-input { display: none; }
-  .search-dropdown { left: -60px; right: -60px; }
-  .nav-dropdown { left: 20px; right: 20px; min-width: auto; }
+  .search-dropdown { position: fixed; left: 16px; right: 16px; top: 60px; }
+
+  /* Hamburger: order 4, far right */
+  .nav-menu-btn { order: 4; padding: 6px; margin-left: 0; border: none; }
+  .nav-menu-label { display: none; }
+
+  /* Hide desktop tool buttons */
+  .nav-tools { display: none; }
+
+  /* Dropdown menu */
+  .nav-dropdown { left: 16px; right: 16px; min-width: auto; }
+
+  /* Dropdown extras: visible on mobile */
+  .nav-dropdown-extras { display: block; }
   section { padding: 60px 20px; }
   .hero { padding: 100px 20px 60px; }
   .hero-bg { opacity: 0.5; }

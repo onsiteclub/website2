@@ -116,7 +116,10 @@ export default function Navbar() {
 
         {/* Search bar with dropdown */}
         <div className="search-wrapper" ref={searchRef}>
-          <div className={`nav-search-bar${searchOpen ? ' nav-search-bar-active' : ''}`}>
+          <div
+            className={`nav-search-bar${searchOpen ? ' nav-search-bar-active' : ''}`}
+            onClick={() => { setSearchOpen(true); searchInputRef.current?.focus(); }}
+          >
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <circle cx="11" cy="11" r="8" />
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -260,6 +263,35 @@ export default function Navbar() {
           <li><Link href="/learn/construction-steps" onClick={handleNavClick}>{t('learn')}</Link></li>
           <li><a href={sectionHref('#contact')} onClick={handleNavClick}>{t('contact')}</a></li>
         </ul>
+
+        {/* Extra items shown inside menu on mobile */}
+        <div className="nav-dropdown-extras">
+          <div className="nav-dropdown-divider" />
+          <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="nav-dropdown-tool" onClick={handleNavClick}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <rect x="4" y="2" width="16" height="20" rx="2" />
+              <line x1="8" y1="6" x2="16" y2="6" />
+            </svg>
+            Calculator
+          </a>
+          <a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer" className="nav-dropdown-tool" onClick={handleNavClick}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            Timekeeper
+          </a>
+          <div className="nav-dropdown-divider" />
+          <a
+            href="https://dashboard.onsiteclub.ca"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-dropdown-cta"
+            onClick={handleNavClick}
+          >
+            {t('member_area')}
+          </a>
+        </div>
       </div>
 
       {/* Trade Selector Modal */}
