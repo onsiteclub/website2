@@ -68,13 +68,21 @@ export default function Hero() {
     <div className="hero" id="home">
       {/* Hero background */}
       <div className="hero-bg assemble" id="heroBg">
-        <Image
-          src={TRADES[trade].heroImage}
-          alt=""
-          fill
-          priority
-          className="hero-bg-img hero-bg-img-active"
-        />
+        <div
+          style={TRADES[trade].heroTransform
+            ? { position: 'absolute' as const, inset: 0, transform: TRADES[trade].heroTransform }
+            : { position: 'absolute' as const, inset: 0 }
+          }
+        >
+          <Image
+            src={TRADES[trade].heroImage}
+            alt=""
+            fill
+            priority
+            className="hero-bg-img hero-bg-img-active"
+            style={{ objectPosition: TRADES[trade].heroPosition }}
+          />
+        </div>
       </div>
 
       <h1 className="assemble delay-1">

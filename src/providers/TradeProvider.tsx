@@ -9,6 +9,8 @@ interface TradeInfo {
   name: string;
   icon: string;
   heroImage: string;
+  heroPosition: string;
+  heroTransform?: string;
   mode: 'light' | 'dark';
 }
 
@@ -18,6 +20,7 @@ export const TRADES: Record<TradeId, TradeInfo> = {
     name: 'All Trades',
     icon: '🏗️',
     heroImage: '/images/hero-default.webp',
+    heroPosition: 'center top',
     mode: 'dark',
   },
   wood: {
@@ -25,6 +28,7 @@ export const TRADES: Record<TradeId, TradeInfo> = {
     name: 'Wood & Framing',
     icon: '🪚',
     heroImage: '/images/hero-wood.png',
+    heroPosition: 'center top',
     mode: 'light',
   },
   drywall: {
@@ -32,6 +36,7 @@ export const TRADES: Record<TradeId, TradeInfo> = {
     name: 'Drywall & Finishing',
     icon: '🖌️',
     heroImage: '/images/hero-drywall.png',
+    heroPosition: 'center top',
     mode: 'light',
   },
   electrical: {
@@ -39,6 +44,7 @@ export const TRADES: Record<TradeId, TradeInfo> = {
     name: 'Electrical',
     icon: '⚡',
     heroImage: '/images/hero-electrical.png',
+    heroPosition: 'center top',
     mode: 'light',
   },
   plumbing: {
@@ -46,6 +52,7 @@ export const TRADES: Record<TradeId, TradeInfo> = {
     name: 'Plumbing & HVAC',
     icon: '🔧',
     heroImage: '/images/hero-plumbing.png',
+    heroPosition: 'center top',
     mode: 'dark',
   },
   concrete: {
@@ -53,6 +60,7 @@ export const TRADES: Record<TradeId, TradeInfo> = {
     name: 'Concrete & Masonry',
     icon: '🧱',
     heroImage: '/images/hero-concrete.png',
+    heroPosition: 'center top',
     mode: 'dark',
   },
 };

@@ -8,6 +8,18 @@ html {
   scrollbar-color: var(--accent-dim) var(--bg-primary);
 }
 
+/* ── Desktop scroll snap — proximity-based ── */
+@media (min-width: 769px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+  .hero,
+  main > section,
+  footer {
+    scroll-snap-align: start;
+  }
+}
+
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
@@ -309,7 +321,8 @@ nav.scrolled {
 .nav-tools {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 14px;
+  margin: 0 8px;
 }
 
 .tool-dropdown-wrapper {
@@ -320,23 +333,24 @@ nav.scrolled {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 14px;
-  background: #F6C343;
-  color: #000;
-  border: none;
+  padding: 7px 13px;
+  background: rgba(246, 195, 67, 0.15);
+  color: var(--text-secondary);
+  border: 1px solid rgba(246, 195, 67, 0.3);
   border-radius: 8px;
   font-family: var(--font-mono);
-  font-size: 0.65rem;
-  font-weight: 700;
+  font-size: 0.6rem;
+  font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
+  transition: background 0.2s, transform 0.2s, border-color 0.2s;
   white-space: nowrap;
 }
 
 .nav-tool-btn:hover {
-  background: #e5b23c;
+  background: rgba(246, 195, 67, 0.3);
+  border-color: rgba(246, 195, 67, 0.5);
   transform: translateY(-1px);
 }
 
@@ -650,10 +664,10 @@ section {
 
 .hero-bg {
   position: fixed;
-  top: 0;
+  top: 56px;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 56px);
   z-index: -1;
   opacity: 0;
   transition: opacity 1.8s ease;
@@ -668,7 +682,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  /* object-position set per-trade via inline style in Hero.tsx */
   animation: ken-burns 25s ease-in-out infinite alternate;
 }
 
@@ -688,7 +702,7 @@ section {
     transform: scale(1) translate(0, 0);
   }
   100% {
-    transform: scale(1.06) translate(-1%, 1%);
+    transform: scale(1.03) translate(-0.5%, 0);
   }
 }
 
@@ -1805,17 +1819,17 @@ section {
 }
 
 .manifesto-lead {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 800;
-  line-height: 1.4;
+  font-style: italic;
+  line-height: 1.7;
   color: var(--text-primary);
   margin-bottom: 16px;
-  letter-spacing: -0.3px;
 }
 
 .manifesto-body {
-  font-size: 0.88rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--text-secondary);
   font-weight: 300;
 }
@@ -2554,7 +2568,7 @@ section {
   .store-badge-text span { font-size: 0.6rem; }
   .community-grid { grid-template-columns: 1fr; }
   .manifesto-banner { padding: 32px 20px; flex-direction: column; gap: 24px; }
-  .manifesto-lead { font-size: 1.1rem; }
+  .manifesto-lead { font-size: 0.95rem; }
   .manifesto-photos { gap: 8px; }
   .manifesto-photo { width: 80px; height: 110px; }
   .stats-row { grid-template-columns: repeat(2, 1fr); gap: 12px; }
