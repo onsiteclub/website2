@@ -75,7 +75,7 @@ export default function Tools() {
   return (
     <section id="tools">
       <div className="section-label assemble">
-        <span className="num">01</span> <span>{t('label')}</span>
+        <span className="num">03</span> <span>{t('label')}</span>
       </div>
       <h2 className="section-title section-title-logo assemble delay-1">
         <Image
@@ -102,9 +102,8 @@ export default function Tools() {
             </div>
           </div>
           <span className="tool-availability">{t('available')}</span>
-          <div className="app-screenshots">
-            <div className="app-screenshot"><Image src="/images/calc1.jpeg" alt="OnSite Calculator" width={240} height={520} /></div>
-            <div className="app-screenshot"><Image src="/images/calc2.jpeg" alt="OnSite Easy-Square" width={240} height={520} /></div>
+          <div className="tool-card-img">
+            <Image src="/images/tool-calculator-woman.png" alt="OnSite Calculator" fill sizes="(max-width:768px) 100vw, 50vw" style={{ objectPosition: '50% 50%' }} />
           </div>
         </div>
 
@@ -119,9 +118,8 @@ export default function Tools() {
             </div>
           </div>
           <span className="tool-availability">{t('available')}</span>
-          <div className="app-screenshots">
-            <div className="app-screenshot"><Image src="/images/time1.jpeg" alt="OnSite Timer" width={240} height={520} /></div>
-            <div className="app-screenshot"><Image src="/images/time2.jpeg" alt="OnSite Reports" width={240} height={520} /></div>
+          <div className="tool-card-img">
+            <Image src="/images/timekeeper-men.png" alt="OnSite Timekeeper" fill sizes="(max-width:768px) 100vw, 50vw" style={{ objectPosition: '50% 35%' }} />
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
-{
+﻿{
   "lang": "fr",
   "meta": {
-    "title": "OnSite Club — Porte ce que tu construis",
-    "description": "OnSite Club — marque lifestyle pour la construction. Vêtements, outils numériques et une communauté pour ceux qui bâtissent vraiment. Basé en Ontario, Canada."
+    "title": "OnSite Club â€” Porte ce que tu construis",
+    "description": "OnSite Club â€” marque lifestyle pour la construction. VÃªtements, outils numÃ©riques et une communautÃ© pour ceux qui bÃ¢tissent vraiment. BasÃ© en Ontario, Canada."
   },
   "nav": {
     "menu": "Menu",
@@ -12,7 +12,8 @@
     "learn": "Apprendre",
     "contact": "Contact",
     "earn_blades": "Gagner des Blades",
-    "member_area": "Espace Membre"
+    "member_area": "Espace Membre",
+    "search_placeholder": "Chercher ou demander..."
   },
   "hero": {
     "kicker": "Culture de chantier",
@@ -21,14 +22,14 @@
     "subtitle_wood": "Pour les charpentiers et tous ceux qui connaissent le grain du bois.",
     "subtitle_drywall": "Pour les finisseurs qui transforment les murs bruts en surfaces lisses.",
     "subtitle_electrical": "Pour les electriciens qui connectent le monde, un fil a la fois.",
-    "subtitle_plumbing": "Pour les plombiers et techniciens CVC — ceux qui travaillent derriere les murs.",
+    "subtitle_plumbing": "Pour les plombiers et techniciens CVC â€” ceux qui travaillent derriere les murs.",
     "subtitle_concrete": "Pour les betoneurs et macons qui batissent depuis les fondations.",
     "cta_shop": "Magasiner",
-    "cta_explore": "Choisis ton métier"
+    "cta_explore": "Choisis ton mÃ©tier"
   },
   "shop": {
     "label": "LA BOUTIQUE",
-    "title": "Du gear qui représente le <highlight>métier</highlight>"
+    "title": "Du gear qui reprÃ©sente le <highlight>mÃ©tier</highlight>"
   },
   "gear": {
     "label": "L'EQUIPEMENT",
@@ -49,111 +50,113 @@
     "see_all": "Voir tous les guides"
   },
   "tools": {
-    "label": "OUTILS NUMÉRIQUES",
+    "label": "OUTILS NUMÃ‰RIQUES",
     "title": "<highlight>Outils</highlight>",
-    "description": "Conçus pour la vitesse du chantier. Pas de bruit. Juste ce qui marche.",
+    "description": "ConÃ§us pour la vitesse du chantier. Pas de bruit. Juste ce qui marche.",
     "available": "Disponible maintenant",
     "calculator": {
       "name": "Calculateur vocal de pouces",
       "description": "Additionne, divise et convertis des mesures en pouces juste en parlant. Pas besoin des mains.",
-      "cta": "Ouvrir le calculateur →"
+      "cta": "Ouvrir le calculateur â†’"
     },
     "timekeeper": {
       "name": "Suivi des heures",
-      "description": "Suivi du temps par GPS avec géorepérage. Pointe à l'arrivée, dépointe au départ.",
-      "cta": "Démarrer le chrono →"
+      "description": "Suivi du temps par GPS avec gÃ©orepÃ©rage. Pointe Ã  l'arrivÃ©e, dÃ©pointe au dÃ©part.",
+      "cta": "DÃ©marrer le chrono â†’"
     },
     "checklist": {
-      "name": "Liste de tâches",
-      "description": "Liste de vérification par projet. Bientôt avec suggestions IA pour les étapes et matériaux.",
-      "tag": "Bientôt disponible",
-      "cta": "Bientôt disponible"
+      "name": "Liste de tÃ¢ches",
+      "description": "Liste de vÃ©rification par projet. BientÃ´t avec suggestions IA pour les Ã©tapes et matÃ©riaux.",
+      "tag": "BientÃ´t disponible",
+      "cta": "BientÃ´t disponible"
     },
     "agenda": {
       "name": "OnSite Agenda",
-      "description": "Planifie tes projets, quarts et équipes. Un seul calendrier pour tout le chantier.",
-      "tag": "Bientôt disponible",
-      "cta": "Bientôt disponible"
+      "description": "Planifie tes projets, quarts et Ã©quipes. Un seul calendrier pour tout le chantier.",
+      "tag": "BientÃ´t disponible",
+      "cta": "BientÃ´t disponible"
     }
   },
   "pathway": {
     "label": "TON PARCOURS",
-    "title": "Sache ce qu'il te faut.<br></br><highlight>Rends-toi là.</highlight>",
-    "description": "L'Ontario exige des formations spécifiques avant de mettre les pieds sur un chantier. Certaines sont gratuites, d'autres non — on a tracé le chemin pour que tu n'aies pas à tout chercher seul.",
-    "trigger_title": "Parcours du travailleur de la construction — Ontario",
+    "title": "Sache ce qu'il te faut.<br></br><highlight>Rends-toi lÃ .</highlight>",
+    "description": "L'Ontario exige des formations spÃ©cifiques avant de mettre les pieds sur un chantier. Certaines sont gratuites, d'autres non â€” on a tracÃ© le chemin pour que tu n'aies pas Ã  tout chercher seul.",
+    "trigger_title": "Parcours du travailleur de la construction â€” Ontario",
     "trigger_desc": "Certifications requises, cours gouvernementaux gratuits et formations partenaires",
-    "explore": "Explorer le parcours →",
-    "badge": "8 étapes",
-    "intro": "Chaque travailleur de la construction en Ontario a besoin de certaines certifications pour travailler légalement et en sécurité. Voici la feuille de route — de ton premier jour sur le chantier jusqu'aux accréditations spécialisées.",
+    "explore": "Explorer le parcours â†’",
+    "badge": "8 Ã©tapes",
+    "intro": "Chaque travailleur de la construction en Ontario a besoin de certaines certifications pour travailler lÃ©galement et en sÃ©curitÃ©. Voici la feuille de route â€” de ton premier jour sur le chantier jusqu'aux accrÃ©ditations spÃ©cialisÃ©es.",
     "badge_mandatory": "Obligatoire",
     "badge_free": "Gratuit",
     "badge_gov": "Gouvernement",
-    "badge_recommended": "Recommandé",
-    "badge_specialized": "Spécialisé",
-    "status_not_started": "Non commencé",
-    "status_completed": "Terminé",
-    "status_expired": "Expiré",
+    "badge_recommended": "RecommandÃ©",
+    "badge_specialized": "SpÃ©cialisÃ©",
+    "status_not_started": "Non commencÃ©",
+    "status_completed": "TerminÃ©",
+    "status_expired": "ExpirÃ©",
     "certificate": "Certificat",
     "steps": {
       "step1": {
-        "title": "Sensibilisation des travailleurs à la santé et sécurité en 4 étapes",
+        "title": "Sensibilisation des travailleurs Ã  la santÃ© et sÃ©curitÃ© en 4 Ã©tapes",
         "description": "Obligatoire pour tous les travailleurs en Ontario. Gratuit en ligne.",
-        "link": "Suivre le cours gratuit (Ontario.ca) →"
+        "link": "Suivre le cours gratuit (Ontario.ca) â†’"
       },
       "step2": {
-        "title": "WHMIS 2025 — Matières dangereuses",
-        "description": "Obligatoire près de produits dangereux. Gratuit en ligne.",
-        "link": "Suivre le cours gratuit →"
+        "title": "WHMIS 2025 â€” MatiÃ¨res dangereuses",
+        "description": "Obligatoire prÃ¨s de produits dangereux. Gratuit en ligne.",
+        "link": "Suivre le cours gratuit â†’"
       },
       "step3": {
         "title": "Travail en hauteur",
         "description": "Obligatoire avec protection contre les chutes. Rappel tous les 3 ans.",
-        "link": "Trouver un fournisseur agréé →"
+        "link": "Trouver un fournisseur agrÃ©Ã© â†’"
       },
       "step4": {
-        "title": "Chariot élévateur / Équipement mobile motorisé",
-        "description": "Requis pour opérer chariots élévateurs et équipements motorisés.",
-        "link": "Voir les options de formation →"
+        "title": "Chariot Ã©lÃ©vateur / Ã‰quipement mobile motorisÃ©",
+        "description": "Requis pour opÃ©rer chariots Ã©lÃ©vateurs et Ã©quipements motorisÃ©s.",
+        "link": "Voir les options de formation â†’"
       },
       "step5": {
-        "title": "Sensibilisation des superviseurs à la santé et sécurité en 5 étapes",
+        "title": "Sensibilisation des superviseurs Ã  la santÃ© et sÃ©curitÃ© en 5 Ã©tapes",
         "description": "Pour les superviseurs. Cours gouvernemental gratuit.",
-        "link": "Suivre le cours gratuit (Ontario.ca) →"
+        "link": "Suivre le cours gratuit (Ontario.ca) â†’"
       },
       "step6": {
-        "title": "Entrée en espace clos",
+        "title": "EntrÃ©e en espace clos",
         "description": "Requis pour le travail en espace clos sur les chantiers.",
-        "link": "Voir le cours →"
+        "link": "Voir le cours â†’"
       },
       "step7": {
         "title": "Certification premiers soins et RCR",
-        "description": "Au moins une personne certifiée requise sur le chantier en tout temps.",
-        "link": "Trouver un fournisseur →"
+        "description": "Au moins une personne certifiÃ©e requise sur le chantier en tout temps.",
+        "link": "Trouver un fournisseur â†’"
       },
       "step8": {
-        "title": "ÉPI, sécurité incendie, perturbation du sol et plus",
-        "description": "Spécifique au métier. Peut être requis par votre employeur.",
-        "link": "Parcourir tous les cours →"
+        "title": "Ã‰PI, sÃ©curitÃ© incendie, perturbation du sol et plus",
+        "description": "SpÃ©cifique au mÃ©tier. Peut Ãªtre requis par votre employeur.",
+        "link": "Parcourir tous les cours â†’"
       }
     },
-    "cta_title": "Sauvegarde ta progression — inscris-toi comme Membre",
-    "cta_desc": "Suis tes certifications, conserve tes certificats et vois ta progression. Tout au même endroit, sans sauter d'un site à l'autre.",
+    "cta_title": "Sauvegarde ta progression â€” inscris-toi comme Membre",
+    "cta_desc": "Suis tes certifications, conserve tes certificats et vois ta progression. Tout au mÃªme endroit, sans sauter d'un site Ã  l'autre.",
     "cta_button": "Espace Membre"
   },
   "community": {
     "label": "CONNECTER",
-    "title": "Rejoins l'<highlight>équipe</highlight>",
+    "title": "Rejoins l'<highlight>Ã©quipe</highlight>",
     "description": "Suis le mouvement. Partage tes projets. Fais partie de la culture.",
-    "manifesto_lead": "Les bâtiments ne se souviennent pas de qui les a construits. Nous, oui.",
-    "manifesto_body": "Cette ville ne s'est pas construite toute seule. Quelqu'un s'est levé avant le soleil, a gratté la glace, a enfilé des bottes qui faisaient déjà mal, et a bâti quelque chose de vrai. OnSite Club existe parce que cette personne mérite plus qu'un chèque de paie. Elle mérite que son nom soit sur ce qu'elle a construit. On crée du gear, des outils et une équipe pour ceux dont tout le monde voit le travail, mais que personne ne reconnaît. Si tu as déjà regardé un horizon urbain en sachant que tes mains sont dedans — c'est ton club.",
-    "counter_number": "250+",
-    "counter_label": "Membres et ça grandit",
+    "manifesto_lead": "Les bÃ¢timents ne se souviennent pas de qui les a construits. Nous, oui.",
+    "manifesto_body": "Cette ville ne s'est pas construite toute seule. Quelqu'un s'est levÃ© avant le soleil, a grattÃ© la glace, a enfilÃ© des bottes qui faisaient dÃ©jÃ  mal, et a bÃ¢ti quelque chose de vrai. OnSite Club existe parce que cette personne mÃ©rite plus qu'un chÃ¨que de paie. Elle mÃ©rite que son nom soit sur ce qu'elle a construit. On crÃ©e du gear, des outils et une Ã©quipe pour ceux dont tout le monde voit le travail, mais que personne ne reconnaÃ®t. Si tu as dÃ©jÃ  regardÃ© un horizon urbain en sachant que tes mains sont dedans â€” c'est ton club.",
+    "stat_members": "Membres",
+    "stat_downloads": "TÃ©lÃ©chargements",
+    "stat_sold": "Articles vendus",
+    "stat_trades": "MÃ©tiers",
     "fb_title": "Fais-toi entendre",
-    "fb_desc": "Rejoins notre communauté Facebook. Partage ton métier, ton équipe, ton histoire.",
-    "fb_cta": "Rejoindre le groupe →",
+    "fb_desc": "Rejoins notre communautÃ© Facebook. Partage ton mÃ©tier, ton Ã©quipe, ton histoire.",
+    "fb_cta": "Rejoindre le groupe â†’",
     "ig_title": "Reste dans le coup",
     "ig_desc": "Suis-nous sur Instagram pour les looks, les sorties et le contenu en coulisses.",
-    "ig_cta": "Ouvrir Instagram →"
+    "ig_cta": "Ouvrir Instagram â†’"
   },
   "contact": {
     "label": "NOUS JOINDRE",
@@ -170,11 +173,11 @@
     "info_location_label": "Emplacement",
     "info_location": "Ontario, Canada",
     "info_email_label": "Courriel",
-    "info_social_label": "Réseaux sociaux"
+    "info_social_label": "RÃ©seaux sociaux"
   },
   "trade_selector": {
     "title": "Choisis ton metier",
-    "description": "Personnalise le site selon ton metier. Couleurs, contenu et ambiance — tout s'adapte.",
+    "description": "Personnalise le site selon ton metier. Couleurs, contenu et ambiance â€” tout s'adapte.",
     "default": "Tous les metiers",
     "default_desc": "L'experience par defaut pour tous.",
     "wood": "Bois & Charpente",
@@ -191,15 +194,15 @@
     "close": "Fermer"
   },
   "blades": {
-    "title": "Gagne des Blades, obtiens des récompenses",
-    "description": "Rejoins le club et commence à accumuler des <strong>Blades</strong>. Empile-les. Échange-les contre du gear exclusif et des rabais.",
+    "title": "Gagne des Blades, obtiens des rÃ©compenses",
+    "description": "Rejoins le club et commence Ã  accumuler des <strong>Blades</strong>. Empile-les. Ã‰change-les contre du gear exclusif et des rabais.",
     "cta": "Rejoindre"
   },
   "sitemap": {
     "nav_heading": "Navigation",
     "shop_heading": "Boutique",
     "tools_heading": "Applis et outils",
-    "legal_heading": "Légal",
+    "legal_heading": "LÃ©gal",
     "connect_heading": "Connecter",
     "home": "Accueil",
     "clubroom": "Salle du club",
@@ -213,23 +216,23 @@
     "member_hub": "Espace Membre",
     "calculator": "Calculateur",
     "timekeeper": "Suivi des heures",
-    "privacy": "Politique de confidentialité",
+    "privacy": "Politique de confidentialitÃ©",
     "terms": "Conditions d'utilisation",
     "facebook": "Facebook",
     "instagram": "Instagram",
-    "email_us": "Nous écrire",
+    "email_us": "Nous Ã©crire",
     "learn_heading": "Apprendre",
     "learn_construction_steps": "Premiers pas",
-    "learn_safety_equipment": "Équipement de sécurité",
-    "learn_trades_guide": "Guide des métiers",
+    "learn_safety_equipment": "Ã‰quipement de sÃ©curitÃ©",
+    "learn_trades_guide": "Guide des mÃ©tiers",
     "learn_calculator_guide": "Guide calculatrice",
     "learn_timekeeper_setup": "Config. Timekeeper",
     "learn_terminology": "Terminologie"
   },
   "footer": {
-    "copyright": "© 2025 OnSite Club",
+    "copyright": "Â© 2025 OnSite Club",
     "sitemap": "Plan du site",
-    "tagline": "Bâti pour ceux qui bâtissent."
+    "tagline": "BÃ¢ti pour ceux qui bÃ¢tissent."
   },
   "chat": {
     "title": "Prumo Assistant",
@@ -239,54 +242,63 @@
     "chip_apps": "Montre-moi les applis",
     "chip_shop": "Visiter la Boutique",
     "chip_certification": "Comment obtenir une certification?",
-    "chip_accessibility": "Options d'accessibilité",
+    "chip_accessibility": "Options d'accessibilitÃ©",
     "chip_contact": "Contact",
-    "typing": "Réflexion en cours...",
-    "listening": "Écoute en cours...",
+    "typing": "RÃ©flexion en cours...",
+    "listening": "Ã‰coute en cours...",
     "transcribing": "Transcription en cours...",
     "voice_unsupported": "Voix non disponible sur cet appareil",
-    "error": "Quelque chose a mal tourné. Réessayez.",
-    "session_limit": "Limite de session atteinte. Veuillez rafraîchir la page."
+    "error": "Quelque chose a mal tournÃ©. RÃ©essayez.",
+    "session_limit": "Limite de session atteinte. Veuillez rafraÃ®chir la page."
+  },
+  "search": {
+    "no_results": "Aucun r├⌐sultat trouv├⌐",
+    "ask_assistant": "Demander ├á Prumo",
+    "cat_sections": "Sections",
+    "cat_learn": "Apprendre",
+    "cat_apps": "Applis & Outils",
+    "cat_shop": "Boutique",
+    "cat_social": "Suivez-nous"
   },
   "learn": {
-    "back": "← Retour à l'accueil",
+    "back": "â† Retour Ã  l'accueil",
     "reading_time": "min de lecture",
     "related": "Articles connexes",
     "construction-steps": {
-      "title": "Comment commencer à travailler dans la construction en Ontario",
-      "meta_desc": "Guide étape par étape pour débuter une carrière en construction en Ontario, Canada. Certifications requises, formations et comment décrocher votre premier emploi.",
+      "title": "Comment commencer Ã  travailler dans la construction en Ontario",
+      "meta_desc": "Guide Ã©tape par Ã©tape pour dÃ©buter une carriÃ¨re en construction en Ontario, Canada. Certifications requises, formations et comment dÃ©crocher votre premier emploi.",
       "reading_time": "8",
-      "content": "<h2>Débuter votre carrière en construction</h2><p>L'industrie de la construction en Ontario est l'un des plus grands employeurs de la province, avec plus de 500 000 travailleurs dans les secteurs résidentiel, commercial et d'infrastructure. Que vous changiez de carrière ou que vous débutiez, voici votre feuille de route complète.</p><h2>Étape 1 : Obtenir vos certifications de base</h2><p>Avant de mettre les pieds sur un chantier en Ontario, vous devez suivre des formations obligatoires. Le cours <strong>Sensibilisation des travailleurs à la santé et la sécurité</strong> est exigé par la loi pour tous les travailleurs — et il est gratuit en ligne sur Ontario.ca. Il prend environ une heure et couvre vos droits, vos responsabilités et la sensibilisation de base aux dangers.</p><p>Ensuite, complétez le <strong>WHMIS 2025</strong> (Système d'information sur les matières dangereuses utilisées au travail). Celui-ci couvre la manipulation sécuritaire des produits dangereux que vous rencontrerez sur le chantier. Également gratuit en ligne.</p><h2>Étape 2 : Travail en hauteur</h2><p>Si vous travaillez à plus de 3 mètres (environ 10 pieds) ou utilisez une protection contre les chutes, vous avez besoin de la certification <strong>Travail en hauteur</strong>. Contrairement aux cours de base, celle-ci nécessite une formation en personne auprès d'un fournisseur agréé. C'est généralement un cours d'une journée coûtant entre 150 $ et 250 $. La certification est valide pour 3 ans.</p><h2>Étape 3 : Procurez-vous votre ÉPI</h2><p>Vous aurez besoin d'équipement de protection individuelle avant votre premier jour. L'essentiel : bottes à embout d'acier ou composite approuvées CSA, casque de sécurité, lunettes de protection, gilet haute visibilité et gants de travail. Prévoyez environ 200 $ à 350 $ pour de l'équipement de qualité qui dure.</p><h2>Étape 4 : Trouver votre premier emploi</h2><p>Commencez par vous inscrire auprès d'agences de placement en construction — c'est le chemin le plus rapide vers votre premier chantier. Des entreprises comme Labour Ready, Randstad et les agences locales embauchent régulièrement des manœuvres débutants. Vous pouvez aussi consulter les sites d'emploi comme Indeed, le portail d'apprentissage du LIUNA (syndicat des manœuvres), ou vous renseigner à votre centre d'emploi local.</p><h2>Étape 5 : Envisager un métier spécialisé</h2><p>Le travail de manœuvre est un excellent début, mais se spécialiser dans un métier (charpenterie, électricité, plomberie, CVC, etc.) augmente considérablement votre potentiel de revenus. Le système d'apprentissage de l'Ontario vous permet de gagner un salaire tout en apprenant, combinant formation rémunérée en milieu de travail et sessions en classe.</p><h2>À quoi s'attendre le premier jour</h2><p>Arrivez tôt. Apportez vos certifications (gardez des copies sur votre téléphone). Portez votre ÉPI. Écoutez attentivement l'orientation du chantier — chaque chantier a ses propres règles. Posez des questions si vous n'êtes pas sûr de quoi que ce soit. Les vétérans de la construction respectent quelqu'un qui demande plutôt que de deviner.</p><h2>Faire progresser votre carrière</h2><p>Le chemin de manœuvre à contremaître puis surintendant est réel et atteignable. Des certifications supplémentaires comme les Premiers soins, l'Entrée en espace clos et la Sensibilisation des superviseurs à la sécurité (toutes cartographiées dans notre <a href='/#pathway'>section Parcours</a>) vous démarqueront. Utilisez des outils comme le <a href='https://calculator.onsiteclub.ca'>OnSite Calculator</a> et le <a href='https://timekeeperweb.onsiteclub.ca'>OnSite Timekeeper</a> pour travailler plus intelligemment dès le premier jour.</p>"
+      "content": "<h2>DÃ©buter votre carriÃ¨re en construction</h2><p>L'industrie de la construction en Ontario est l'un des plus grands employeurs de la province, avec plus de 500 000 travailleurs dans les secteurs rÃ©sidentiel, commercial et d'infrastructure. Que vous changiez de carriÃ¨re ou que vous dÃ©butiez, voici votre feuille de route complÃ¨te.</p><h2>Ã‰tape 1 : Obtenir vos certifications de base</h2><p>Avant de mettre les pieds sur un chantier en Ontario, vous devez suivre des formations obligatoires. Le cours <strong>Sensibilisation des travailleurs Ã  la santÃ© et la sÃ©curitÃ©</strong> est exigÃ© par la loi pour tous les travailleurs â€” et il est gratuit en ligne sur Ontario.ca. Il prend environ une heure et couvre vos droits, vos responsabilitÃ©s et la sensibilisation de base aux dangers.</p><p>Ensuite, complÃ©tez le <strong>WHMIS 2025</strong> (SystÃ¨me d'information sur les matiÃ¨res dangereuses utilisÃ©es au travail). Celui-ci couvre la manipulation sÃ©curitaire des produits dangereux que vous rencontrerez sur le chantier. Ã‰galement gratuit en ligne.</p><h2>Ã‰tape 2 : Travail en hauteur</h2><p>Si vous travaillez Ã  plus de 3 mÃ¨tres (environ 10 pieds) ou utilisez une protection contre les chutes, vous avez besoin de la certification <strong>Travail en hauteur</strong>. Contrairement aux cours de base, celle-ci nÃ©cessite une formation en personne auprÃ¨s d'un fournisseur agrÃ©Ã©. C'est gÃ©nÃ©ralement un cours d'une journÃ©e coÃ»tant entre 150 $ et 250 $. La certification est valide pour 3 ans.</p><h2>Ã‰tape 3 : Procurez-vous votre Ã‰PI</h2><p>Vous aurez besoin d'Ã©quipement de protection individuelle avant votre premier jour. L'essentiel : bottes Ã  embout d'acier ou composite approuvÃ©es CSA, casque de sÃ©curitÃ©, lunettes de protection, gilet haute visibilitÃ© et gants de travail. PrÃ©voyez environ 200 $ Ã  350 $ pour de l'Ã©quipement de qualitÃ© qui dure.</p><h2>Ã‰tape 4 : Trouver votre premier emploi</h2><p>Commencez par vous inscrire auprÃ¨s d'agences de placement en construction â€” c'est le chemin le plus rapide vers votre premier chantier. Des entreprises comme Labour Ready, Randstad et les agences locales embauchent rÃ©guliÃ¨rement des manÅ“uvres dÃ©butants. Vous pouvez aussi consulter les sites d'emploi comme Indeed, le portail d'apprentissage du LIUNA (syndicat des manÅ“uvres), ou vous renseigner Ã  votre centre d'emploi local.</p><h2>Ã‰tape 5 : Envisager un mÃ©tier spÃ©cialisÃ©</h2><p>Le travail de manÅ“uvre est un excellent dÃ©but, mais se spÃ©cialiser dans un mÃ©tier (charpenterie, Ã©lectricitÃ©, plomberie, CVC, etc.) augmente considÃ©rablement votre potentiel de revenus. Le systÃ¨me d'apprentissage de l'Ontario vous permet de gagner un salaire tout en apprenant, combinant formation rÃ©munÃ©rÃ©e en milieu de travail et sessions en classe.</p><h2>Ã€ quoi s'attendre le premier jour</h2><p>Arrivez tÃ´t. Apportez vos certifications (gardez des copies sur votre tÃ©lÃ©phone). Portez votre Ã‰PI. Ã‰coutez attentivement l'orientation du chantier â€” chaque chantier a ses propres rÃ¨gles. Posez des questions si vous n'Ãªtes pas sÃ»r de quoi que ce soit. Les vÃ©tÃ©rans de la construction respectent quelqu'un qui demande plutÃ´t que de deviner.</p><h2>Faire progresser votre carriÃ¨re</h2><p>Le chemin de manÅ“uvre Ã  contremaÃ®tre puis surintendant est rÃ©el et atteignable. Des certifications supplÃ©mentaires comme les Premiers soins, l'EntrÃ©e en espace clos et la Sensibilisation des superviseurs Ã  la sÃ©curitÃ© (toutes cartographiÃ©es dans notre <a href='/#pathway'>section Parcours</a>) vous dÃ©marqueront. Utilisez des outils comme le <a href='https://calculator.onsiteclub.ca'>OnSite Calculator</a> et le <a href='https://timekeeperweb.onsiteclub.ca'>OnSite Timekeeper</a> pour travailler plus intelligemment dÃ¨s le premier jour.</p>"
     },
     "safety-equipment": {
-      "title": "Équipement de sécurité essentiel pour les travailleurs de la construction",
-      "meta_desc": "Guide complet sur l'ÉPI et l'équipement de sécurité requis sur les chantiers de construction canadiens. Quoi acheter, combien ça coûte et la réglementation.",
+      "title": "Ã‰quipement de sÃ©curitÃ© essentiel pour les travailleurs de la construction",
+      "meta_desc": "Guide complet sur l'Ã‰PI et l'Ã©quipement de sÃ©curitÃ© requis sur les chantiers de construction canadiens. Quoi acheter, combien Ã§a coÃ»te et la rÃ©glementation.",
       "reading_time": "7",
-      "content": "<h2>Pourquoi l'ÉPI est important</h2><p>La construction représente près de 30 % des décès en milieu de travail au Canada. L'équipement de protection individuelle (ÉPI) n'est pas optionnel — il est exigé par la Loi sur la santé et la sécurité au travail de l'Ontario (OHSA) et peut vous sauver la vie. Voici tout ce dont vous avez besoin.</p><h2>Protection de la tête</h2><p>Un <strong>casque de sécurité certifié CSA Z94.1</strong> est obligatoire sur tous les chantiers de construction. Le Type 1 protège le dessus de la tête; le Type 2 protège le dessus et les côtés. La Classe E (électrique) est recommandée pour la construction générale. Remplacez votre casque tous les 5 ans ou immédiatement après tout impact. Coût : 25 $ à 80 $.</p><h2>Protection des pieds</h2><p>Les <strong>bottes de sécurité CSA Grade 1</strong> avec le triangle vert sont la norme. Elles doivent avoir des embouts en acier ou composite résistant à un impact de 125 joules et une semelle anti-perforation. Choisissez des bottes confortables — vous les porterez de 8 à 12 heures. Coût : 120 $ à 250 $ pour des bottes de qualité qui durent une saison.</p><h2>Protection des yeux et du visage</h2><p>Les <strong>lunettes de sécurité CSA Z94.3</strong> sont requises chaque fois qu'il y a un risque de particules volantes, de poussière ou d'éclaboussures chimiques. Verres clairs pour le travail intérieur, teintés pour l'extérieur. Si vous coupez, meûlez ou soudez, vous aurez besoin d'un écran facial ou d'un casque de soudage. Coût : 10 $ à 30 $ pour les lunettes de sécurité.</p><h2>Vêtements haute visibilité</h2><p>Un gilet ou une veste <strong>haute visibilité CSA Z96 Classe 2</strong> est requis sur la plupart des chantiers, surtout à proximité de la circulation de véhicules. Jaune-vert ou orange fluorescent avec bandes rétroréfléchissantes. Beaucoup de chantiers exigent la Classe 3 (couverture complète) pour le travail de nuit. Coût : 15 $ à 40 $.</p><h2>Protection des mains</h2><p>Des gants de travail adaptés à la tâche : usage général en cuir ou synthétique pour la manutention de matériaux, résistants aux coupures pour les objets tranchants, résistants aux produits chimiques pour les solvants et adhésifs. Vérifiez toujours la cote de résistance aux coupures ANSI/ISEA. Coût : 10 $ à 35 $ la paire.</p><h2>Protection auditive</h2><p>Requise lorsque le bruit dépasse 85 dB (fréquent avec les outils électriques, l'équipement lourd et la démolition). Options : bouchons d'oreilles en mousse (NRR 25-33, jetables) ou protège-oreilles (NRR 20-30, réutilisables). Pour une exposition constante, envisagez des bouchons moulés sur mesure. Coût : 1 $ à 40 $.</p><h2>Protection contre les chutes</h2><p>Lorsque vous travaillez à plus de 3 mètres, un harnais complet <strong>CSA Z259</strong> avec longe est requis. Il doit être inspecté avant chaque utilisation et remplacé après tout arrêt de chute. Vous devez avoir suivi la formation Travail en hauteur pour utiliser l'équipement de protection contre les chutes. Coût : 150 $ à 400 $ pour un système de harnais complet.</p><h2>Protection respiratoire</h2><p>Masques anti-poussière (N95) pour la poussière générale, demi-masques respiratoires pour les produits chimiques et la peinture, et masques complets pour les espaces clos ou l'exposition importante. Doivent être ajustés par essai lorsque requis par votre employeur. Coût : 5 $ à 200 $ selon le type.</p><h2>Constituer votre kit d'ÉPI</h2><p>Prévoyez environ 350 $ à 600 $ pour un kit d'ÉPI de départ complet. Certains employeurs fournissent certains articles, mais avoir le vôtre garantit la qualité et l'ajustement. Remplacez l'équipement endommagé immédiatement — ne bricolez jamais votre ÉPI. Suivez vos certifications et les dates d'expiration de votre ÉPI au même endroit avec le <a href='/#pathway'>suivi du Parcours OnSite</a>.</p>"
+      "content": "<h2>Pourquoi l'Ã‰PI est important</h2><p>La construction reprÃ©sente prÃ¨s de 30 % des dÃ©cÃ¨s en milieu de travail au Canada. L'Ã©quipement de protection individuelle (Ã‰PI) n'est pas optionnel â€” il est exigÃ© par la Loi sur la santÃ© et la sÃ©curitÃ© au travail de l'Ontario (OHSA) et peut vous sauver la vie. Voici tout ce dont vous avez besoin.</p><h2>Protection de la tÃªte</h2><p>Un <strong>casque de sÃ©curitÃ© certifiÃ© CSA Z94.1</strong> est obligatoire sur tous les chantiers de construction. Le Type 1 protÃ¨ge le dessus de la tÃªte; le Type 2 protÃ¨ge le dessus et les cÃ´tÃ©s. La Classe E (Ã©lectrique) est recommandÃ©e pour la construction gÃ©nÃ©rale. Remplacez votre casque tous les 5 ans ou immÃ©diatement aprÃ¨s tout impact. CoÃ»t : 25 $ Ã  80 $.</p><h2>Protection des pieds</h2><p>Les <strong>bottes de sÃ©curitÃ© CSA Grade 1</strong> avec le triangle vert sont la norme. Elles doivent avoir des embouts en acier ou composite rÃ©sistant Ã  un impact de 125 joules et une semelle anti-perforation. Choisissez des bottes confortables â€” vous les porterez de 8 Ã  12 heures. CoÃ»t : 120 $ Ã  250 $ pour des bottes de qualitÃ© qui durent une saison.</p><h2>Protection des yeux et du visage</h2><p>Les <strong>lunettes de sÃ©curitÃ© CSA Z94.3</strong> sont requises chaque fois qu'il y a un risque de particules volantes, de poussiÃ¨re ou d'Ã©claboussures chimiques. Verres clairs pour le travail intÃ©rieur, teintÃ©s pour l'extÃ©rieur. Si vous coupez, meÃ»lez ou soudez, vous aurez besoin d'un Ã©cran facial ou d'un casque de soudage. CoÃ»t : 10 $ Ã  30 $ pour les lunettes de sÃ©curitÃ©.</p><h2>VÃªtements haute visibilitÃ©</h2><p>Un gilet ou une veste <strong>haute visibilitÃ© CSA Z96 Classe 2</strong> est requis sur la plupart des chantiers, surtout Ã  proximitÃ© de la circulation de vÃ©hicules. Jaune-vert ou orange fluorescent avec bandes rÃ©trorÃ©flÃ©chissantes. Beaucoup de chantiers exigent la Classe 3 (couverture complÃ¨te) pour le travail de nuit. CoÃ»t : 15 $ Ã  40 $.</p><h2>Protection des mains</h2><p>Des gants de travail adaptÃ©s Ã  la tÃ¢che : usage gÃ©nÃ©ral en cuir ou synthÃ©tique pour la manutention de matÃ©riaux, rÃ©sistants aux coupures pour les objets tranchants, rÃ©sistants aux produits chimiques pour les solvants et adhÃ©sifs. VÃ©rifiez toujours la cote de rÃ©sistance aux coupures ANSI/ISEA. CoÃ»t : 10 $ Ã  35 $ la paire.</p><h2>Protection auditive</h2><p>Requise lorsque le bruit dÃ©passe 85 dB (frÃ©quent avec les outils Ã©lectriques, l'Ã©quipement lourd et la dÃ©molition). Options : bouchons d'oreilles en mousse (NRR 25-33, jetables) ou protÃ¨ge-oreilles (NRR 20-30, rÃ©utilisables). Pour une exposition constante, envisagez des bouchons moulÃ©s sur mesure. CoÃ»t : 1 $ Ã  40 $.</p><h2>Protection contre les chutes</h2><p>Lorsque vous travaillez Ã  plus de 3 mÃ¨tres, un harnais complet <strong>CSA Z259</strong> avec longe est requis. Il doit Ãªtre inspectÃ© avant chaque utilisation et remplacÃ© aprÃ¨s tout arrÃªt de chute. Vous devez avoir suivi la formation Travail en hauteur pour utiliser l'Ã©quipement de protection contre les chutes. CoÃ»t : 150 $ Ã  400 $ pour un systÃ¨me de harnais complet.</p><h2>Protection respiratoire</h2><p>Masques anti-poussiÃ¨re (N95) pour la poussiÃ¨re gÃ©nÃ©rale, demi-masques respiratoires pour les produits chimiques et la peinture, et masques complets pour les espaces clos ou l'exposition importante. Doivent Ãªtre ajustÃ©s par essai lorsque requis par votre employeur. CoÃ»t : 5 $ Ã  200 $ selon le type.</p><h2>Constituer votre kit d'Ã‰PI</h2><p>PrÃ©voyez environ 350 $ Ã  600 $ pour un kit d'Ã‰PI de dÃ©part complet. Certains employeurs fournissent certains articles, mais avoir le vÃ´tre garantit la qualitÃ© et l'ajustement. Remplacez l'Ã©quipement endommagÃ© immÃ©diatement â€” ne bricolez jamais votre Ã‰PI. Suivez vos certifications et les dates d'expiration de votre Ã‰PI au mÃªme endroit avec le <a href='/#pathway'>suivi du Parcours OnSite</a>.</p>"
     },
     "trades-guide": {
-      "title": "Guide des métiers de la construction : trouvez votre spécialité",
-      "meta_desc": "Aperçu des principaux métiers de la construction en Ontario. Charpenterie, électricité, plomberie, CVC et plus — salaire, exigences et parcours de carrière.",
+      "title": "Guide des mÃ©tiers de la construction : trouvez votre spÃ©cialitÃ©",
+      "meta_desc": "AperÃ§u des principaux mÃ©tiers de la construction en Ontario. Charpenterie, Ã©lectricitÃ©, plomberie, CVC et plus â€” salaire, exigences et parcours de carriÃ¨re.",
       "reading_time": "9",
-      "content": "<h2>Choisir votre métier</h2><p>L'Ontario reconnaît plus de 140 métiers spécialisés, dont environ 40 directement liés à la construction. Le bon choix dépend de vos intérêts, de vos capacités physiques et de vos objectifs à long terme. Voici un aperçu des métiers les plus en demande.</p><h2>Charpenterie (Charpentier général - 403A)</h2><p>Les charpentiers construisent la structure des bâtiments — ossature, coffrages, coffrage de béton, finition. C'est le métier le plus polyvalent et un excellent point de départ. <strong>Apprentissage :</strong> 4 ans (7 280 heures en milieu de travail + 3 sessions en classe). <strong>Salaire compagnon :</strong> 30 $ à 45 $/heure. La charpenterie est un métier à certification obligatoire en Ontario, ce qui signifie que vous devez détenir un certificat pour utiliser le titre.</p><h2>Électricité (Électricien - 309A)</h2><p>Les électriciens installent, entretiennent et réparent les systèmes électriques. Forte demande, excellent salaire et compétences transférables. <strong>Apprentissage :</strong> 5 ans (9 000 heures + 3 sessions en classe). <strong>Salaire compagnon :</strong> 35 $ à 55 $/heure. C'est un métier à certification obligatoire — vous devez légalement être accrédité pour effectuer des travaux électriques.</p><h2>Plomberie (Plombier - 306A)</h2><p>Les plombiers installent et réparent les systèmes de tuyauterie d'eau, d'égout et de gaz. Demande constante tant en construction neuve qu'en rénovation. <strong>Apprentissage :</strong> 5 ans (9 000 heures + 3 sessions en classe). <strong>Salaire compagnon :</strong> 35 $ à 50 $/heure. Métier à certification obligatoire.</p><h2>CVC (Mécanicien en réfrigération et climatisation - 313A)</h2><p>Les techniciens en CVC installent et entretiennent les systèmes de chauffage, ventilation et climatisation. Demande croissante avec les réglementations sur l'efficacité énergétique. <strong>Apprentissage :</strong> 5 ans (9 000 heures + 3 sessions en classe). <strong>Salaire compagnon :</strong> 33 $ à 48 $/heure.</p><h2>Monteur de charpentes métalliques (Structural/Ornemental - 420A)</h2><p>Les monteurs de charpentes métalliques érigent les structures en acier des bâtiments, ponts et infrastructures. Travail physique et bien rémunéré. <strong>Apprentissage :</strong> 3 ans (5 400 heures + sessions en classe). <strong>Salaire compagnon :</strong> 38 $ à 52 $/heure. Forte présence syndicale (Local 721, Local 736).</p><h2>Opérateur d'équipement lourd</h2><p>Les opérateurs conduisent des excavatrices, bulldozers, grues et autres machines lourdes. Excellent salaire pour un parcours hors apprentissage. Formation par les collèges ou les programmes syndicaux (IUOE Local 793). <strong>Salaire :</strong> 28 $ à 50 $/heure selon la classe d'équipement.</p><h2>Plâtrage, tirage de joints et peinture</h2><p>Métiers de finition intérieure. Accès plus rapide, exigences d'apprentissage réduites et demande résidentielle constante. <strong>Salaire :</strong> 22 $ à 38 $/heure. Beaucoup de travailleurs sont autonomes ou dirigent de petites équipes.</p><h2>Comment commencer un apprentissage</h2><p>1. Trouver un parrain (employeur prêt à vous former). 2. S'inscrire auprès du ministère du Travail, de l'Immigration, de la Formation et du Développement des compétences de l'Ontario. 3. Signer une entente de formation. 4. Alterner entre les heures en milieu de travail et les sessions au collège. 5. Passer l'examen du Certificat de qualification. Le <a href='/#pathway'>Parcours OnSite</a> cartographie les certifications requises à chaque étape.</p><h2>Potentiel de revenus</h2><p>Les gens de métier qualifiés en Ontario gagnent entre 60 000 $ et 120 000 $+ par année. Le temps supplémentaire, les primes de quart et les spécialisations font augmenter ce montant. Les contremaîtres gagnent de 15 à 25 % de plus que les compagnons. Démarrer sa propre entreprise est une progression naturelle que poursuivent de nombreux gens de métier.</p>"
+      "content": "<h2>Choisir votre mÃ©tier</h2><p>L'Ontario reconnaÃ®t plus de 140 mÃ©tiers spÃ©cialisÃ©s, dont environ 40 directement liÃ©s Ã  la construction. Le bon choix dÃ©pend de vos intÃ©rÃªts, de vos capacitÃ©s physiques et de vos objectifs Ã  long terme. Voici un aperÃ§u des mÃ©tiers les plus en demande.</p><h2>Charpenterie (Charpentier gÃ©nÃ©ral - 403A)</h2><p>Les charpentiers construisent la structure des bÃ¢timents â€” ossature, coffrages, coffrage de bÃ©ton, finition. C'est le mÃ©tier le plus polyvalent et un excellent point de dÃ©part. <strong>Apprentissage :</strong> 4 ans (7 280 heures en milieu de travail + 3 sessions en classe). <strong>Salaire compagnon :</strong> 30 $ Ã  45 $/heure. La charpenterie est un mÃ©tier Ã  certification obligatoire en Ontario, ce qui signifie que vous devez dÃ©tenir un certificat pour utiliser le titre.</p><h2>Ã‰lectricitÃ© (Ã‰lectricien - 309A)</h2><p>Les Ã©lectriciens installent, entretiennent et rÃ©parent les systÃ¨mes Ã©lectriques. Forte demande, excellent salaire et compÃ©tences transfÃ©rables. <strong>Apprentissage :</strong> 5 ans (9 000 heures + 3 sessions en classe). <strong>Salaire compagnon :</strong> 35 $ Ã  55 $/heure. C'est un mÃ©tier Ã  certification obligatoire â€” vous devez lÃ©galement Ãªtre accrÃ©ditÃ© pour effectuer des travaux Ã©lectriques.</p><h2>Plomberie (Plombier - 306A)</h2><p>Les plombiers installent et rÃ©parent les systÃ¨mes de tuyauterie d'eau, d'Ã©gout et de gaz. Demande constante tant en construction neuve qu'en rÃ©novation. <strong>Apprentissage :</strong> 5 ans (9 000 heures + 3 sessions en classe). <strong>Salaire compagnon :</strong> 35 $ Ã  50 $/heure. MÃ©tier Ã  certification obligatoire.</p><h2>CVC (MÃ©canicien en rÃ©frigÃ©ration et climatisation - 313A)</h2><p>Les techniciens en CVC installent et entretiennent les systÃ¨mes de chauffage, ventilation et climatisation. Demande croissante avec les rÃ©glementations sur l'efficacitÃ© Ã©nergÃ©tique. <strong>Apprentissage :</strong> 5 ans (9 000 heures + 3 sessions en classe). <strong>Salaire compagnon :</strong> 33 $ Ã  48 $/heure.</p><h2>Monteur de charpentes mÃ©talliques (Structural/Ornemental - 420A)</h2><p>Les monteurs de charpentes mÃ©talliques Ã©rigent les structures en acier des bÃ¢timents, ponts et infrastructures. Travail physique et bien rÃ©munÃ©rÃ©. <strong>Apprentissage :</strong> 3 ans (5 400 heures + sessions en classe). <strong>Salaire compagnon :</strong> 38 $ Ã  52 $/heure. Forte prÃ©sence syndicale (Local 721, Local 736).</p><h2>OpÃ©rateur d'Ã©quipement lourd</h2><p>Les opÃ©rateurs conduisent des excavatrices, bulldozers, grues et autres machines lourdes. Excellent salaire pour un parcours hors apprentissage. Formation par les collÃ¨ges ou les programmes syndicaux (IUOE Local 793). <strong>Salaire :</strong> 28 $ Ã  50 $/heure selon la classe d'Ã©quipement.</p><h2>PlÃ¢trage, tirage de joints et peinture</h2><p>MÃ©tiers de finition intÃ©rieure. AccÃ¨s plus rapide, exigences d'apprentissage rÃ©duites et demande rÃ©sidentielle constante. <strong>Salaire :</strong> 22 $ Ã  38 $/heure. Beaucoup de travailleurs sont autonomes ou dirigent de petites Ã©quipes.</p><h2>Comment commencer un apprentissage</h2><p>1. Trouver un parrain (employeur prÃªt Ã  vous former). 2. S'inscrire auprÃ¨s du ministÃ¨re du Travail, de l'Immigration, de la Formation et du DÃ©veloppement des compÃ©tences de l'Ontario. 3. Signer une entente de formation. 4. Alterner entre les heures en milieu de travail et les sessions au collÃ¨ge. 5. Passer l'examen du Certificat de qualification. Le <a href='/#pathway'>Parcours OnSite</a> cartographie les certifications requises Ã  chaque Ã©tape.</p><h2>Potentiel de revenus</h2><p>Les gens de mÃ©tier qualifiÃ©s en Ontario gagnent entre 60 000 $ et 120 000 $+ par annÃ©e. Le temps supplÃ©mentaire, les primes de quart et les spÃ©cialisations font augmenter ce montant. Les contremaÃ®tres gagnent de 15 Ã  25 % de plus que les compagnons. DÃ©marrer sa propre entreprise est une progression naturelle que poursuivent de nombreux gens de mÃ©tier.</p>"
     },
     "calculator-guide": {
       "title": "OnSite Calculator : le calcul de construction par la voix",
-      "meta_desc": "Comment utiliser OnSite Calculator — la calculatrice de construction à commande vocale pour les fractions, les mesures impériales et l'estimation de matériaux.",
+      "meta_desc": "Comment utiliser OnSite Calculator â€” la calculatrice de construction Ã  commande vocale pour les fractions, les mesures impÃ©riales et l'estimation de matÃ©riaux.",
       "reading_time": "5",
-      "content": "<h2>Pourquoi on l'a créé</h2><p>Les mathématiques de la construction sont différentes. Vous travaillez en pieds et pouces, vous additionnez des fractions, vous convertissez entre impérial et métrique — souvent avec des gants sales et pas de main libre. Le OnSite Calculator a été conçu par un charpentier qui en avait assez de pianoter sur un petit écran de téléphone en haut d'un échafaudage.</p><h2>Entrée vocale</h2><p>La fonctionnalité phare : <strong>dictez votre calcul</strong>. Dites « douze et trois huitièmes plus quatre et demi » et obtenez la réponse instantanément. La calculatrice comprend le langage naturel de la construction — pieds, pouces, fractions et raccourcis courants. Fonctionne avec des gants, fonctionne dans les environnements bruyants grâce à la suppression du bruit.</p><h2>Les fractions simplifiées</h2><p>Additionnez, soustrayez, multipliez et divisez des fractions sans les convertir en décimales. La calculatrice affiche les résultats dans le format le plus utile : nombres entiers et fractions simplifiées (p. ex., 16 3/4\" au lieu de 16,75\"). Parfait pour les listes de coupe et les mesures de tracé.</p><h2>Conversion impérial ↔ métrique</h2><p>Conversion instantanée entre impérial et métrique. Vous travaillez avec des plans en millimètres mais votre ruban mesure en pouces? Un seul clic pour basculer. Prend en charge pieds/pouces vers mètres/centimètres et inversement.</p><h2>Estimation de matériaux</h2><p>Calculs rapides de surface et de volume pour les tâches courantes : pieds carrés pour les revêtements de sol, pieds-planche pour le bois d'œuvre, volume de béton en verges cubes, et plus encore. Entrez les dimensions et obtenez les quantités avec le facteur de perte intégré.</p><h2>Pour commencer</h2><p>OnSite Calculator est disponible sur <a href='https://play.google.com/store'>Google Play</a> et l'<a href='https://apps.apple.com'>App Store</a>. Le forfait gratuit inclut les fonctions de base de la calculatrice. Pro (9,99 $/mois) débloque l'entrée vocale, la sauvegarde des calculs et l'estimation avancée de matériaux. Essayez la version web sur <a href='https://calculator.onsiteclub.ca'>calculator.onsiteclub.ca</a>.</p><h2>Trucs et astuces</h2><p>• Dites « diviser » pour couper une mesure en deux — utile pour trouver les centres.<br/>• Dites « en métrique » après n'importe quel résultat pour convertir instantanément.<br/>• Utilisez « ajouter à la liste » pour construire une liste de coupe au fur et à mesure que vous mesurez.<br/>• Secouez votre téléphone pour effacer la dernière entrée.</p>"
+      "content": "<h2>Pourquoi on l'a crÃ©Ã©</h2><p>Les mathÃ©matiques de la construction sont diffÃ©rentes. Vous travaillez en pieds et pouces, vous additionnez des fractions, vous convertissez entre impÃ©rial et mÃ©trique â€” souvent avec des gants sales et pas de main libre. Le OnSite Calculator a Ã©tÃ© conÃ§u par un charpentier qui en avait assez de pianoter sur un petit Ã©cran de tÃ©lÃ©phone en haut d'un Ã©chafaudage.</p><h2>EntrÃ©e vocale</h2><p>La fonctionnalitÃ© phare : <strong>dictez votre calcul</strong>. Dites Â« douze et trois huitiÃ¨mes plus quatre et demi Â» et obtenez la rÃ©ponse instantanÃ©ment. La calculatrice comprend le langage naturel de la construction â€” pieds, pouces, fractions et raccourcis courants. Fonctionne avec des gants, fonctionne dans les environnements bruyants grÃ¢ce Ã  la suppression du bruit.</p><h2>Les fractions simplifiÃ©es</h2><p>Additionnez, soustrayez, multipliez et divisez des fractions sans les convertir en dÃ©cimales. La calculatrice affiche les rÃ©sultats dans le format le plus utile : nombres entiers et fractions simplifiÃ©es (p. ex., 16 3/4\" au lieu de 16,75\"). Parfait pour les listes de coupe et les mesures de tracÃ©.</p><h2>Conversion impÃ©rial â†” mÃ©trique</h2><p>Conversion instantanÃ©e entre impÃ©rial et mÃ©trique. Vous travaillez avec des plans en millimÃ¨tres mais votre ruban mesure en pouces? Un seul clic pour basculer. Prend en charge pieds/pouces vers mÃ¨tres/centimÃ¨tres et inversement.</p><h2>Estimation de matÃ©riaux</h2><p>Calculs rapides de surface et de volume pour les tÃ¢ches courantes : pieds carrÃ©s pour les revÃªtements de sol, pieds-planche pour le bois d'Å“uvre, volume de bÃ©ton en verges cubes, et plus encore. Entrez les dimensions et obtenez les quantitÃ©s avec le facteur de perte intÃ©grÃ©.</p><h2>Pour commencer</h2><p>OnSite Calculator est disponible sur <a href='https://play.google.com/store'>Google Play</a> et l'<a href='https://apps.apple.com'>App Store</a>. Le forfait gratuit inclut les fonctions de base de la calculatrice. Pro (9,99 $/mois) dÃ©bloque l'entrÃ©e vocale, la sauvegarde des calculs et l'estimation avancÃ©e de matÃ©riaux. Essayez la version web sur <a href='https://calculator.onsiteclub.ca'>calculator.onsiteclub.ca</a>.</p><h2>Trucs et astuces</h2><p>â€¢ Dites Â« diviser Â» pour couper une mesure en deux â€” utile pour trouver les centres.<br/>â€¢ Dites Â« en mÃ©trique Â» aprÃ¨s n'importe quel rÃ©sultat pour convertir instantanÃ©ment.<br/>â€¢ Utilisez Â« ajouter Ã  la liste Â» pour construire une liste de coupe au fur et Ã  mesure que vous mesurez.<br/>â€¢ Secouez votre tÃ©lÃ©phone pour effacer la derniÃ¨re entrÃ©e.</p>"
     },
     "timekeeper-setup": {
       "title": "OnSite Timekeeper : guide de configuration du suivi GPS",
-      "meta_desc": "Configurez OnSite Timekeeper — le suivi du temps par géorepérage pour les travailleurs de la construction. Pointage automatique, mode hors ligne et rapports hebdomadaires.",
+      "meta_desc": "Configurez OnSite Timekeeper â€” le suivi du temps par gÃ©orepÃ©rage pour les travailleurs de la construction. Pointage automatique, mode hors ligne et rapports hebdomadaires.",
       "reading_time": "5",
-      "content": "<h2>Qu'est-ce que OnSite Timekeeper?</h2><p>OnSite Timekeeper est une application de suivi du temps par GPS conçue spécifiquement pour les travailleurs de la construction. Définissez vos zones de chantier sur une carte, et l'application vous pointe automatiquement à l'arrivée et vous dépointe au départ. Plus besoin d'oublier de pointer, plus de litiges sur les heures.</p><h2>Configurer votre premier chantier</h2><p><strong>Étape 1 :</strong> Ouvrez l'application et appuyez sur « Ajouter un chantier ». <strong>Étape 2 :</strong> Recherchez l'adresse ou placez une épingle sur la carte. <strong>Étape 3 :</strong> Ajustez le rayon de géorepérage (par défaut 100 mètres — convient à la plupart des chantiers). <strong>Étape 4 :</strong> Nommez le chantier et définissez vos heures prévues. C'est tout — la zone est active.</p><h2>Comment fonctionne le géorepérage</h2><p>L'application utilise le GPS de votre téléphone pour détecter quand vous entrez ou sortez d'une zone de chantier. Elle tourne en arrière-plan avec un impact minimal sur la batterie (environ 2 à 3 % par jour). Quand vous franchissez la limite de la zone, elle enregistre l'horodatage. L'application fonctionne même sans Internet — les données se synchronisent quand vous vous reconnectez.</p><h2>Mode hors ligne</h2><p>Les chantiers de construction ont souvent un mauvais signal cellulaire. Timekeeper stocke tous les événements de pointage localement et les synchronise quand la connectivité revient. Vos heures ne sont jamais perdues, même en sous-sol ou sur des chantiers en zone rurale.</p><h2>Rapports hebdomadaires</h2><p>Chaque semaine, Timekeeper génère un résumé : total des heures par chantier, ventilation quotidienne et calcul des heures supplémentaires. Exportez en PDF pour vos dossiers ou envoyez directement à votre employeur. Prend en charge le seuil de temps supplémentaire standard de l'Ontario de 44 heures par semaine.</p><h2>Plusieurs chantiers</h2><p>Vous travaillez sur plusieurs chantiers? Pas de problème. Ajoutez des zones illimitées (forfait Pro) et Timekeeper suit chacune séparément. La vue quotidienne montre exactement où vous avez passé votre temps, codée par couleur selon le chantier.</p><h2>Pour commencer</h2><p>Disponible sur <a href='https://play.google.com/store'>Google Play</a> et l'<a href='https://apps.apple.com'>App Store</a>. Le forfait gratuit inclut 1 zone de chantier. Pro (9,99 $/mois) débloque les zones illimitées, les exports PDF et le support prioritaire. Tableau de bord web sur <a href='https://timekeeperweb.onsiteclub.ca'>timekeeperweb.onsiteclub.ca</a>.</p><h2>Confidentialité</h2><p>Vos données de localisation restent sur votre appareil à moins que vous ne les exportiez ou les partagiez explicitement. Nous ne vendons ni ne partageons jamais les données GPS. L'application ne suit votre position que lorsque vous êtes près d'une zone que vous avez définie — pas toute votre journée.</p>"
+      "content": "<h2>Qu'est-ce que OnSite Timekeeper?</h2><p>OnSite Timekeeper est une application de suivi du temps par GPS conÃ§ue spÃ©cifiquement pour les travailleurs de la construction. DÃ©finissez vos zones de chantier sur une carte, et l'application vous pointe automatiquement Ã  l'arrivÃ©e et vous dÃ©pointe au dÃ©part. Plus besoin d'oublier de pointer, plus de litiges sur les heures.</p><h2>Configurer votre premier chantier</h2><p><strong>Ã‰tape 1 :</strong> Ouvrez l'application et appuyez sur Â« Ajouter un chantier Â». <strong>Ã‰tape 2 :</strong> Recherchez l'adresse ou placez une Ã©pingle sur la carte. <strong>Ã‰tape 3 :</strong> Ajustez le rayon de gÃ©orepÃ©rage (par dÃ©faut 100 mÃ¨tres â€” convient Ã  la plupart des chantiers). <strong>Ã‰tape 4 :</strong> Nommez le chantier et dÃ©finissez vos heures prÃ©vues. C'est tout â€” la zone est active.</p><h2>Comment fonctionne le gÃ©orepÃ©rage</h2><p>L'application utilise le GPS de votre tÃ©lÃ©phone pour dÃ©tecter quand vous entrez ou sortez d'une zone de chantier. Elle tourne en arriÃ¨re-plan avec un impact minimal sur la batterie (environ 2 Ã  3 % par jour). Quand vous franchissez la limite de la zone, elle enregistre l'horodatage. L'application fonctionne mÃªme sans Internet â€” les donnÃ©es se synchronisent quand vous vous reconnectez.</p><h2>Mode hors ligne</h2><p>Les chantiers de construction ont souvent un mauvais signal cellulaire. Timekeeper stocke tous les Ã©vÃ©nements de pointage localement et les synchronise quand la connectivitÃ© revient. Vos heures ne sont jamais perdues, mÃªme en sous-sol ou sur des chantiers en zone rurale.</p><h2>Rapports hebdomadaires</h2><p>Chaque semaine, Timekeeper gÃ©nÃ¨re un rÃ©sumÃ© : total des heures par chantier, ventilation quotidienne et calcul des heures supplÃ©mentaires. Exportez en PDF pour vos dossiers ou envoyez directement Ã  votre employeur. Prend en charge le seuil de temps supplÃ©mentaire standard de l'Ontario de 44 heures par semaine.</p><h2>Plusieurs chantiers</h2><p>Vous travaillez sur plusieurs chantiers? Pas de problÃ¨me. Ajoutez des zones illimitÃ©es (forfait Pro) et Timekeeper suit chacune sÃ©parÃ©ment. La vue quotidienne montre exactement oÃ¹ vous avez passÃ© votre temps, codÃ©e par couleur selon le chantier.</p><h2>Pour commencer</h2><p>Disponible sur <a href='https://play.google.com/store'>Google Play</a> et l'<a href='https://apps.apple.com'>App Store</a>. Le forfait gratuit inclut 1 zone de chantier. Pro (9,99 $/mois) dÃ©bloque les zones illimitÃ©es, les exports PDF et le support prioritaire. Tableau de bord web sur <a href='https://timekeeperweb.onsiteclub.ca'>timekeeperweb.onsiteclub.ca</a>.</p><h2>ConfidentialitÃ©</h2><p>Vos donnÃ©es de localisation restent sur votre appareil Ã  moins que vous ne les exportiez ou les partagiez explicitement. Nous ne vendons ni ne partageons jamais les donnÃ©es GPS. L'application ne suit votre position que lorsque vous Ãªtes prÃ¨s d'une zone que vous avez dÃ©finie â€” pas toute votre journÃ©e.</p>"
     },
     "construction-terminology": {
       "title": "Terminologie de la construction : 50+ termes essentiels",
-      "meta_desc": "Glossaire des termes courants de la construction utilisés sur les chantiers canadiens. De l'entraxe au gros œuvre, apprenez le langage du métier.",
+      "meta_desc": "Glossaire des termes courants de la construction utilisÃ©s sur les chantiers canadiens. De l'entraxe au gros Å“uvre, apprenez le langage du mÃ©tier.",
       "reading_time": "10",
-      "content": "<h2>Parler le langage du métier</h2><p>Chaque chantier a son propre jargon. Si vous êtes nouveau dans la construction, la terminologie peut être déroutante. Voici plus de 50 termes que vous entendrez sur les chantiers de construction canadiens, organisés par catégorie.</p><h2>Tracé et mesures</h2><p><strong>Entraxe :</strong> Espacement mesuré du centre d'un élément au centre du suivant. L'espacement standard des montants est de 16\" entraxe.<br/><strong>D'aplomb :</strong> Parfaitement vertical. Vérifié avec un niveau ou un fil à plomb.<br/><strong>De niveau :</strong> Parfaitement horizontal.<br/><strong>D'équerre :</strong> À un angle de 90 degrés. Une équerre de charpentier ou la méthode 3-4-5 permet de le vérifier.<br/><strong>Tracé :</strong> Marquage des positions des éléments de charpente, des appareils ou de l'équipement sur le plancher, les murs ou le plafond.<br/><strong>Cordeau à craie :</strong> Une corde enduite de poudre de craie claquée contre une surface pour créer une ligne de référence droite.<br/><strong>Pile dessus :</strong> Exactement la bonne mesure. « Cette coupe est pile dessus. »</p><h2>Charpente</h2><p><strong>Montant :</strong> Élément de charpente vertical dans un mur, généralement 2×4 ou 2×6.<br/><strong>Lisse :</strong> Élément de charpente horizontal en haut (lisse haute, double lisse) ou en bas (lisse basse) d'un mur.<br/><strong>Solive :</strong> Élément de charpente horizontal supportant un plancher ou un plafond.<br/><strong>Linteau :</strong> Poutre au-dessus d'une ouverture de fenêtre ou de porte qui répartit la charge autour de celle-ci.<br/><strong>Nain :</strong> Montant court au-dessus ou en dessous d'une ouverture.<br/><strong>Montant principal :</strong> Montant pleine longueur à côté d'une ouverture de fenêtre/porte supportant le linteau.<br/><strong>Montant de remplissage (faux montant) :</strong> Montant raccourci directement sous le linteau.<br/><strong>Revêtement :</strong> Panneaux (contreplaqué ou OSB) recouvrant la charpente pour ajouter de la rigidité structurale.<br/><strong>Blocage :</strong> Courtes pièces de bois installées entre les éléments de charpente pour le support ou le coupe-feu.</p><h2>Béton</h2><p><strong>Coffrage :</strong> Moules temporaires qui maintiennent le béton frais en forme jusqu'à sa prise.<br/><strong>Armature :</strong> Barres d'acier de renforcement placées à l'intérieur du béton pour la résistance à la traction.<br/><strong>Coulée :</strong> L'action de mettre le béton en place. « On fait une coulée jeudi. »<br/><strong>Affaissement :</strong> Mesure de la maniabilité du béton — de combien le cône de béton s'affaisse.<br/><strong>Cure :</strong> Le processus chimique par lequel le béton durcit et gagne en résistance au fil du temps (28 jours pour la pleine résistance).<br/><strong>Tirants d'écartement :</strong> Quincaillerie utilisée pour maintenir les coffrages de béton à l'espacement correct.</p><h2>Termes généraux de chantier</h2><p><strong>Gros œuvre :</strong> Première phase d'installation mécanique/électrique avant la fermeture des murs.<br/><strong>Finition :</strong> Installation finale des appareils visibles et des matériaux de finition.<br/><strong>Liste de déficiences :</strong> Liste des éléments à corriger ou à compléter avant qu'un projet soit considéré terminé.<br/><strong>Ordre de modification :</strong> Modification formelle de la portée ou du prix du contrat original.<br/><strong>DI (Demande d'information) :</strong> Question formelle adressée à l'architecte ou à l'ingénieur concernant les plans.<br/><strong>Devis :</strong> Description détaillée des matériaux, méthodes ou normes de qualité.<br/><strong>EG (Entrepreneur général) :</strong> L'entrepreneur principal responsable de l'ensemble du projet.<br/><strong>Sous-traitant :</strong> Entrepreneur spécialisé embauché par l'EG pour des travaux spécifiques.<br/><strong>Mécanicien de chantier :</strong> Travailleur spécialisé qui installe, entretient et répare les machines industrielles.</p><h2>Outils et équipement</h2><p><strong>Scie circulaire :</strong> Scie électrique portative pour couper le bois d'œuvre et les panneaux.<br/><strong>Scie alternative :</strong> Scie électrique pour la démolition et la coupe grossière.<br/><strong>Visseuse à chocs :</strong> Outil électrique pour visser rapidement — le cliquetis que vous entendez sur chaque chantier.<br/><strong>Niveau laser :</strong> Projette une ligne de niveau à l'aide d'un faisceau laser. A remplacé les cordeaux pour de nombreuses tâches.<br/><strong>Théodolite / Station totale :</strong> Instruments d'arpentage pour établir des points et des élévations.<br/><strong>Pied-de-biche :</strong> Petit levier avec une griffe arrache-clou à une extrémité.</p><h2>Termes de sécurité</h2><p><strong>Causerie de sécurité :</strong> Brève réunion de sécurité au début d'un quart de travail.<br/><strong>LOTO (Verrouillage/Étiquetage) :</strong> Procédure pour s'assurer que l'équipement est hors tension pendant l'entretien.<br/><strong>FDS (Fiche de données de sécurité) :</strong> Document détaillant les dangers d'un produit chimique (partie du WHMIS).<br/><strong>Quasi-accident :</strong> Incident qui aurait pu causer une blessure mais ne l'a pas fait. Doit être signalé.<br/><strong>ÉPI :</strong> Équipement de protection individuelle — casque, bottes, lunettes, gilet, gants.<br/><strong>ART (Analyse des risques de la tâche) :</strong> Évaluation des risques avant de commencer une tâche.</p><h2>Continuez à apprendre</h2><p>La meilleure façon d'apprendre le langage de la construction est sur le terrain. N'ayez pas peur de demander ce qu'un terme signifie — chaque vétéran a été nouveau un jour. Consultez le <a href='/#pathway'>Parcours OnSite</a> pour les certifications requises et les ressources de formation.</p>"
+      "content": "<h2>Parler le langage du mÃ©tier</h2><p>Chaque chantier a son propre jargon. Si vous Ãªtes nouveau dans la construction, la terminologie peut Ãªtre dÃ©routante. Voici plus de 50 termes que vous entendrez sur les chantiers de construction canadiens, organisÃ©s par catÃ©gorie.</p><h2>TracÃ© et mesures</h2><p><strong>Entraxe :</strong> Espacement mesurÃ© du centre d'un Ã©lÃ©ment au centre du suivant. L'espacement standard des montants est de 16\" entraxe.<br/><strong>D'aplomb :</strong> Parfaitement vertical. VÃ©rifiÃ© avec un niveau ou un fil Ã  plomb.<br/><strong>De niveau :</strong> Parfaitement horizontal.<br/><strong>D'Ã©querre :</strong> Ã€ un angle de 90 degrÃ©s. Une Ã©querre de charpentier ou la mÃ©thode 3-4-5 permet de le vÃ©rifier.<br/><strong>TracÃ© :</strong> Marquage des positions des Ã©lÃ©ments de charpente, des appareils ou de l'Ã©quipement sur le plancher, les murs ou le plafond.<br/><strong>Cordeau Ã  craie :</strong> Une corde enduite de poudre de craie claquÃ©e contre une surface pour crÃ©er une ligne de rÃ©fÃ©rence droite.<br/><strong>Pile dessus :</strong> Exactement la bonne mesure. Â« Cette coupe est pile dessus. Â»</p><h2>Charpente</h2><p><strong>Montant :</strong> Ã‰lÃ©ment de charpente vertical dans un mur, gÃ©nÃ©ralement 2Ã—4 ou 2Ã—6.<br/><strong>Lisse :</strong> Ã‰lÃ©ment de charpente horizontal en haut (lisse haute, double lisse) ou en bas (lisse basse) d'un mur.<br/><strong>Solive :</strong> Ã‰lÃ©ment de charpente horizontal supportant un plancher ou un plafond.<br/><strong>Linteau :</strong> Poutre au-dessus d'une ouverture de fenÃªtre ou de porte qui rÃ©partit la charge autour de celle-ci.<br/><strong>Nain :</strong> Montant court au-dessus ou en dessous d'une ouverture.<br/><strong>Montant principal :</strong> Montant pleine longueur Ã  cÃ´tÃ© d'une ouverture de fenÃªtre/porte supportant le linteau.<br/><strong>Montant de remplissage (faux montant) :</strong> Montant raccourci directement sous le linteau.<br/><strong>RevÃªtement :</strong> Panneaux (contreplaquÃ© ou OSB) recouvrant la charpente pour ajouter de la rigiditÃ© structurale.<br/><strong>Blocage :</strong> Courtes piÃ¨ces de bois installÃ©es entre les Ã©lÃ©ments de charpente pour le support ou le coupe-feu.</p><h2>BÃ©ton</h2><p><strong>Coffrage :</strong> Moules temporaires qui maintiennent le bÃ©ton frais en forme jusqu'Ã  sa prise.<br/><strong>Armature :</strong> Barres d'acier de renforcement placÃ©es Ã  l'intÃ©rieur du bÃ©ton pour la rÃ©sistance Ã  la traction.<br/><strong>CoulÃ©e :</strong> L'action de mettre le bÃ©ton en place. Â« On fait une coulÃ©e jeudi. Â»<br/><strong>Affaissement :</strong> Mesure de la maniabilitÃ© du bÃ©ton â€” de combien le cÃ´ne de bÃ©ton s'affaisse.<br/><strong>Cure :</strong> Le processus chimique par lequel le bÃ©ton durcit et gagne en rÃ©sistance au fil du temps (28 jours pour la pleine rÃ©sistance).<br/><strong>Tirants d'Ã©cartement :</strong> Quincaillerie utilisÃ©e pour maintenir les coffrages de bÃ©ton Ã  l'espacement correct.</p><h2>Termes gÃ©nÃ©raux de chantier</h2><p><strong>Gros Å“uvre :</strong> PremiÃ¨re phase d'installation mÃ©canique/Ã©lectrique avant la fermeture des murs.<br/><strong>Finition :</strong> Installation finale des appareils visibles et des matÃ©riaux de finition.<br/><strong>Liste de dÃ©ficiences :</strong> Liste des Ã©lÃ©ments Ã  corriger ou Ã  complÃ©ter avant qu'un projet soit considÃ©rÃ© terminÃ©.<br/><strong>Ordre de modification :</strong> Modification formelle de la portÃ©e ou du prix du contrat original.<br/><strong>DI (Demande d'information) :</strong> Question formelle adressÃ©e Ã  l'architecte ou Ã  l'ingÃ©nieur concernant les plans.<br/><strong>Devis :</strong> Description dÃ©taillÃ©e des matÃ©riaux, mÃ©thodes ou normes de qualitÃ©.<br/><strong>EG (Entrepreneur gÃ©nÃ©ral) :</strong> L'entrepreneur principal responsable de l'ensemble du projet.<br/><strong>Sous-traitant :</strong> Entrepreneur spÃ©cialisÃ© embauchÃ© par l'EG pour des travaux spÃ©cifiques.<br/><strong>MÃ©canicien de chantier :</strong> Travailleur spÃ©cialisÃ© qui installe, entretient et rÃ©pare les machines industrielles.</p><h2>Outils et Ã©quipement</h2><p><strong>Scie circulaire :</strong> Scie Ã©lectrique portative pour couper le bois d'Å“uvre et les panneaux.<br/><strong>Scie alternative :</strong> Scie Ã©lectrique pour la dÃ©molition et la coupe grossiÃ¨re.<br/><strong>Visseuse Ã  chocs :</strong> Outil Ã©lectrique pour visser rapidement â€” le cliquetis que vous entendez sur chaque chantier.<br/><strong>Niveau laser :</strong> Projette une ligne de niveau Ã  l'aide d'un faisceau laser. A remplacÃ© les cordeaux pour de nombreuses tÃ¢ches.<br/><strong>ThÃ©odolite / Station totale :</strong> Instruments d'arpentage pour Ã©tablir des points et des Ã©lÃ©vations.<br/><strong>Pied-de-biche :</strong> Petit levier avec une griffe arrache-clou Ã  une extrÃ©mitÃ©.</p><h2>Termes de sÃ©curitÃ©</h2><p><strong>Causerie de sÃ©curitÃ© :</strong> BrÃ¨ve rÃ©union de sÃ©curitÃ© au dÃ©but d'un quart de travail.<br/><strong>LOTO (Verrouillage/Ã‰tiquetage) :</strong> ProcÃ©dure pour s'assurer que l'Ã©quipement est hors tension pendant l'entretien.<br/><strong>FDS (Fiche de donnÃ©es de sÃ©curitÃ©) :</strong> Document dÃ©taillant les dangers d'un produit chimique (partie du WHMIS).<br/><strong>Quasi-accident :</strong> Incident qui aurait pu causer une blessure mais ne l'a pas fait. Doit Ãªtre signalÃ©.<br/><strong>Ã‰PI :</strong> Ã‰quipement de protection individuelle â€” casque, bottes, lunettes, gilet, gants.<br/><strong>ART (Analyse des risques de la tÃ¢che) :</strong> Ã‰valuation des risques avant de commencer une tÃ¢che.</p><h2>Continuez Ã  apprendre</h2><p>La meilleure faÃ§on d'apprendre le langage de la construction est sur le terrain. N'ayez pas peur de demander ce qu'un terme signifie â€” chaque vÃ©tÃ©ran a Ã©tÃ© nouveau un jour. Consultez le <a href='/#pathway'>Parcours OnSite</a> pour les certifications requises et les ressources de formation.</p>"
     }
   }
 }

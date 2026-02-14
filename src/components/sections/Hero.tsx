@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { SHOP_URL } from '@/lib/constants';
+import { SHOP_URL, CALCULATOR_URL, TIMEKEEPER_URL } from '@/lib/constants';
 import { useTrade, TRADES, TradeId } from '@/providers/TradeProvider';
 import { getTradeText } from '@/data/tradeContent';
 
@@ -11,6 +11,16 @@ export default function Hero() {
   const t = useTranslations('hero');
   const locale = useLocale();
   const { trade } = useTrade();
+  const [floatingVisible, setFloatingVisible] = useState(true);
+
+  /* Hide floating tool buttons on scroll */
+  useEffect(() => {
+    function onScroll() {
+      setFloatingVisible(window.scrollY < 200);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   /* Staggered hero assembly on page load */
   useEffect(() => {
@@ -56,26 +66,18 @@ export default function Hero() {
 
   return (
     <div className="hero" id="home">
-      {/* Hero backgrounds — crossfade on trade change */}
+      {/* Hero background */}
       <div className="hero-bg assemble" id="heroBg">
-        {(Object.keys(TRADES) as TradeId[]).map((tid) => (
-          <Image
-            key={tid}
-            src={TRADES[tid].heroImage}
-            alt=""
-            fill
-            priority={tid === 'default'}
-            className={`hero-bg-img${trade === tid ? ' hero-bg-img-active' : ''}`}
-          />
-        ))}
+        <Image
+          src={TRADES[trade].heroImage}
+          alt=""
+          fill
+          priority
+          className="hero-bg-img hero-bg-img-active"
+        />
       </div>
 
-      <div className="hero-kicker assemble delay-1">
-        <span className="line"></span>
-        <span>{t('kicker')}</span>
-      </div>
-
-      <h1 className="assemble delay-2">
+      <h1 className="assemble delay-1">
         {words.map((word, i) => (
           <span
             key={i}
@@ -87,18 +89,36 @@ export default function Hero() {
         ))}
       </h1>
 
-      <p className="hero-sub assemble delay-4">{subtitle}</p>
+      <p className="hero-sub assemble delay-3">{subtitle}</p>
 
-      <div className="hero-cta assemble delay-5">
-        <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
-          {t('cta_shop')}
-        </a>
+      <div className="hero-cta assemble delay-4">
         <button
-          className="btn-secondary"
+          className="hero-btn-primary"
           onClick={() => document.dispatchEvent(new Event('open-trade-selector'))}
         >
           {t('cta_explore')}
         </button>
+        <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="hero-btn-ghost">
+          {t('cta_shop')}
+        </a>
+      </div>
+
+      {/* Mobile floating tool buttons */}
+      <div className={`hero-float-tools${floatingVisible ? '' : ' hero-float-hidden'}`}>
+        <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="hero-float-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <rect x="4" y="2" width="16" height="20" rx="2" />
+            <line x1="8" y1="6" x2="16" y2="6" />
+          </svg>
+          Calculator
+        </a>
+        <a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer" className="hero-float-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          Timekeeper
+        </a>
       </div>
     </div>
   );

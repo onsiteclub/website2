@@ -233,11 +233,9 @@ export default function Home() {
 
       <main>
         <Hero />
-        <div className="connector assemble" aria-hidden="true"></div>
-        <div className="connector assemble" aria-hidden="true"></div>
-        <Tools />
-        <Gear />
         <Manifesto />
+        <Gear />
+        <Tools />
         <LearnTeaser />
         <Contact />
       </main>

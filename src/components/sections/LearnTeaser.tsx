@@ -1,12 +1,13 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
 const LEARN_CARDS = [
-  { slug: 'construction-steps', icon: '\u{1F3D7}\uFE0F', key: 'card_steps' },
-  { slug: 'safety-equipment', icon: '\u{1F512}', key: 'card_safety' },
-  { slug: 'trades-guide', icon: '\u{1F4CB}', key: 'card_trades' },
+  { slug: 'construction-steps', image: '/images/learn.png', key: 'card_steps' },
+  { slug: 'safety-equipment', image: '/images/epis.png', key: 'card_safety' },
+  { slug: 'trades-guide', image: '/images/trades.png', key: 'card_trades' },
 ] as const;
 
 export default function LearnTeaser() {
@@ -15,7 +16,7 @@ export default function LearnTeaser() {
   return (
     <section id="learn">
       <div className="section-label assemble">
-        <span className="num">03</span> <span>{t('label')}</span>
+        <span className="num">04</span> <span>{t('label')}</span>
       </div>
       <h2 className="section-title assemble delay-1">{t('heading')}</h2>
 
@@ -26,9 +27,13 @@ export default function LearnTeaser() {
             href={`/learn/${card.slug}`}
             className={`learn-teaser-card assemble delay-${i + 2}`}
           >
-            <span className="learn-teaser-icon">{card.icon}</span>
-            <span className="learn-teaser-title">{t(card.key)}</span>
-            <span className="learn-teaser-cta">{t('card_cta')} &rarr;</span>
+            <div className="learn-teaser-img">
+              <Image src={card.image} alt="" fill sizes="(max-width: 768px) 100vw, 33vw" />
+            </div>
+            <div className="learn-teaser-body">
+              <span className="learn-teaser-title">{t(card.key)}</span>
+              <span className="learn-teaser-cta">{t('card_cta')} &rarr;</span>
+            </div>
           </Link>
         ))}
       </div>

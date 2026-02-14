@@ -210,6 +210,13 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
     if (open) inputRef.current?.focus();
   }, [open]);
 
+  // Listen for open-chat event from Navbar search bar
+  useEffect(() => {
+    const handler = () => setOpen(true);
+    document.addEventListener('open-chat', handler);
+    return () => document.removeEventListener('open-chat', handler);
+  }, []);
+
   // ESC to close + focus trap
   useEffect(() => {
     if (!open) return;
@@ -500,14 +507,6 @@ export default function ChatWidget({ locale }: ChatWidgetProps) {
         </div>
       </div>
 
-      {/* ── Floating Button ── */}
-      <button
-        className={`chat-fab${!pulsed ? ' chat-fab-pulse' : ''}`}
-        onClick={() => setOpen((v) => !v)}
-        aria-label="Open chat assistant"
-      >
-        {open ? <CloseIcon /> : <ChatIcon />}
-      </button>
     </>
   );
 }

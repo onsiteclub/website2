@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, useRouter, usePathname, routing } from '@/i18n/routing';
-import { useTrade, TRADES } from '@/providers/TradeProvider';
+import { CALCULATOR_URL, TIMEKEEPER_URL } from '@/lib/constants';
+import SearchDropdown from '@/components/global/SearchDropdown';
 
 const TradeSelector = dynamic(() => import('@/components/global/TradeSelector'), { ssr: false });
 
@@ -14,10 +15,15 @@ export default function Navbar() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const { trade } = useTrade();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [tradeOpen, setTradeOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const [toolOpen, setToolOpen] = useState<'calc' | 'time' | null>(null);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const searchRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   const toggleMenu = () => setMenuOpen((v) => !v);
   const closeMenu = useCallback(() => setMenuOpen(false), []);
@@ -46,24 +52,43 @@ export default function Navbar() {
     return () => document.removeEventListener('open-trade-selector', handler);
   }, []);
 
-  const handleLangCycle = () => {
-    const locales = routing.locales;
-    const idx = locales.indexOf(locale as (typeof locales)[number]);
-    const next = locales[(idx + 1) % locales.length];
-    router.replace(pathname, { locale: next });
+  const handleLangSelect = (lang: string) => {
+    setLangOpen(false);
+    if (lang !== locale) {
+      router.replace(pathname, { locale: lang });
+    }
   };
 
-  const handleNavClick = () => closeMenu();
+  // Close dropdowns on outside click
+  useEffect(() => {
+    if (!langOpen && !toolOpen && !searchOpen) return;
+    const handler = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (langOpen && !target.closest('.lang-dropdown-wrapper')) setLangOpen(false);
+      if (toolOpen && !target.closest('.tool-dropdown-wrapper')) setToolOpen(null);
+      if (searchOpen && !target.closest('.search-wrapper')) {
+        setSearchOpen(false);
+        setSearchQuery('');
+      }
+    };
+    document.addEventListener('click', handler);
+    return () => document.removeEventListener('click', handler);
+  }, [langOpen, toolOpen, searchOpen]);
 
-  const tradeInfo = TRADES[trade];
+  const isHome = pathname === '/';
+
+  /* Build href for section anchors — on homepage scroll, on other pages navigate to /#section */
+  const sectionHref = (hash: string) => (isHome ? hash : `/${hash}`);
+
+  const handleNavClick = () => closeMenu();
 
   return (
     <>
       <nav id="mainNav" aria-label="Main navigation">
         {/* Logo */}
-        <a href="#home" className="logo" aria-label="OnSite Club home">
+        <Link href="/" className="logo" aria-label="OnSite Club home">
           <Image src="/images/logo-onsite-club-02.png" alt="OnSite Club" width={150} height={40} priority />
-        </a>
+        </Link>
 
         {/* Menu trigger */}
         <button
@@ -73,7 +98,7 @@ export default function Navbar() {
           aria-expanded={menuOpen}
           aria-controls="navDropdown"
         >
-          <svg className="nav-menu-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <svg className="nav-menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             {menuOpen ? (
               <>
                 <line x1="18" y1="6" x2="6" y2="18" />
@@ -87,14 +112,118 @@ export default function Navbar() {
               </>
             )}
           </svg>
-          <span className="nav-menu-label">{t('menu')}</span>
         </button>
 
-        {/* Spacer */}
-        <div style={{ flex: 1 }} />
+        {/* Search bar with dropdown */}
+        <div className="search-wrapper" ref={searchRef}>
+          <div className={`nav-search-bar${searchOpen ? ' nav-search-bar-active' : ''}`}>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input
+              ref={searchInputRef}
+              type="text"
+              className="nav-search-input"
+              placeholder={t('search_placeholder')}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onFocus={() => setSearchOpen(true)}
+              aria-label="Search"
+              autoComplete="off"
+            />
+          </div>
+          <SearchDropdown
+            open={searchOpen}
+            query={searchQuery}
+            onClose={() => { setSearchOpen(false); setSearchQuery(''); }}
+          />
+        </div>
+
+        {/* Tool buttons */}
+        <div className="nav-tools">
+          <div className="tool-dropdown-wrapper">
+            <button
+              className="nav-tool-btn"
+              onClick={() => setToolOpen(toolOpen === 'calc' ? null : 'calc')}
+              aria-expanded={toolOpen === 'calc'}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="4" y="2" width="16" height="20" rx="2" />
+                <line x1="8" y1="6" x2="16" y2="6" />
+                <line x1="8" y1="14" x2="8" y2="14.01" />
+                <line x1="12" y1="14" x2="12" y2="14.01" />
+                <line x1="16" y1="14" x2="16" y2="14.01" />
+                <line x1="8" y1="18" x2="8" y2="18.01" />
+                <line x1="12" y1="18" x2="12" y2="18.01" />
+                <line x1="16" y1="18" x2="16" y2="18.01" />
+              </svg>
+              Calculator
+            </button>
+            {toolOpen === 'calc' && (
+              <ul className="tool-dropdown">
+                <li><a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer">Web App</a></li>
+                <li><span className="tool-dropdown-soon">iOS (soon)</span></li>
+                <li><span className="tool-dropdown-soon">Android (soon)</span></li>
+              </ul>
+            )}
+          </div>
+          <div className="tool-dropdown-wrapper">
+            <button
+              className="nav-tool-btn"
+              onClick={() => setToolOpen(toolOpen === 'time' ? null : 'time')}
+              aria-expanded={toolOpen === 'time'}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              Timekeeper
+            </button>
+            {toolOpen === 'time' && (
+              <ul className="tool-dropdown">
+                <li><a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer">Web App</a></li>
+                <li><span className="tool-dropdown-soon">iOS (soon)</span></li>
+                <li><span className="tool-dropdown-soon">Android (soon)</span></li>
+              </ul>
+            )}
+          </div>
+        </div>
 
         {/* Right actions */}
         <div className="nav-actions">
+          <div className="lang-dropdown-wrapper">
+            <button
+              className="lang-toggle"
+              onClick={() => setLangOpen((v) => !v)}
+              aria-label="Change language"
+              aria-expanded={langOpen}
+            >
+              <svg className="lang-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+              <span className="lang-code">{locale.toUpperCase()}</span>
+            </button>
+            {langOpen && (
+              <ul className="lang-dropdown" role="listbox" aria-label="Language">
+                {routing.locales.map((loc) => (
+                  <li key={loc}>
+                    <button
+                      className={`lang-option${loc === locale ? ' lang-option-active' : ''}`}
+                      role="option"
+                      aria-selected={loc === locale}
+                      onClick={() => handleLangSelect(loc)}
+                    >
+                      {loc.toUpperCase()}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
           <a
             href="https://dashboard.onsiteclub.ca"
             target="_blank"
@@ -103,25 +232,6 @@ export default function Navbar() {
           >
             {t('member_area')}
           </a>
-
-          {/* Trade indicator */}
-          <button
-            className="trade-indicator"
-            onClick={() => setTradeOpen(true)}
-            aria-label="Choose trade"
-          >
-            <span className="trade-indicator-icon">{tradeInfo.icon}</span>
-          </button>
-
-          <button className="lang-toggle" id="langToggle" aria-label="Change language" onClick={handleLangCycle}>
-            <svg className="lang-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="2" y1="12" x2="22" y2="12" />
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-            </svg>
-            <span className="lang-code">{locale.toUpperCase()}</span>
-          </button>
-
         </div>
       </nav>
 
@@ -140,15 +250,15 @@ export default function Navbar() {
         aria-label="Main menu"
       >
         <ul className="nav-dropdown-links">
-          <li><a href="#home" onClick={handleNavClick}>{t('home')}</a></li>
+          <li><Link href="/" onClick={handleNavClick}>{t('home')}</Link></li>
           <li>
             <a href="https://shop.onsiteclub.ca" target="_blank" rel="noopener noreferrer" onClick={handleNavClick}>
               {t('shop')}
             </a>
           </li>
-          <li><a href="#tools" onClick={handleNavClick}>{t('tools')}</a></li>
+          <li><a href={sectionHref('#tools')} onClick={handleNavClick}>{t('tools')}</a></li>
           <li><Link href="/learn/construction-steps" onClick={handleNavClick}>{t('learn')}</Link></li>
-          <li><a href="#contact" onClick={handleNavClick}>{t('contact')}</a></li>
+          <li><a href={sectionHref('#contact')} onClick={handleNavClick}>{t('contact')}</a></li>
         </ul>
       </div>
 

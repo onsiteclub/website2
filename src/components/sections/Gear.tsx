@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { richTags } from '@/lib/richText';
 import { PRODUCTS, SHOP_URL } from '@/lib/constants';
-import { useTrade } from '@/providers/TradeProvider';
+import { useTrade, TRADES } from '@/providers/TradeProvider';
 import { getTradeText } from '@/data/tradeContent';
 
 export default function Gear() {
@@ -22,33 +22,37 @@ export default function Gear() {
         <h2 className="section-title assemble delay-1">
           {t.rich('title', richTags)}
         </h2>
-        {slogan && <p className="gear-slogan assemble delay-2">{slogan}</p>}
       </div>
 
-      <div className="product-showcase assemble delay-2" id="productShowcase">
+      <div className="gear-bar assemble delay-2">
+        {slogan && (
+          <span className="gear-slogan">
+            {slogan} &mdash; {TRADES[trade].name} Collection
+          </span>
+        )}
+        <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="gear-collection-link">
+          {t('see_all')} &rarr;
+        </a>
+      </div>
+
+      <div className="gear-grid assemble delay-2">
         {PRODUCTS.map((product) => (
           <a
             key={product.name}
             href={SHOP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className={`showcase-item ${product.variant === 'main' ? 'showcase-main' : 'showcase-thumb'}`}
+            className="gear-card"
           >
-            <div className="showcase-image">
+            <div className="gear-card-image">
               <Image src={product.image} alt={product.alt} width={600} height={600} />
             </div>
-            <div className="showcase-overlay">
-              <span className="showcase-name">{product.name}</span>
-              <span className="showcase-price">{product.price}</span>
+            <div className="gear-card-info">
+              <span className="gear-card-name">{product.name}</span>
+              <span className="gear-card-price">{product.price}</span>
             </div>
           </a>
         ))}
-      </div>
-
-      <div className="gear-cta assemble delay-3">
-        <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-          {t('see_all')} &rarr;
-        </a>
       </div>
     </section>
   );

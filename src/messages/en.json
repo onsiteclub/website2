@@ -12,7 +12,8 @@
     "learn": "Learn",
     "contact": "Contact",
     "earn_blades": "Earn Blades",
-    "member_area": "Member Area"
+    "member_area": "Member Area",
+    "search_placeholder": "Search or ask anything..."
   },
   "hero": {
     "kicker": "Construction Lifestyle",
@@ -146,8 +147,10 @@
     "description": "Follow the movement. Share your builds. Be part of the culture.",
     "manifesto_lead": "Buildings don't remember who built them. We do.",
     "manifesto_body": "This city didn't build itself. Somebody woke up before the sun, scraped ice, put on boots that already hurt, and made something real. OnSite Club exists because that somebody deserves more than a paycheck. They deserve a name on what they built. We make gear, tools, and a crew for the people whose work everyone sees but nobody credits. If you've ever looked at a skyline and known your hands are in it — this is your club.",
-    "counter_number": "250+",
-    "counter_label": "Members and growing",
+    "stat_members": "Members",
+    "stat_downloads": "Downloads",
+    "stat_sold": "Items Sold",
+    "stat_trades": "Trades",
     "fb_title": "Be the Voice",
     "fb_desc": "Join our Facebook community. Share your trade, your crew, your story.",
     "fb_cta": "Join Group →",
@@ -288,5 +291,14 @@
       "reading_time": "10",
       "content": "<h2>Speaking the Language</h2><p>Every job site has its own shorthand. If you're new to construction, the jargon can be overwhelming. Here are 50+ terms you'll hear on Canadian construction sites, organized by category.</p><h2>Layout & Measurement</h2><p><strong>O.C. (On Centre):</strong> Spacing measured from the centre of one member to the centre of the next. Standard stud spacing is 16\" O.C.<br/><strong>Plumb:</strong> Perfectly vertical. Checked with a level or plumb bob.<br/><strong>Level:</strong> Perfectly horizontal.<br/><strong>Square:</strong> At a 90-degree angle. A framing square or 3-4-5 method verifies square.<br/><strong>Layout:</strong> Marking positions for framing members, fixtures, or equipment on the floor, walls, or ceiling.<br/><strong>Chalk line:</strong> A string coated in chalk dust snapped against a surface to create a straight reference line.<br/><strong>Dead on:</strong> Exactly the right measurement. \"That cut is dead on.\"</p><h2>Framing</h2><p><strong>Stud:</strong> Vertical framing member in a wall, typically 2×4 or 2×6.<br/><strong>Plate:</strong> Horizontal framing member at top (top plate, double plate) or bottom (sole plate) of a wall.<br/><strong>Joist:</strong> Horizontal framing member supporting a floor or ceiling.<br/><strong>Header:</strong> Beam above a window or door opening that carries the load around it.<br/><strong>Cripple:</strong> Short stud above or below an opening.<br/><strong>King stud:</strong> Full-length stud beside a window/door opening supporting the header.<br/><strong>Jack stud (trimmer):</strong> Shortened stud directly under the header.<br/><strong>Sheathing:</strong> Panels (plywood or OSB) covering the framing to add structural rigidity.<br/><strong>Blocking:</strong> Short pieces of lumber installed between framing members for support or fire stopping.</p><h2>Concrete</h2><p><strong>Formwork:</strong> Temporary moulds that hold wet concrete in shape until it cures.<br/><strong>Rebar:</strong> Steel reinforcing bars placed inside concrete for tensile strength.<br/><strong>Pour:</strong> The act of placing concrete. \"We're doing a pour Thursday.\"<br/><strong>Slump:</strong> A measure of concrete workability — how much the cone of concrete settles.<br/><strong>Cure:</strong> The chemical process where concrete hardens and gains strength over time (28 days for full strength).<br/><strong>Snap ties:</strong> Hardware used to hold concrete forms at the correct spacing.</p><h2>General Site Terms</h2><p><strong>Rough-in:</strong> First phase of mechanical/electrical installation before walls are closed up.<br/><strong>Trim-out:</strong> Final installation of visible fixtures and finish materials.<br/><strong>Punch list:</strong> A list of items to fix or complete before a project is considered done.<br/><strong>Change order:</strong> A formal modification to the original contract scope or price.<br/><strong>RFI (Request for Information):</strong> A formal question to the architect or engineer about plans.<br/><strong>Spec (Specification):</strong> Detailed description of materials, methods, or quality standards.<br/><strong>GC (General Contractor):</strong> The main contractor responsible for the entire project.<br/><strong>Sub (Subcontractor):</strong> A specialized contractor hired by the GC for specific work.<br/><strong>Millwright:</strong> A tradesperson who installs, maintains, and repairs industrial machinery.</p><h2>Tools & Equipment</h2><p><strong>Skilsaw (circular saw):</strong> Handheld power saw for cutting lumber and sheet goods.<br/><strong>Sawzall (reciprocating saw):</strong> Power saw for demolition and rough cutting.<br/><strong>Impact driver:</strong> Power tool for driving screws quickly — the clicking sound you hear on every site.<br/><strong>Laser level:</strong> Projects a level line using a laser beam. Replaced string lines for many tasks.<br/><strong>Transit / Total station:</strong> Surveying instruments for establishing points and elevations.<br/><strong>Cat's paw:</strong> A small pry bar with a nail-pulling claw on one end.</p><h2>Safety Terms</h2><p><strong>Tailgate talk / Toolbox talk:</strong> Brief safety meeting at the start of a shift.<br/><strong>LOTO (Lockout/Tagout):</strong> Procedure to ensure equipment is de-energized during maintenance.<br/><strong>SDS (Safety Data Sheet):</strong> Document detailing hazards of a chemical product (part of WHMIS).<br/><strong>Near miss:</strong> An incident that could have caused injury but didn't. Must be reported.<br/><strong>PPE:</strong> Personal Protective Equipment — hard hat, boots, glasses, vest, gloves.<br/><strong>JHA (Job Hazard Analysis):</strong> Assessment of risks before starting a task.</p><h2>Keep Learning</h2><p>The best way to learn construction language is on the job. Don't be afraid to ask what a term means — every veteran was new once. Check the <a href='/#pathway'>OnSite Pathway</a> for required certifications and training resources.</p>"
     }
+  },
+  "search": {
+    "no_results": "No results found",
+    "ask_assistant": "Ask Prumo",
+    "cat_sections": "Sections",
+    "cat_learn": "Learn",
+    "cat_apps": "Apps & Tools",
+    "cat_shop": "Shop",
+    "cat_social": "Connect"
   }
 }

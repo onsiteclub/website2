@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
+import { Link, usePathname } from '@/i18n/routing';
 import {
   SHOP_URL,
   DASHBOARD_URL,
@@ -16,6 +16,11 @@ export default function Footer() {
   const s = useTranslations('sitemap');
   const f = useTranslations('footer');
   const [sitemapOpen, setSitemapOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '/';
+
+  /* Build href for section anchors — on homepage scroll, on other pages navigate home */
+  const sectionHref = (hash: string) => (isHome ? hash : `/${hash}`);
 
   return (
     <>
@@ -23,10 +28,10 @@ export default function Footer() {
         <div className="sitemap-grid">
           <div className="sitemap-col">
             <h5>{s('nav_heading')}</h5>
-            <a href="#home">{s('home')}</a>
-            <a href="#tools">{s('tools_link')}</a>
-            <a href="#gear">{s('gear_link')}</a>
-            <a href="#contact">{s('contact')}</a>
+            <Link href="/">{s('home')}</Link>
+            <a href={sectionHref('#tools')}>{s('tools_link')}</a>
+            <a href={sectionHref('#gear')}>{s('gear_link')}</a>
+            <a href={sectionHref('#contact')}>{s('contact')}</a>
           </div>
           <div className="sitemap-col">
             <h5>{s('shop_heading')}</h5>
@@ -52,14 +57,14 @@ export default function Footer() {
           </div>
           <div className="sitemap-col">
             <h5>{s('legal_heading')}</h5>
-            <a href="/privacy">{s('privacy')}</a>
-            <a href="/terms">{s('terms')}</a>
+            <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{s('privacy')}</span>
+            <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{s('terms')}</span>
           </div>
           <div className="sitemap-col">
             <h5>{s('connect_heading')}</h5>
             <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">{s('facebook')}</a>
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{s('instagram')}</a>
-            <a href="mailto:contact@shabba.ca">{s('email_us')}</a>
+            <a href="mailto:contact@onsiteclub.ca">{s('email_us')}</a>
           </div>
         </div>
       </div>

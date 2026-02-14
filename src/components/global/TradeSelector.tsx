@@ -1,23 +1,16 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useEffect, useCallback, useRef } from 'react';
+import { useTranslations } from 'next-intl';
 import { useTrade, TRADES, TradeId } from '@/providers/TradeProvider';
-import { getTradeText } from '@/data/tradeContent';
 
 const TRADE_IDS: TradeId[] = ['default', 'wood', 'drywall', 'electrical', 'plumbing', 'concrete'];
 
 export default function TradeSelector({ open, onClose }: { open: boolean; onClose: () => void }) {
   const t = useTranslations('trade_selector');
-  const locale = useLocale();
   const { trade, setTrade } = useTrade();
-  const [selected, setSelected] = useState<TradeId>(trade);
-  const [toast, setToast] = useState('');
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
-
-  /* Sync selected when trade changes externally */
-  useEffect(() => { setSelected(trade); }, [trade]);
 
   /* Focus trap */
   useEffect(() => {
@@ -61,77 +54,38 @@ export default function TradeSelector({ open, onClose }: { open: boolean; onClos
     return () => { document.body.style.overflow = ''; };
   }, [open]);
 
-  const handleApply = useCallback(() => {
-    setTrade(selected);
-    const msg = getTradeText(selected, 'welcome_toast', locale);
-    if (msg) {
-      setToast(msg);
-      setTimeout(() => setToast(''), 3000);
-    }
+  const handleSelect = useCallback((tid: TradeId) => {
+    setTrade(tid);
     onClose();
-  }, [selected, setTrade, onClose, locale]);
+  }, [setTrade, onClose]);
 
-  if (!open && !toast) return null;
+  if (!open) return null;
 
   return (
     <>
-      {/* Welcome toast */}
-      {toast && (
-        <div className="trade-toast" role="status" aria-live="polite">
-          {toast}
-        </div>
-      )}
-
-      {open && (
-        <>
-          <div className="trade-overlay" onClick={onClose} aria-hidden="true" />
-          <div
-            ref={dialogRef}
-            className="trade-dialog"
-            role="dialog"
-            aria-modal="true"
-            aria-label={t('title')}
-          >
-        <div className="trade-dialog-header">
-          <h2>{t('title')}</h2>
-          <p>{t('description')}</p>
-          <button
-            ref={closeRef}
-            className="trade-dialog-close"
-            onClick={onClose}
-            aria-label={t('close')}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
-          </button>
-        </div>
-
+      <div className="trade-overlay" onClick={onClose} aria-hidden="true" />
+      <div
+        ref={dialogRef}
+        className="trade-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-label={t('title')}
+      >
         <div className="trade-cards" role="radiogroup" aria-label={t('title')}>
           {TRADE_IDS.map((tid) => (
             <button
+              ref={tid === TRADE_IDS[0] ? closeRef : undefined}
               key={tid}
-              className={`trade-card${selected === tid ? ' trade-card-selected' : ''}`}
+              className={`trade-card${trade === tid ? ' trade-card-selected' : ''}`}
               role="radio"
-              aria-checked={selected === tid}
-              onClick={() => setSelected(tid)}
+              aria-checked={trade === tid}
+              onClick={() => handleSelect(tid)}
             >
-              <span className="trade-card-icon">{TRADES[tid].icon}</span>
-              <span className="trade-card-name">{t(tid)}</span>
-              <span className="trade-card-desc">{t(`${tid}_desc`)}</span>
+              {t(tid)}
             </button>
           ))}
         </div>
-
-        <div className="trade-dialog-footer">
-          <button className="btn-primary" onClick={handleApply}>
-            {t('apply')}
-          </button>
-        </div>
-          </div>
-        </>
-      )}
+      </div>
     </>
   );
 }
