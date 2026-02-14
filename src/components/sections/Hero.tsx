@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { SHOP_URL, CALCULATOR_URL, TIMEKEEPER_URL } from '@/lib/constants';
-import { useTrade, TRADES, TradeId } from '@/providers/TradeProvider';
+import { useTrade, TRADES } from '@/providers/TradeProvider';
 import { getTradeText } from '@/data/tradeContent';
 
 export default function Hero() {

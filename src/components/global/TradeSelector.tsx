@@ -2,7 +2,7 @@
 
 import { useEffect, useCallback, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { useTrade, TRADES, TradeId } from '@/providers/TradeProvider';
+import { useTrade, TradeId } from '@/providers/TradeProvider';
 
 const TRADE_IDS: TradeId[] = ['default', 'wood', 'drywall', 'electrical', 'plumbing', 'concrete'];
 
