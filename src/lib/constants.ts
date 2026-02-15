@@ -105,6 +105,7 @@ export const LEARN_SLUGS = [
   'construction-steps',
   'safety-equipment',
   'trades-guide',
+  'starter-kit',
   'calculator-guide',
   'timekeeper-setup',
   'construction-terminology',

@@ -8,6 +8,7 @@ const LEARN_CARDS = [
   { slug: 'construction-steps', image: '/images/learn.png', key: 'card_steps' },
   { slug: 'safety-equipment', image: '/images/epis.png', key: 'card_safety' },
   { slug: 'trades-guide', image: '/images/trades.png', key: 'card_trades' },
+  { slug: 'starter-kit', image: '/images/kit-tools.webp', key: 'card_kit' },
 ] as const;
 
 export default function LearnTeaser() {

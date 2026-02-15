@@ -5,6 +5,10 @@ import { routing } from '@/i18n/routing';
 import { LEARN_SLUGS, type LearnSlug } from '@/lib/constants';
 import Navbar from '@/components/global/Navbar';
 import Footer from '@/components/global/Footer';
+import LearnCourseCards from '@/components/sections/LearnCourseCards';
+
+
+const COURSE_SLUGS = ['construction-steps', 'safety-equipment', 'trades-guide', 'starter-kit'];
 
 const SITE_URL = 'https://www.onsiteclub.ca';
 
@@ -69,9 +73,16 @@ export default async function LearnArticlePage({
   }
 
   const t = await getTranslations({ locale, namespace: 'learn' });
+  const tc = await getTranslations({ locale, namespace: 'learn_courses' });
   const title = t(`${slug}.title`);
   const readingTime = t(`${slug}.reading_time`);
-  const content = t.raw(`${slug}.content`) as string;
+
+  // Course cards for the 3 main learn pages (no article content)
+  const hasCourses = COURSE_SLUGS.includes(slug);
+  const courses = hasCourses ? (tc.raw(slug) as Array<{ title: string; desc: string; quote: string; tags: string[]; cta: string; url: string }>) : [];
+
+  // Article HTML content only for non-course pages
+  const content = hasCourses ? '' : (t.raw(`${slug}.content`) as string);
 
   // Related articles: pick 2 others
   const related = LEARN_SLUGS.filter((s) => s !== slug).slice(0, 2);
@@ -110,24 +121,32 @@ export default async function LearnArticlePage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        <article className="learn-container">
-          <a href={`/${locale === routing.defaultLocale ? '' : locale}`} className="learn-back">
+        <article className={hasCourses ? 'learn-container learn-container-wide' : 'learn-container'}>
+          <a href={`/${locale === routing.defaultLocale ? '' : locale}#learn`} className="learn-back">
             {t('back')}
           </a>
 
           <header className="learn-header">
             <h1>{title}</h1>
-            <span className="learn-meta">
-              {readingTime} {t('reading_time')}
-            </span>
+            {!hasCourses && (
+              <span className="learn-meta">
+                {readingTime} {t('reading_time')}
+              </span>
+            )}
           </header>
 
-          <div
-            className="learn-content"
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
+          {hasCourses && courses.length > 0 && (
+            <LearnCourseCards courses={courses} slug={slug} />
+          )}
 
-          {related.length > 0 && (
+          {!hasCourses && content && (
+            <div
+              className="learn-content"
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+          )}
+
+          {!hasCourses && related.length > 0 && (
             <nav className="learn-related">
               <h2>{t('related')}</h2>
               <div className="learn-related-grid">

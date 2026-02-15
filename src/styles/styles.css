@@ -2485,7 +2485,7 @@ section {
    ═══════════════════════════════════ */
 .learn-teaser-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-top: 32px;
 }
@@ -2545,6 +2545,232 @@ section {
 }
 
 .learn-teaser-footer {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* ═══════════════════════════════════
+   LEARN COURSE CARDS — HORIZONTAL
+   ═══════════════════════════════════ */
+.learn-course-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.learn-course-card {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: var(--card-radius);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.learn-course-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 12px 32px var(--shadow-color);
+}
+
+.learn-course-card:hover .learn-course-img img {
+  transform: scale(1.05);
+}
+
+.learn-course-img {
+  position: relative;
+  width: 220px;
+  min-height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.learn-course-img img {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.learn-course-content {
+  padding: 20px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.learn-course-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.learn-tag {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.learn-tag-red    { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+.learn-tag-green  { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+.learn-tag-blue   { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+.learn-tag-orange { background: rgba(249, 115, 22, 0.15); color: #f97316; }
+.learn-tag-purple { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
+.learn-tag-yellow { background: rgba(246, 195, 67, 0.15); color: var(--accent); }
+.learn-tag-gray   { background: rgba(107, 114, 128, 0.15); color: #6b7280; }
+
+.learn-course-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.learn-course-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.learn-course-quote {
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin: 4px 0;
+}
+
+.learn-course-cta {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+/* ═══════════════════════════════════
+   LEARN TOOLKIT (on learn pages)
+   ═══════════════════════════════════ */
+.learn-toolkit {
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.learn-toolkit-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px;
+}
+
+.learn-toolkit-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+.learn-toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.learn-toolkit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 12px;
+  border-radius: var(--card-radius);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  transition: border-color 0.3s;
+}
+
+.learn-toolkit-card:hover {
+  border-color: var(--accent);
+}
+
+.learn-toolkit-emoji {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.learn-toolkit-name {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+}
+
+/* ═══════════════════════════════════
+   STARTER KIT
+   ═══════════════════════════════════ */
+.starter-kit-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.starter-kit-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.starter-kit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 16px;
+  border-radius: var(--card-radius);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  transition: border-color 0.3s, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s;
+}
+
+.starter-kit-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px var(--shadow-color);
+}
+
+.starter-kit-emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.starter-kit-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+}
+
+.starter-kit-footer {
   text-align: center;
   margin-top: 32px;
 }
@@ -2651,7 +2877,13 @@ section {
   .manifesto { padding: 60px 20px; }
   .manifesto-quote p { font-size: 1.2rem; }
   .manifesto-highlight { font-size: 1.6rem !important; }
-  .learn-teaser-grid { grid-template-columns: 1fr; }
+  .learn-teaser-grid { grid-template-columns: repeat(2, 1fr); }
+  .learn-course-card { flex-direction: column; }
+  .learn-course-img { width: 100%; height: 180px; min-height: 180px; }
+  .starter-kit-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .starter-kit-card { padding: 20px 12px; }
+  .starter-kit-emoji { font-size: 1.6rem; }
+  .learn-toolkit-grid { grid-template-columns: repeat(3, 1fr); }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .contact-info-row { flex-direction: column; }
   .contact-social-big { flex-direction: row; }
@@ -2944,6 +3176,10 @@ section {
   max-width: 720px;
   margin: 0 auto;
   padding: 0 24px 80px;
+}
+.learn-container-wide {
+  max-width: 1000px;
+  padding: 0 16px 80px;
 }
 .learn-back {
   display: inline-block;

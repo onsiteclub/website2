@@ -41,13 +41,190 @@
     "line2": "We do."
   },
   "learn_teaser": {
-    "label": "GROW YOUR CAREER",
-    "heading": "Start Learning",
-    "card_steps": "How to Start Working in Construction",
+    "label": "CERTIFICATIONS",
+    "heading": "Courses & Certifications",
+    "card_steps": "Required Certifications",
     "card_safety": "Essential Safety Equipment",
     "card_trades": "Find Your Specialty",
+    "card_kit": "Your Starter Kit",
     "card_cta": "Read Guide",
     "see_all": "See All Guides"
+  },
+  "starter_kit": {
+    "label": "YOUR STARTER KIT",
+    "heading": "What You'll Need",
+    "subtitle_default": "Essential tools every construction worker needs on day one.",
+    "subtitle_wood": "The framer's basic toolkit — measure, cut, build.",
+    "subtitle_drywall": "What every drywall finisher needs to start clean.",
+    "subtitle_electrical": "The electrician's essentials — test, strip, connect.",
+    "subtitle_plumbing": "Plumber's starter kit — cut, seal, connect.",
+    "subtitle_concrete": "The concrete worker's toolkit — pour, float, finish.",
+    "cta": "See Complete Equipment Guide",
+    "tape_measure": "Tape Measure 25ft",
+    "utility_knife": "Utility Knife",
+    "tool_belt": "Tool Belt",
+    "pencils": "Carpenter Pencils",
+    "chalk_line": "Chalk Line",
+    "speed_square": "Speed Square",
+    "framing_hammer": "Framing Hammer",
+    "circular_saw": "Circular Saw",
+    "nail_puller": "Nail Puller",
+    "taping_knives": "Taping Knife Set",
+    "mud_pan": "Mud Pan",
+    "drywall_saw": "Drywall Saw",
+    "t_square": "Drywall T-Square",
+    "sanding_sponge": "Sanding Sponge",
+    "wire_strippers": "Wire Strippers",
+    "voltage_tester": "Voltage Tester",
+    "lineman_pliers": "Lineman Pliers",
+    "fish_tape": "Fish Tape",
+    "conduit_bender": "Conduit Bender",
+    "pipe_wrench": "Pipe Wrench",
+    "tubing_cutter": "Tubing Cutter",
+    "teflon_tape": "Teflon Tape",
+    "pex_crimper": "PEX Crimper",
+    "basin_wrench": "Basin Wrench",
+    "bull_float": "Bull Float",
+    "finishing_trowel": "Finishing Trowel",
+    "edger": "Edger",
+    "concrete_vibrator": "Concrete Vibrator",
+    "knee_boards": "Knee Boards"
+  },
+  "learn_courses": {
+    "construction-steps": [
+      {
+        "title": "Worker Health & Safety Awareness",
+        "desc": "Free online training required by Ontario law. Covers your rights, employer duties, and how to identify hazards on a construction site.",
+        "quote": "Required by law for ALL workers in Ontario. Complete before your first day on site.",
+        "tags": ["MANDATORY", "FREE", "GOVERNMENT"],
+        "cta": "Take Free Course on Ontario.ca",
+        "url": "https://www.ontario.ca/page/worker-health-and-safety-awareness-four-steps"
+      },
+      {
+        "title": "WHMIS 2015 Training",
+        "desc": "Learn to read safety data sheets and hazard labels for chemicals you'll encounter on site. Free online course available.",
+        "quote": "You must complete WHMIS before handling any controlled product on a job site.",
+        "tags": ["MANDATORY", "FREE"],
+        "cta": "Take Free WHMIS Course",
+        "url": "https://www.ccohs.ca/oshanswers/chemicals/whmis_ghs/education_training.html"
+      },
+      {
+        "title": "Working at Heights",
+        "desc": "Required if you'll work above 3 metres. Must be done through a Ministry-approved provider. Costs $80–$200 and takes one full day.",
+        "quote": "Cannot be done online. You must attend in-person training with an approved provider.",
+        "tags": ["MANDATORY", "PAID", "IN-PERSON"],
+        "cta": "Find Approved Providers",
+        "url": "https://www.ontario.ca/page/working-heights-training"
+      }
+    ],
+    "safety-equipment": [
+      {
+        "title": "CSA Hard Hat (Type 1 or 2)",
+        "desc": "Protects against falling objects and bumps. Must meet CSA Z94.1 standard. Type 2 also protects from lateral impacts.",
+        "quote": "No hard hat, no entry. Every Ontario construction site requires one.",
+        "tags": ["REQUIRED", "CSA", "PPE"],
+        "cta": "CSA Standards Info",
+        "url": "https://www.csagroup.org/"
+      },
+      {
+        "title": "Safety Boots (CSA Green Triangle)",
+        "desc": "Steel or composite toe boots with puncture-resistant soles. Look for the green triangle CSA symbol on the tag.",
+        "quote": "Green triangle = Grade 1 protection. This is the minimum for construction sites.",
+        "tags": ["REQUIRED", "CSA", "PPE"],
+        "cta": "Boot Requirements Guide",
+        "url": "/learn/safety-equipment"
+      },
+      {
+        "title": "High-Visibility Vest (Class 2+)",
+        "desc": "Fluorescent vest or shirt with reflective stripes. Required on any site with vehicle or equipment traffic.",
+        "quote": "Class 2 minimum for construction. Class 3 required for road work.",
+        "tags": ["REQUIRED", "SAFETY"],
+        "cta": "Hi-Vis Classification Guide",
+        "url": "/learn/safety-equipment"
+      }
+    ],
+    "trades-guide": [
+      {
+        "title": "Carpentry & Framing",
+        "desc": "Build the skeleton of every structure. Read blueprints, cut lumber, frame walls, install roof trusses. 4-year apprenticeship, strong demand year-round.",
+        "quote": "The backbone of residential construction. Great for people who like to see things take shape fast.",
+        "tags": ["TRADE", "APPRENTICESHIP"],
+        "cta": "Carpentry Career Path",
+        "url": "/learn/trades-guide"
+      },
+      {
+        "title": "Electrical",
+        "desc": "Wire buildings for power, lighting, and data. Licensed trade with 5-year apprenticeship. One of the highest-paid construction trades.",
+        "quote": "Electricians are always in demand. Licensed journeypersons earn $40-$50+/hr in Ontario.",
+        "tags": ["TRADE", "LICENSED", "HIGH-DEMAND"],
+        "cta": "Electrical Career Path",
+        "url": "/learn/trades-guide"
+      },
+      {
+        "title": "Plumbing & HVAC",
+        "desc": "Install water, drainage, gas, and climate systems. Licensed trade with a 5-year apprenticeship. Residential and commercial opportunities.",
+        "quote": "Plumbers and HVAC techs work behind the walls — and they're never out of work.",
+        "tags": ["TRADE", "LICENSED"],
+        "cta": "Plumbing Career Path",
+        "url": "/learn/trades-guide"
+      }
+    ],
+    "starter-kit": [
+      {
+        "title": "General Essentials",
+        "desc": "Every construction worker needs these on day one — regardless of trade. Tape measure, utility knife, tool belt, pencils, and a chalk line. These go everywhere you go.",
+        "quote": "Show up with your own basics. Borrowing tools on site is a bad first impression.",
+        "tags": ["ESSENTIAL", "ALL TRADES", "BEGINNER"],
+        "cta": "See Equipment Guide",
+        "url": "/learn/safety-equipment",
+        "image": "/images/kit-tools.webp"
+      },
+      {
+        "title": "Wood & Framing Kit",
+        "desc": "Speed square for marking angles, framing hammer for nailing, circular saw for cuts, tape measure, and a nail puller. The framer's five essentials.",
+        "quote": "A good speed square and a 25oz framing hammer — that's how every carpenter starts.",
+        "tags": ["WOOD", "FRAMING"],
+        "cta": "Framing Career Path",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-wood.webp"
+      },
+      {
+        "title": "Drywall & Finishing Kit",
+        "desc": "Taping knives (6\", 10\", 12\"), mud pan, drywall saw, T-square, and sanding sponge. Clean walls start with clean tools.",
+        "quote": "Drywall is 90% prep. Good taping knives make or break your finish.",
+        "tags": ["DRYWALL", "FINISHING"],
+        "cta": "Drywall Career Path",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-drywall.webp"
+      },
+      {
+        "title": "Electrical Kit",
+        "desc": "Wire strippers, non-contact voltage tester, lineman pliers, fish tape, and conduit bender. Safety-first tools for a licensed trade.",
+        "quote": "Never work on a circuit you haven't tested. The voltage tester is your most important tool.",
+        "tags": ["ELECTRICAL", "LICENSED"],
+        "cta": "Electrical Career Path",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-electrical.webp"
+      },
+      {
+        "title": "Plumbing & HVAC Kit",
+        "desc": "Pipe wrench, tubing cutter, teflon tape, PEX crimper, and basin wrench. Cut, seal, and connect — the plumber's daily workflow.",
+        "quote": "Keep extra teflon tape. You'll use more than you think.",
+        "tags": ["PLUMBING", "HVAC"],
+        "cta": "Plumbing Career Path",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-plumbing.webp"
+      },
+      {
+        "title": "Concrete & Masonry Kit",
+        "desc": "Bull float, finishing trowel, edger, concrete vibrator, and knee boards. Pour, level, and finish — timing is everything.",
+        "quote": "Concrete doesn't wait. Have your tools ready before the pour starts.",
+        "tags": ["CONCRETE", "MASONRY"],
+        "cta": "Concrete Career Path",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-concrete.webp"
+      }
+    ]
   },
   "tools": {
     "label": "DIGITAL TOOLKIT",
@@ -272,6 +449,12 @@
       "meta_desc": "Overview of major construction trades in Ontario. Carpentry, electrical, plumbing, HVAC, and more — pay, requirements, and career paths.",
       "reading_time": "9",
       "content": "<h2>Choosing Your Trade</h2><p>Ontario recognizes over 140 skilled trades, with about 40 directly related to construction. Choosing the right one depends on your interests, physical abilities, and long-term goals. Here's an overview of the most in-demand trades.</p><h2>Carpentry (General Carpenter - 403A)</h2><p>Carpenters build the bones of structures — framing, formwork, concrete forming, finishing. It's the most versatile trade and a great starting point. <strong>Apprenticeship:</strong> 4 years (7,280 hours on-the-job + 3 in-school sessions). <strong>Journeyperson wage:</strong> $30-$45/hour. Carpentry is compulsory certified in Ontario, meaning you must hold a certificate to use the title.</p><h2>Electrical (Electrician - 309A)</h2><p>Electricians install, maintain, and repair electrical systems. High demand, excellent pay, and transferable skills. <strong>Apprenticeship:</strong> 5 years (9,000 hours + 3 in-school sessions). <strong>Journeyperson wage:</strong> $35-$55/hour. This is a compulsory trade — you legally must be licensed to perform electrical work.</p><h2>Plumbing (Plumber - 306A)</h2><p>Plumbers install and repair water, waste, and gas piping systems. Steady demand in both new construction and renovation. <strong>Apprenticeship:</strong> 5 years (9,000 hours + 3 in-school sessions). <strong>Journeyperson wage:</strong> $35-$50/hour. Compulsory trade.</p><h2>HVAC (Refrigeration & AC Mechanic - 313A)</h2><p>HVAC techs install and service heating, ventilation, and air conditioning systems. Growing demand with energy-efficiency regulations. <strong>Apprenticeship:</strong> 5 years (9,000 hours + 3 in-school sessions). <strong>Journeyperson wage:</strong> $33-$48/hour.</p><h2>Ironworker (Structural/Ornamental - 420A)</h2><p>Ironworkers erect steel frameworks for buildings, bridges, and infrastructure. Physical and high-paying. <strong>Apprenticeship:</strong> 3 years (5,400 hours + in-school). <strong>Journeyperson wage:</strong> $38-$52/hour. Strong union presence (Local 721, Local 736).</p><h2>Heavy Equipment Operator</h2><p>Operators run excavators, bulldozers, cranes, and other heavy machinery. Excellent pay for non-apprenticeship routes. Training through colleges or union programs (IUOE Local 793). <strong>Wage:</strong> $28-$50/hour depending on equipment class.</p><h2>Drywall, Taping & Painting</h2><p>Interior finishing trades. Faster entry, lower apprenticeship requirements, and consistent residential demand. <strong>Wage:</strong> $22-$38/hour. Many workers are self-employed or run small crews.</p><h2>How to Start an Apprenticeship</h2><p>1. Find a sponsor (employer willing to train you). 2. Register through Ontario's Ministry of Labour, Immigration, Training, and Skills Development. 3. Sign a training agreement. 4. Alternate between on-the-job hours and college sessions. 5. Write the Certificate of Qualification exam. The <a href='/#pathway'>OnSite Pathway</a> maps out required certifications for each step.</p><h2>Earning Potential</h2><p>Skilled tradespeople in Ontario earn $60,000-$120,000+ annually. Overtime, shift premiums, and specializations push this higher. Foremen earn 15-25% more than journeypersons. Starting your own company is a natural progression many tradespeople pursue.</p>"
+    },
+    "starter-kit": {
+      "title": "Your Starter Kit: Essential Tools by Trade",
+      "meta_desc": "New to construction? Here's exactly what personal tools you need for your first day on site — organized by trade.",
+      "reading_time": "5",
+      "content": ""
     },
     "calculator-guide": {
       "title": "OnSite Calculator: Voice-Powered Construction Math",

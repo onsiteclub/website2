@@ -41,13 +41,190 @@
     "line2": "Nous, oui."
   },
   "learn_teaser": {
-    "label": "DEVELOPPEZ VOTRE CARRIERE",
-    "heading": "Commencez a apprendre",
-    "card_steps": "Comment commencer dans la construction",
-    "card_safety": "Equipement de securite essentiel",
-    "card_trades": "Trouvez votre specialite",
+    "label": "CERTIFICATIONS",
+    "heading": "Cours & Certifications",
+    "card_steps": "Certifications obligatoires",
+    "card_safety": "Équipement de sécurité essentiel",
+    "card_trades": "Trouve ta spécialité",
+    "card_kit": "Ton Kit de Départ",
     "card_cta": "Lire le guide",
     "see_all": "Voir tous les guides"
+  },
+  "starter_kit": {
+    "label": "TON KIT DE DÉPART",
+    "heading": "Ce qu'il te faut",
+    "subtitle_default": "Les outils essentiels pour ton premier jour sur le chantier.",
+    "subtitle_wood": "Le kit de base du charpentier — mesurer, couper, construire.",
+    "subtitle_drywall": "Ce qu'il faut à tout finisseur pour commencer propre.",
+    "subtitle_electrical": "Les essentiels de l'électricien — tester, dénuder, connecter.",
+    "subtitle_plumbing": "Le kit du plombier — couper, sceller, connecter.",
+    "subtitle_concrete": "Le kit du bétonnage — couler, lisser, finir.",
+    "cta": "Voir le guide complet d'équipement",
+    "tape_measure": "Ruban à mesurer 25pi",
+    "utility_knife": "Couteau utilitaire",
+    "tool_belt": "Ceinture à outils",
+    "pencils": "Crayons de charpentier",
+    "chalk_line": "Cordeau à craie",
+    "speed_square": "Équerre de charpentier",
+    "framing_hammer": "Marteau de charpentier",
+    "circular_saw": "Scie circulaire",
+    "nail_puller": "Arrache-clou",
+    "taping_knives": "Jeu de couteaux à ruban",
+    "mud_pan": "Bac à composé",
+    "drywall_saw": "Scie à gypse",
+    "t_square": "Équerre en T pour gypse",
+    "sanding_sponge": "Éponge à poncer",
+    "wire_strippers": "Pince à dénuder",
+    "voltage_tester": "Testeur de tension",
+    "lineman_pliers": "Pince de monteur",
+    "fish_tape": "Tire-fil",
+    "conduit_bender": "Cintreuse de conduit",
+    "pipe_wrench": "Clé à tuyau",
+    "tubing_cutter": "Coupe-tube",
+    "teflon_tape": "Ruban téflon",
+    "pex_crimper": "Pince à sertir PEX",
+    "basin_wrench": "Clé à bassin",
+    "bull_float": "Aplanissoire",
+    "finishing_trowel": "Truelle de finition",
+    "edger": "Bordureuse",
+    "concrete_vibrator": "Vibrateur à béton",
+    "knee_boards": "Planches à genoux"
+  },
+  "learn_courses": {
+    "construction-steps": [
+      {
+        "title": "Sensibilisation à la santé et sécurité des travailleurs",
+        "desc": "Formation en ligne gratuite exigée par la loi ontarienne. Couvre tes droits, les devoirs de l'employeur et comment identifier les dangers sur un chantier.",
+        "quote": "Exigé par la loi pour TOUS les travailleurs en Ontario. À compléter avant ton premier jour sur le chantier.",
+        "tags": ["OBLIGATOIRE", "GRATUIT", "GOUVERNEMENT"],
+        "cta": "Suivre le cours gratuit sur Ontario.ca",
+        "url": "https://www.ontario.ca/page/worker-health-and-safety-awareness-four-steps"
+      },
+      {
+        "title": "Formation SIMDUT 2015",
+        "desc": "Apprends à lire les fiches de données de sécurité et les étiquettes de danger pour les produits chimiques sur le chantier. Cours en ligne gratuit.",
+        "quote": "Tu dois compléter le SIMDUT avant de manipuler tout produit contrôlé sur un chantier.",
+        "tags": ["OBLIGATOIRE", "GRATUIT"],
+        "cta": "Suivre le cours SIMDUT gratuit",
+        "url": "https://www.ccohs.ca/oshanswers/chemicals/whmis_ghs/education_training.html"
+      },
+      {
+        "title": "Travail en hauteur",
+        "desc": "Obligatoire si tu travailles au-dessus de 3 mètres. Doit être fait chez un fournisseur agréé. Coûte 80 $–200 $ et dure une journée complète.",
+        "quote": "Ne peut pas être fait en ligne. Tu dois suivre la formation en personne avec un fournisseur agréé.",
+        "tags": ["OBLIGATOIRE", "PAYANT", "EN PERSONNE"],
+        "cta": "Trouver un fournisseur agréé",
+        "url": "https://www.ontario.ca/page/working-heights-training"
+      }
+    ],
+    "safety-equipment": [
+      {
+        "title": "Casque de sécurité CSA (Type 1 ou 2)",
+        "desc": "Protège contre les chutes d'objets et les chocs. Doit respecter la norme CSA Z94.1. Le Type 2 protège aussi des impacts latéraux.",
+        "quote": "Pas de casque, pas d'accès. Chaque chantier en Ontario l'exige.",
+        "tags": ["REQUIS", "CSA", "ÉPI"],
+        "cta": "Info normes CSA",
+        "url": "https://www.csagroup.org/"
+      },
+      {
+        "title": "Bottes de sécurité (CSA triangle vert)",
+        "desc": "Bottes à embout d'acier ou composite avec semelles anti-perforation. Cherche le triangle vert CSA sur l'étiquette.",
+        "quote": "Triangle vert = protection Grade 1. C'est le minimum pour les chantiers de construction.",
+        "tags": ["REQUIS", "CSA", "ÉPI"],
+        "cta": "Guide des exigences pour les bottes",
+        "url": "/learn/safety-equipment"
+      },
+      {
+        "title": "Veste haute visibilité (Classe 2+)",
+        "desc": "Veste ou chandail fluorescent avec bandes réfléchissantes. Obligatoire sur tout chantier avec circulation de véhicules.",
+        "quote": "Classe 2 minimum pour la construction. Classe 3 requise pour les travaux routiers.",
+        "tags": ["REQUIS", "SÉCURITÉ"],
+        "cta": "Guide de classification haute visibilité",
+        "url": "/learn/safety-equipment"
+      }
+    ],
+    "trades-guide": [
+      {
+        "title": "Charpente et ossature",
+        "desc": "Construis le squelette de chaque structure. Lis des plans, coupe du bois, monte des murs et installe des fermes de toit. Apprentissage de 4 ans, forte demande toute l'année.",
+        "quote": "La base de la construction résidentielle. Parfait pour ceux qui aiment voir les choses prendre forme vite.",
+        "tags": ["MÉTIER", "APPRENTISSAGE"],
+        "cta": "Parcours charpentier",
+        "url": "/learn/trades-guide"
+      },
+      {
+        "title": "Électricité",
+        "desc": "Câble les bâtiments pour l'électricité, l'éclairage et les données. Métier réglementé avec apprentissage de 5 ans. Un des métiers les mieux payés.",
+        "quote": "Les électriciens sont toujours en demande. Les compagnons gagnent 40 $–50 $+/h en Ontario.",
+        "tags": ["MÉTIER", "RÉGLEMENTÉ", "HAUTE DEMANDE"],
+        "cta": "Parcours électricien",
+        "url": "/learn/trades-guide"
+      },
+      {
+        "title": "Plomberie et CVC",
+        "desc": "Installe les systèmes d'eau, de drainage, de gaz et de climatisation. Métier réglementé avec apprentissage de 5 ans.",
+        "quote": "Les plombiers et techniciens CVC travaillent derrière les murs — et ils ne manquent jamais de travail.",
+        "tags": ["MÉTIER", "RÉGLEMENTÉ"],
+        "cta": "Parcours plombier",
+        "url": "/learn/trades-guide"
+      }
+    ],
+    "starter-kit": [
+      {
+        "title": "Essentiels Généraux",
+        "desc": "Tout travailleur de la construction a besoin de ça dès le premier jour — peu importe le métier. Ruban à mesurer, couteau utilitaire, ceinture à outils, crayons et cordeau à craie.",
+        "quote": "Arrive avec tes propres outils de base. Emprunter sur le chantier fait mauvaise impression.",
+        "tags": ["ESSENTIEL", "TOUS MÉTIERS", "DÉBUTANT"],
+        "cta": "Voir le Guide d'Équipement",
+        "url": "/learn/safety-equipment",
+        "image": "/images/kit-tools.webp"
+      },
+      {
+        "title": "Kit Bois & Charpente",
+        "desc": "Équerre de vitesse pour les angles, marteau de charpentier pour clouer, scie circulaire pour les coupes, ruban à mesurer et arrache-clou. Les cinq essentiels du charpentier.",
+        "quote": "Une bonne équerre et un marteau de 25oz — c'est comme ça que tout charpentier commence.",
+        "tags": ["BOIS", "CHARPENTE"],
+        "cta": "Carrière en Charpente",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-wood.webp"
+      },
+      {
+        "title": "Kit Plâtre & Finition",
+        "desc": "Couteaux à ruban (6\", 10\", 12\"), bac à composé, scie à gypse, équerre en T et éponge à poncer. Des murs lisses commencent avec de bons outils.",
+        "quote": "Le plâtre, c'est 90% de préparation. De bons couteaux font toute la différence.",
+        "tags": ["PLÂTRE", "FINITION"],
+        "cta": "Carrière en Finition",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-drywall.webp"
+      },
+      {
+        "title": "Kit Électricité",
+        "desc": "Pince à dénuder, testeur de tension sans contact, pince de monteur, tire-fil et cintreuse à conduit. Outils axés sécurité pour un métier réglementé.",
+        "quote": "Ne travaille jamais sur un circuit que tu n'as pas testé. Le testeur de tension est ton outil le plus important.",
+        "tags": ["ÉLECTRICITÉ", "RÉGLEMENTÉ"],
+        "cta": "Carrière en Électricité",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-electrical.webp"
+      },
+      {
+        "title": "Kit Plomberie & CVC",
+        "desc": "Clé à tuyau, coupe-tube, ruban téflon, pince à sertir PEX et clé à lavabo. Couper, sceller et connecter — le quotidien du plombier.",
+        "quote": "Garde du ruban téflon en extra. Tu en utiliseras plus que tu penses.",
+        "tags": ["PLOMBERIE", "CVC"],
+        "cta": "Carrière en Plomberie",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-plumbing.webp"
+      },
+      {
+        "title": "Kit Béton & Maçonnerie",
+        "desc": "Taloche, truelle de finition, bordureuse, vibrateur à béton et planches à genoux. Couler, niveler et finir — le timing est tout.",
+        "quote": "Le béton n'attend pas. Tes outils doivent être prêts avant la coulée.",
+        "tags": ["BÉTON", "MAÇONNERIE"],
+        "cta": "Carrière en Béton",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-concrete.webp"
+      }
+    ]
   },
   "tools": {
     "label": "OUTILS NUMÃ‰RIQUES",
@@ -281,6 +458,12 @@
       "meta_desc": "AperÃ§u des principaux mÃ©tiers de la construction en Ontario. Charpenterie, Ã©lectricitÃ©, plomberie, CVC et plus â€” salaire, exigences et parcours de carriÃ¨re.",
       "reading_time": "9",
       "content": "<h2>Choisir votre mÃ©tier</h2><p>L'Ontario reconnaÃ®t plus de 140 mÃ©tiers spÃ©cialisÃ©s, dont environ 40 directement liÃ©s Ã  la construction. Le bon choix dÃ©pend de vos intÃ©rÃªts, de vos capacitÃ©s physiques et de vos objectifs Ã  long terme. Voici un aperÃ§u des mÃ©tiers les plus en demande.</p><h2>Charpenterie (Charpentier gÃ©nÃ©ral - 403A)</h2><p>Les charpentiers construisent la structure des bÃ¢timents â€” ossature, coffrages, coffrage de bÃ©ton, finition. C'est le mÃ©tier le plus polyvalent et un excellent point de dÃ©part. <strong>Apprentissage :</strong> 4 ans (7 280 heures en milieu de travail + 3 sessions en classe). <strong>Salaire compagnon :</strong> 30 $ Ã  45 $/heure. La charpenterie est un mÃ©tier Ã  certification obligatoire en Ontario, ce qui signifie que vous devez dÃ©tenir un certificat pour utiliser le titre.</p><h2>Ã‰lectricitÃ© (Ã‰lectricien - 309A)</h2><p>Les Ã©lectriciens installent, entretiennent et rÃ©parent les systÃ¨mes Ã©lectriques. Forte demande, excellent salaire et compÃ©tences transfÃ©rables. <strong>Apprentissage :</strong> 5 ans (9 000 heures + 3 sessions en classe). <strong>Salaire compagnon :</strong> 35 $ Ã  55 $/heure. C'est un mÃ©tier Ã  certification obligatoire â€” vous devez lÃ©galement Ãªtre accrÃ©ditÃ© pour effectuer des travaux Ã©lectriques.</p><h2>Plomberie (Plombier - 306A)</h2><p>Les plombiers installent et rÃ©parent les systÃ¨mes de tuyauterie d'eau, d'Ã©gout et de gaz. Demande constante tant en construction neuve qu'en rÃ©novation. <strong>Apprentissage :</strong> 5 ans (9 000 heures + 3 sessions en classe). <strong>Salaire compagnon :</strong> 35 $ Ã  50 $/heure. MÃ©tier Ã  certification obligatoire.</p><h2>CVC (MÃ©canicien en rÃ©frigÃ©ration et climatisation - 313A)</h2><p>Les techniciens en CVC installent et entretiennent les systÃ¨mes de chauffage, ventilation et climatisation. Demande croissante avec les rÃ©glementations sur l'efficacitÃ© Ã©nergÃ©tique. <strong>Apprentissage :</strong> 5 ans (9 000 heures + 3 sessions en classe). <strong>Salaire compagnon :</strong> 33 $ Ã  48 $/heure.</p><h2>Monteur de charpentes mÃ©talliques (Structural/Ornemental - 420A)</h2><p>Les monteurs de charpentes mÃ©talliques Ã©rigent les structures en acier des bÃ¢timents, ponts et infrastructures. Travail physique et bien rÃ©munÃ©rÃ©. <strong>Apprentissage :</strong> 3 ans (5 400 heures + sessions en classe). <strong>Salaire compagnon :</strong> 38 $ Ã  52 $/heure. Forte prÃ©sence syndicale (Local 721, Local 736).</p><h2>OpÃ©rateur d'Ã©quipement lourd</h2><p>Les opÃ©rateurs conduisent des excavatrices, bulldozers, grues et autres machines lourdes. Excellent salaire pour un parcours hors apprentissage. Formation par les collÃ¨ges ou les programmes syndicaux (IUOE Local 793). <strong>Salaire :</strong> 28 $ Ã  50 $/heure selon la classe d'Ã©quipement.</p><h2>PlÃ¢trage, tirage de joints et peinture</h2><p>MÃ©tiers de finition intÃ©rieure. AccÃ¨s plus rapide, exigences d'apprentissage rÃ©duites et demande rÃ©sidentielle constante. <strong>Salaire :</strong> 22 $ Ã  38 $/heure. Beaucoup de travailleurs sont autonomes ou dirigent de petites Ã©quipes.</p><h2>Comment commencer un apprentissage</h2><p>1. Trouver un parrain (employeur prÃªt Ã  vous former). 2. S'inscrire auprÃ¨s du ministÃ¨re du Travail, de l'Immigration, de la Formation et du DÃ©veloppement des compÃ©tences de l'Ontario. 3. Signer une entente de formation. 4. Alterner entre les heures en milieu de travail et les sessions au collÃ¨ge. 5. Passer l'examen du Certificat de qualification. Le <a href='/#pathway'>Parcours OnSite</a> cartographie les certifications requises Ã  chaque Ã©tape.</p><h2>Potentiel de revenus</h2><p>Les gens de mÃ©tier qualifiÃ©s en Ontario gagnent entre 60 000 $ et 120 000 $+ par annÃ©e. Le temps supplÃ©mentaire, les primes de quart et les spÃ©cialisations font augmenter ce montant. Les contremaÃ®tres gagnent de 15 Ã  25 % de plus que les compagnons. DÃ©marrer sa propre entreprise est une progression naturelle que poursuivent de nombreux gens de mÃ©tier.</p>"
+    },
+    "starter-kit": {
+      "title": "Ton Kit de Départ : Outils Essentiels par Métier",
+      "meta_desc": "Nouveau en construction ? Voici exactement les outils personnels dont tu as besoin pour ton premier jour sur le chantier — organisés par métier.",
+      "reading_time": "5",
+      "content": ""
     },
     "calculator-guide": {
       "title": "OnSite Calculator : le calcul de construction par la voix",

@@ -41,13 +41,190 @@
     "line2": "Nosotros si."
   },
   "learn_teaser": {
-    "label": "CRECE TU CARRERA",
-    "heading": "Empieza a aprender",
-    "card_steps": "Como empezar a trabajar en construccion",
+    "label": "CERTIFICACIONES",
+    "heading": "Cursos & Certificaciones",
+    "card_steps": "Certificaciones obligatorias",
     "card_safety": "Equipo de seguridad esencial",
     "card_trades": "Encuentra tu especialidad",
-    "card_cta": "Leer guia",
-    "see_all": "Ver todas las guias"
+    "card_kit": "Tu Kit Inicial",
+    "card_cta": "Leer guía",
+    "see_all": "Ver todas las guías"
+  },
+  "starter_kit": {
+    "label": "TU KIT INICIAL",
+    "heading": "Lo que necesitas",
+    "subtitle_default": "Herramientas esenciales para tu primer día en obra.",
+    "subtitle_wood": "El kit básico del carpintero — medir, cortar, construir.",
+    "subtitle_drywall": "Lo que todo acabador necesita para empezar limpio.",
+    "subtitle_electrical": "Los esenciales del electricista — probar, pelar, conectar.",
+    "subtitle_plumbing": "Kit inicial del plomero — cortar, sellar, conectar.",
+    "subtitle_concrete": "El kit del concretero — verter, alisar, acabar.",
+    "cta": "Ver guía completa de equipo",
+    "tape_measure": "Cinta métrica 25ft",
+    "utility_knife": "Cuchilla utilitaria",
+    "tool_belt": "Cinturón de herramientas",
+    "pencils": "Lápices de carpintero",
+    "chalk_line": "Línea de tiza",
+    "speed_square": "Escuadra rápida",
+    "framing_hammer": "Martillo de estructura",
+    "circular_saw": "Sierra circular",
+    "nail_puller": "Saca-clavos",
+    "taping_knives": "Juego de espátulas",
+    "mud_pan": "Bandeja de compuesto",
+    "drywall_saw": "Sierra para drywall",
+    "t_square": "Escuadra T para drywall",
+    "sanding_sponge": "Esponja de lijado",
+    "wire_strippers": "Pelacables",
+    "voltage_tester": "Probador de voltaje",
+    "lineman_pliers": "Pinzas de montaje",
+    "fish_tape": "Cinta pasacables",
+    "conduit_bender": "Doblador de conduit",
+    "pipe_wrench": "Llave de tubo",
+    "tubing_cutter": "Cortador de tubos",
+    "teflon_tape": "Cinta teflón",
+    "pex_crimper": "Crimpadora PEX",
+    "basin_wrench": "Llave de lavabo",
+    "bull_float": "Llana de toro",
+    "finishing_trowel": "Llana de acabado",
+    "edger": "Bordeadora",
+    "concrete_vibrator": "Vibrador de concreto",
+    "knee_boards": "Tablas de rodillas"
+  },
+  "learn_courses": {
+    "construction-steps": [
+      {
+        "title": "Concientización en Salud y Seguridad del Trabajador",
+        "desc": "Capacitación en línea gratuita requerida por la ley de Ontario. Cubre tus derechos, deberes del empleador y cómo identificar peligros en una obra.",
+        "quote": "Requerido por ley para TODOS los trabajadores en Ontario. Complétalo antes de tu primer día en obra.",
+        "tags": ["OBLIGATORIO", "GRATIS", "GOBIERNO"],
+        "cta": "Tomar curso gratis en Ontario.ca",
+        "url": "https://www.ontario.ca/page/worker-health-and-safety-awareness-four-steps"
+      },
+      {
+        "title": "Capacitación WHMIS 2015",
+        "desc": "Aprende a leer hojas de datos de seguridad y etiquetas de peligro para químicos que encontrarás en obra. Curso en línea gratuito.",
+        "quote": "Debes completar WHMIS antes de manejar cualquier producto controlado en una obra.",
+        "tags": ["OBLIGATORIO", "GRATIS"],
+        "cta": "Tomar curso WHMIS gratis",
+        "url": "https://www.ccohs.ca/oshanswers/chemicals/whmis_ghs/education_training.html"
+      },
+      {
+        "title": "Trabajo en Alturas",
+        "desc": "Requerido si trabajarás a más de 3 metros. Debe hacerse con un proveedor aprobado. Cuesta $80–$200 y toma un día completo.",
+        "quote": "No se puede hacer en línea. Debes asistir a capacitación presencial con un proveedor aprobado.",
+        "tags": ["OBLIGATORIO", "PAGO", "PRESENCIAL"],
+        "cta": "Encontrar proveedores aprobados",
+        "url": "https://www.ontario.ca/page/working-heights-training"
+      }
+    ],
+    "safety-equipment": [
+      {
+        "title": "Casco de Seguridad CSA (Tipo 1 o 2)",
+        "desc": "Protege contra objetos que caen y golpes. Debe cumplir la norma CSA Z94.1. El Tipo 2 también protege de impactos laterales.",
+        "quote": "Sin casco, no entras. Toda obra en Ontario lo exige.",
+        "tags": ["REQUERIDO", "CSA", "EPP"],
+        "cta": "Info normas CSA",
+        "url": "https://www.csagroup.org/"
+      },
+      {
+        "title": "Botas de Seguridad (CSA triángulo verde)",
+        "desc": "Botas con punta de acero o compuesto y suelas anti-perforación. Busca el triángulo verde CSA en la etiqueta.",
+        "quote": "Triángulo verde = protección Grado 1. Es el mínimo para obras de construcción.",
+        "tags": ["REQUERIDO", "CSA", "EPP"],
+        "cta": "Guía de requisitos para botas",
+        "url": "/learn/safety-equipment"
+      },
+      {
+        "title": "Chaleco de Alta Visibilidad (Clase 2+)",
+        "desc": "Chaleco o camisa fluorescente con franjas reflectantes. Obligatorio en cualquier obra con tráfico de vehículos.",
+        "quote": "Clase 2 mínimo para construcción. Clase 3 requerida para trabajo vial.",
+        "tags": ["REQUERIDO", "SEGURIDAD"],
+        "cta": "Guía de clasificación alta visibilidad",
+        "url": "/learn/safety-equipment"
+      }
+    ],
+    "trades-guide": [
+      {
+        "title": "Carpintería y Estructura",
+        "desc": "Construye el esqueleto de cada estructura. Lee planos, corta madera, arma muros e instala cerchas. Aprendizaje de 4 años, alta demanda todo el año.",
+        "quote": "La base de la construcción residencial. Ideal para quienes les gusta ver las cosas tomar forma rápido.",
+        "tags": ["OFICIO", "APRENDIZAJE"],
+        "cta": "Carrera en carpintería",
+        "url": "/learn/trades-guide"
+      },
+      {
+        "title": "Electricidad",
+        "desc": "Cablea edificios para energía, iluminación y datos. Oficio regulado con aprendizaje de 5 años. Uno de los oficios mejor pagados.",
+        "quote": "Los electricistas siempre tienen demanda. Los oficiales ganan $40–$50+/hr en Ontario.",
+        "tags": ["OFICIO", "REGULADO", "ALTA DEMANDA"],
+        "cta": "Carrera en electricidad",
+        "url": "/learn/trades-guide"
+      },
+      {
+        "title": "Plomería y HVAC",
+        "desc": "Instala sistemas de agua, drenaje, gas y climatización. Oficio regulado con aprendizaje de 5 años.",
+        "quote": "Los plomeros y técnicos HVAC trabajan detrás de las paredes — y nunca les falta trabajo.",
+        "tags": ["OFICIO", "REGULADO"],
+        "cta": "Carrera en plomería",
+        "url": "/learn/trades-guide"
+      }
+    ],
+    "starter-kit": [
+      {
+        "title": "Esenciales Generales",
+        "desc": "Todo trabajador de la construcción necesita esto desde el primer día — sin importar el oficio. Cinta métrica, cuchilla, cinturón de herramientas, lápices y línea de tiza.",
+        "quote": "Llega con tus propias herramientas básicas. Pedir prestado en obra da mala impresión.",
+        "tags": ["ESENCIAL", "TODOS LOS OFICIOS", "PRINCIPIANTE"],
+        "cta": "Ver Guía de Equipo",
+        "url": "/learn/safety-equipment",
+        "image": "/images/kit-tools.webp"
+      },
+      {
+        "title": "Kit Madera & Estructura",
+        "desc": "Escuadra rápida para ángulos, martillo de carpintero, sierra circular, cinta métrica y sacaclavos. Los cinco esenciales del carpintero.",
+        "quote": "Una buena escuadra y un martillo de 25oz — así empieza todo carpintero.",
+        "tags": ["MADERA", "ESTRUCTURA"],
+        "cta": "Carrera en Carpintería",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-wood.webp"
+      },
+      {
+        "title": "Kit Yeso & Acabado",
+        "desc": "Espátulas para cinta (6\", 10\", 12\"), bandeja para mezcla, sierra para yeso, escuadra en T y esponja para lijar. Paredes limpias empiezan con buenas herramientas.",
+        "quote": "El yeso es 90% preparación. Buenas espátulas hacen toda la diferencia.",
+        "tags": ["YESO", "ACABADO"],
+        "cta": "Carrera en Acabados",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-drywall.webp"
+      },
+      {
+        "title": "Kit Electricidad",
+        "desc": "Pelacables, detector de voltaje sin contacto, alicates de electricista, cinta pasacables y dobladora de conduit. Herramientas de seguridad para un oficio regulado.",
+        "quote": "Nunca trabajes en un circuito sin probarlo. El detector de voltaje es tu herramienta más importante.",
+        "tags": ["ELECTRICIDAD", "REGULADO"],
+        "cta": "Carrera en Electricidad",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-electrical.webp"
+      },
+      {
+        "title": "Kit Plomería & Climatización",
+        "desc": "Llave para tubos, cortador de tubería, cinta teflón, crimpadora PEX y llave de lavabo. Cortar, sellar y conectar — el día a día del plomero.",
+        "quote": "Lleva cinta teflón extra. Vas a usar más de lo que piensas.",
+        "tags": ["PLOMERÍA", "CLIMATIZACIÓN"],
+        "cta": "Carrera en Plomería",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-plumbing.webp"
+      },
+      {
+        "title": "Kit Concreto & Albañilería",
+        "desc": "Llana flotadora, llana de acabado, bordeadora, vibrador de concreto y tablas para rodillas. Vaciar, nivelar y acabar — el tiempo lo es todo.",
+        "quote": "El concreto no espera. Ten tus herramientas listas antes de empezar a vaciar.",
+        "tags": ["CONCRETO", "ALBAÑILERÍA"],
+        "cta": "Carrera en Concreto",
+        "url": "/learn/trades-guide",
+        "image": "/images/kit-concrete.webp"
+      }
+    ]
   },
   "tools": {
     "label": "HERRAMIENTAS DIGITALES",
@@ -272,6 +449,12 @@
       "meta_desc": "Resumen de los principales oficios de construccion en Ontario. Carpinteria, electricidad, plomeria, HVAC y mas — salarios, requisitos y trayectorias profesionales.",
       "reading_time": "9",
       "content": "<h2>Eligiendo Tu Oficio</h2><p>Ontario reconoce mas de 140 oficios calificados, de los cuales unos 40 estan directamente relacionados con la construccion. Elegir el adecuado depende de tus intereses, capacidades fisicas y metas a largo plazo. Aqui tienes un resumen de los oficios con mayor demanda.</p><h2>Carpinteria (Carpintero General - 403A)</h2><p>Los carpinteros construyen la estructura de las edificaciones — armado, encofrado, formado de concreto, acabados. Es el oficio mas versatil y un gran punto de partida. <strong>Aprendizaje:</strong> 4 anos (7,280 horas en el trabajo + 3 sesiones en escuela). <strong>Salario de oficial:</strong> $30-$45/hora. La carpinteria es de certificacion obligatoria en Ontario, lo que significa que debes tener certificado para usar el titulo.</p><h2>Electricidad (Electricista - 309A)</h2><p>Los electricistas instalan, mantienen y reparan sistemas electricos. Alta demanda, excelente pago y habilidades transferibles. <strong>Aprendizaje:</strong> 5 anos (9,000 horas + 3 sesiones en escuela). <strong>Salario de oficial:</strong> $35-$55/hora. Este es un oficio obligatorio — legalmente debes tener licencia para realizar trabajo electrico.</p><h2>Plomeria (Plomero - 306A)</h2><p>Los plomeros instalan y reparan sistemas de tuberias de agua, desague y gas. Demanda constante tanto en construccion nueva como en renovacion. <strong>Aprendizaje:</strong> 5 anos (9,000 horas + 3 sesiones en escuela). <strong>Salario de oficial:</strong> $35-$50/hora. Oficio obligatorio.</p><h2>HVAC (Mecanico de Refrigeracion y A/C - 313A)</h2><p>Los tecnicos de HVAC instalan y dan servicio a sistemas de calefaccion, ventilacion y aire acondicionado. Demanda creciente con las regulaciones de eficiencia energetica. <strong>Aprendizaje:</strong> 5 anos (9,000 horas + 3 sesiones en escuela). <strong>Salario de oficial:</strong> $33-$48/hora.</p><h2>Herrero Estructural (Estructural/Ornamental - 420A)</h2><p>Los herreros estructurales montan armazones de acero para edificios, puentes e infraestructura. Fisicamente exigente y bien pagado. <strong>Aprendizaje:</strong> 3 anos (5,400 horas + sesiones en escuela). <strong>Salario de oficial:</strong> $38-$52/hora. Fuerte presencia sindical (Local 721, Local 736).</p><h2>Operador de Equipo Pesado</h2><p>Los operadores manejan excavadoras, bulldozers, gruas y otra maquinaria pesada. Excelente pago para rutas sin aprendizaje formal. Capacitacion a traves de colegios o programas sindicales (IUOE Local 793). <strong>Salario:</strong> $28-$50/hora dependiendo de la clase de equipo.</p><h2>Tablaroca, Encintado y Pintura</h2><p>Oficios de acabados interiores. Entrada mas rapida, menores requisitos de aprendizaje y demanda residencial constante. <strong>Salario:</strong> $22-$38/hora. Muchos trabajadores son independientes o manejan pequenas cuadrillas.</p><h2>Como Iniciar un Aprendizaje</h2><p>1. Encuentra un patrocinador (empleador dispuesto a capacitarte). 2. Registrate a traves del Ministerio de Trabajo, Inmigracion, Capacitacion y Desarrollo de Habilidades de Ontario. 3. Firma un acuerdo de capacitacion. 4. Alterna entre horas en el trabajo y sesiones en el colegio. 5. Presenta el examen de Certificado de Calificacion. La <a href='/#pathway'>Ruta de OnSite</a> mapea las certificaciones requeridas para cada paso.</p><h2>Potencial de Ingresos</h2><p>Los trabajadores calificados en Ontario ganan entre $60,000 y $120,000+ anuales. Horas extra, primas por turno y especializaciones aumentan esta cifra. Los capataces ganan entre 15-25% mas que los oficiales. Iniciar tu propia empresa es una progresion natural que muchos profesionales de oficios persiguen.</p>"
+    },
+    "starter-kit": {
+      "title": "Tu Kit Inicial: Herramientas Esenciales por Oficio",
+      "meta_desc": "¿Nuevo en la construcción? Aquí están exactamente las herramientas personales que necesitas para tu primer día en obra — organizadas por oficio.",
+      "reading_time": "5",
+      "content": ""
     },
     "calculator-guide": {
       "title": "OnSite Calculator: Matematicas de Construccion por Voz",

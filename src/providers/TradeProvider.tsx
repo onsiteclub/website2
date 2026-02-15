@@ -76,17 +76,8 @@ const TradeContext = createContext<TradeContextType | null>(null);
 export function TradeProvider({ children }: { children: ReactNode }) {
   const [trade, setTradeState] = useState<TradeId>('default');
 
-  useEffect(() => {
-    const saved = localStorage.getItem('onsite-trade') as TradeId | null;
-    if (saved && TRADES[saved]) {
-      setTradeState(saved);
-      document.documentElement.setAttribute('data-trade', saved);
-    }
-  }, []);
-
   const setTrade = (newTrade: TradeId) => {
     setTradeState(newTrade);
-    localStorage.setItem('onsite-trade', newTrade);
     document.documentElement.setAttribute('data-trade', newTrade);
   };
 
