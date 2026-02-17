@@ -2381,6 +2381,15 @@ section {
 
 .sitemap-col a:hover { color: var(--text-primary); }
 
+.sitemap-sub {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  margin: 12px 0 4px;
+  font-weight: 600;
+}
+
 
 /* ═══════════════════════════════════
    PARALLAX STAGGER — hovered card lags behind on scroll
