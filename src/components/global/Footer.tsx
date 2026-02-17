@@ -58,11 +58,11 @@ export default function Footer() {
           <div className="sitemap-col">
             <h5>{s('legal_heading')}</h5>
             <h6 className="sitemap-sub">{s('calculator')}</h6>
-            <a href={`${CALCULATOR_URL}/privacy`} target="_blank" rel="noopener noreferrer">{s('privacy')}</a>
-            <a href={`${CALCULATOR_URL}/terms`} target="_blank" rel="noopener noreferrer">{s('terms')}</a>
+            <Link href="/legal/calculator-privacy">{s('privacy')}</Link>
+            <Link href="/legal/calculator-terms">{s('terms')}</Link>
             <h6 className="sitemap-sub">{s('timekeeper')}</h6>
-            <a href={`${TIMEKEEPER_URL}/privacy`} target="_blank" rel="noopener noreferrer">{s('privacy')}</a>
-            <a href={`${TIMEKEEPER_URL}/terms`} target="_blank" rel="noopener noreferrer">{s('terms')}</a>
+            <Link href="/legal/timekeeper-privacy">{s('privacy')}</Link>
+            <Link href="/legal/timekeeper-terms">{s('terms')}</Link>
           </div>
           <div className="sitemap-col">
             <h5>{s('connect_heading')}</h5>

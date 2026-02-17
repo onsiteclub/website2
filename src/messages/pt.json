@@ -483,5 +483,28 @@
     "cat_apps": "Apps e Ferramentas",
     "cat_shop": "Loja",
     "cat_social": "Conectar"
+  },
+  "legal": {
+    "back": "← Voltar",
+    "calculator-privacy": {
+      "title": "Calculadora OnSite — Política de Privacidade",
+      "updated": "Última atualização: fevereiro 2026",
+      "content": "<h2>Introdução</h2><p>OnSite Club opera o aplicativo Calculadora OnSite. Esta política explica como coletamos, usamos e protegemos suas informações.</p><h2>Informações coletadas</h2><p><strong>Dados de voz:</strong> O áudio é processado em tempo real. Não armazenamos gravações de voz.</p><p><strong>Dados de uso:</strong> Estatísticas anônimas para melhorar o app.</p><p><strong>Dados de conta:</strong> Email e pagamento (Stripe) para contas Pro.</p><h2>Uso das informações</h2><p>Fornecer o serviço, processar pagamentos Pro, melhorar funcionalidades e enviar atualizações.</p><h2>Armazenamento e segurança</h2><p>Servidores seguros no Canadá. Criptografia TLS 1.3 em trânsito e AES-256 em repouso.</p><h2>Serviços de terceiros</h2><p>Stripe (pagamentos), Google Cloud Speech-to-Text (voz Pro), Vercel (hospedagem).</p><h2>Seus direitos</h2><p>Solicitar cópia dos seus dados, excluir sua conta, recusar análises. Contato: <a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a>.</p><h2>Contato</h2><p><a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a><br/>OnSite Club, Ontário, Canadá.</p>"
+    },
+    "calculator-terms": {
+      "title": "Calculadora OnSite — Termos de Serviço",
+      "updated": "Última atualização: fevereiro 2026",
+      "content": "<h2>Acordo</h2><p>Ao usar a Calculadora OnSite, você aceita estes termos.</p><h2>Descrição do serviço</h2><p>Ferramenta de cálculo para construção. Nível gratuito com funções básicas. Pro (CAD $9,99/mês) com voz, cálculos salvos e funções avançadas.</p><h2>Uso aceitável</h2><p>Não descompilar o aplicativo nem usá-lo para fins ilegais.</p><h2>Pagamentos</h2><p>Assinaturas Pro mensais. Cancelamento a qualquer momento. Reembolso dentro de 7 dias da compra inicial.</p><h2>Aviso legal</h2><p><strong>A Calculadora é uma ferramenta de conveniência. Os cálculos devem ser verificados antes de usar na construção.</strong></p><h2>Limitação de responsabilidade</h2><p>OnSite Club não será responsável por danos indiretos. Nossa responsabilidade total não excederá o valor pago nos últimos 12 meses.</p><h2>Lei aplicável</h2><p>Leis da província de Ontário, Canadá.</p><h2>Contato</h2><p><a href='mailto:legal@onsiteclub.ca'>legal@onsiteclub.ca</a><br/>OnSite Club, Ontário, Canadá.</p>"
+    },
+    "timekeeper-privacy": {
+      "title": "Timekeeper OnSite — Política de Privacidade",
+      "updated": "Última atualização: fevereiro 2026",
+      "content": "<h2>Introdução</h2><p>OnSite Club opera o aplicativo OnSite Timekeeper. Esta política explica como coletamos e protegemos suas informações, especialmente dados de localização.</p><h2>Informações coletadas</h2><p><strong>Dados de localização:</strong> Timekeeper usa GPS para detectar entrada/saída de zonas de obra. Não rastreamos seus movimentos completos. Os dados GPS são armazenados localmente.</p><p><strong>Registros de horas:</strong> Armazenados localmente. Usuários Pro podem sincronizar com nossos servidores.</p><p><strong>Dados de conta:</strong> Email e pagamento (Stripe) para contas Pro.</p><h2>Uso</h2><p>Rastreamento de tempo por geofence, relatórios semanais, pagamentos Pro. <strong>Nunca vendemos seus dados de localização.</strong></p><h2>Armazenamento</h2><p>Dados locais por padrão. Servidores seguros no Canadá para sincronização Pro. Criptografia AES-256.</p><h2>Modo offline</h2><p>Timekeeper funciona totalmente offline. Os dados sincronizam ao recuperar conectividade.</p><h2>Seus direitos</h2><p>Exportar registros, excluir conta, desativar localização. Contato: <a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a>.</p><h2>Contato</h2><p><a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a><br/>OnSite Club, Ontário, Canadá.</p>"
+    },
+    "timekeeper-terms": {
+      "title": "Timekeeper OnSite — Termos de Serviço",
+      "updated": "Última atualização: fevereiro 2026",
+      "content": "<h2>Acordo</h2><p>Ao usar o OnSite Timekeeper, você aceita estes termos.</p><h2>Descrição</h2><p>App de rastreamento de tempo por GPS para trabalhadores da construção. Gratuito com 1 zona. Pro (CAD $9,99/mês) com zonas ilimitadas, exportação PDF e sincronização.</p><h2>Serviços de localização</h2><p>Timekeeper requer permissão de localização. Você pode revogar a qualquer momento. <strong>Não rastreamos sua localização fora das zonas definidas.</strong></p><h2>Uso aceitável</h2><p>Não rastrear outras pessoas sem consentimento, não falsificar registros de horas.</p><h2>Pagamentos</h2><p>Pro mensal. Cancelamento a qualquer momento. Reembolso dentro de 7 dias.</p><h2>Aviso legal</h2><p><strong>Timekeeper é uma ferramenta de conveniência. A precisão do GPS varia por dispositivo.</strong> Não somos responsáveis por disputas salariais baseadas em dados do Timekeeper.</p><h2>Propriedade dos dados</h2><p>Seus registros pertencem a você. Exportação em PDF e CSV. Exclusão completa em 30 dias após excluir a conta.</p><h2>Lei aplicável</h2><p>Leis da província de Ontário, Canadá.</p><h2>Contato</h2><p><a href='mailto:legal@onsiteclub.ca'>legal@onsiteclub.ca</a><br/>OnSite Club, Ontário, Canadá.</p>"
+    }
   }
 }
