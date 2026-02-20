@@ -96,7 +96,11 @@
         "title": "Concientización en Salud y Seguridad del Trabajador",
         "desc": "Capacitación en línea gratuita requerida por la ley de Ontario. Cubre tus derechos, deberes del empleador y cómo identificar peligros en una obra.",
         "quote": "Requerido por ley para TODOS los trabajadores en Ontario. Complétalo antes de tu primer día en obra.",
-        "tags": ["OBLIGATORIO", "GRATIS", "GOBIERNO"],
+        "tags": [
+          "OBLIGATORIO",
+          "GRATIS",
+          "GOBIERNO"
+        ],
         "cta": "Tomar curso gratis en Ontario.ca",
         "url": "https://www.ontario.ca/page/worker-health-and-safety-awareness-four-steps"
       },
@@ -104,7 +108,10 @@
         "title": "Capacitación WHMIS 2015",
         "desc": "Aprende a leer hojas de datos de seguridad y etiquetas de peligro para químicos que encontrarás en obra. Curso en línea gratuito.",
         "quote": "Debes completar WHMIS antes de manejar cualquier producto controlado en una obra.",
-        "tags": ["OBLIGATORIO", "GRATIS"],
+        "tags": [
+          "OBLIGATORIO",
+          "GRATIS"
+        ],
         "cta": "Tomar curso WHMIS gratis",
         "url": "https://www.ccohs.ca/oshanswers/chemicals/whmis_ghs/education_training.html"
       },
@@ -112,7 +119,11 @@
         "title": "Trabajo en Alturas",
         "desc": "Requerido si trabajarás a más de 3 metros. Debe hacerse con un proveedor aprobado. Cuesta $80–$200 y toma un día completo.",
         "quote": "No se puede hacer en línea. Debes asistir a capacitación presencial con un proveedor aprobado.",
-        "tags": ["OBLIGATORIO", "PAGO", "PRESENCIAL"],
+        "tags": [
+          "OBLIGATORIO",
+          "PAGO",
+          "PRESENCIAL"
+        ],
         "cta": "Encontrar proveedores aprobados",
         "url": "https://www.ontario.ca/page/working-heights-training"
       }
@@ -122,7 +133,11 @@
         "title": "Casco de Seguridad CSA (Tipo 1 o 2)",
         "desc": "Protege contra objetos que caen y golpes. Debe cumplir la norma CSA Z94.1. El Tipo 2 también protege de impactos laterales.",
         "quote": "Sin casco, no entras. Toda obra en Ontario lo exige.",
-        "tags": ["REQUERIDO", "CSA", "EPP"],
+        "tags": [
+          "REQUERIDO",
+          "CSA",
+          "EPP"
+        ],
         "cta": "Info normas CSA",
         "url": "https://www.csagroup.org/"
       },
@@ -130,7 +145,11 @@
         "title": "Botas de Seguridad (CSA triángulo verde)",
         "desc": "Botas con punta de acero o compuesto y suelas anti-perforación. Busca el triángulo verde CSA en la etiqueta.",
         "quote": "Triángulo verde = protección Grado 1. Es el mínimo para obras de construcción.",
-        "tags": ["REQUERIDO", "CSA", "EPP"],
+        "tags": [
+          "REQUERIDO",
+          "CSA",
+          "EPP"
+        ],
         "cta": "Guía de requisitos para botas",
         "url": "/learn/safety-equipment"
       },
@@ -138,7 +157,10 @@
         "title": "Chaleco de Alta Visibilidad (Clase 2+)",
         "desc": "Chaleco o camisa fluorescente con franjas reflectantes. Obligatorio en cualquier obra con tráfico de vehículos.",
         "quote": "Clase 2 mínimo para construcción. Clase 3 requerida para trabajo vial.",
-        "tags": ["REQUERIDO", "SEGURIDAD"],
+        "tags": [
+          "REQUERIDO",
+          "SEGURIDAD"
+        ],
         "cta": "Guía de clasificación alta visibilidad",
         "url": "/learn/safety-equipment"
       }
@@ -148,7 +170,10 @@
         "title": "Carpintería y Estructura",
         "desc": "Construye el esqueleto de cada estructura. Lee planos, corta madera, arma muros e instala cerchas. Aprendizaje de 4 años, alta demanda todo el año.",
         "quote": "La base de la construcción residencial. Ideal para quienes les gusta ver las cosas tomar forma rápido.",
-        "tags": ["OFICIO", "APRENDIZAJE"],
+        "tags": [
+          "OFICIO",
+          "APRENDIZAJE"
+        ],
         "cta": "Carrera en carpintería",
         "url": "/learn/trades-guide"
       },
@@ -156,7 +181,11 @@
         "title": "Electricidad",
         "desc": "Cablea edificios para energía, iluminación y datos. Oficio regulado con aprendizaje de 5 años. Uno de los oficios mejor pagados.",
         "quote": "Los electricistas siempre tienen demanda. Los oficiales ganan $40–$50+/hr en Ontario.",
-        "tags": ["OFICIO", "REGULADO", "ALTA DEMANDA"],
+        "tags": [
+          "OFICIO",
+          "REGULADO",
+          "ALTA DEMANDA"
+        ],
         "cta": "Carrera en electricidad",
         "url": "/learn/trades-guide"
       },
@@ -164,7 +193,10 @@
         "title": "Plomería y HVAC",
         "desc": "Instala sistemas de agua, drenaje, gas y climatización. Oficio regulado con aprendizaje de 5 años.",
         "quote": "Los plomeros y técnicos HVAC trabajan detrás de las paredes — y nunca les falta trabajo.",
-        "tags": ["OFICIO", "REGULADO"],
+        "tags": [
+          "OFICIO",
+          "REGULADO"
+        ],
         "cta": "Carrera en plomería",
         "url": "/learn/trades-guide"
       }
@@ -174,7 +206,11 @@
         "title": "Esenciales Generales",
         "desc": "Todo trabajador de la construcción necesita esto desde el primer día — sin importar el oficio. Cinta métrica, cuchilla, cinturón de herramientas, lápices y línea de tiza.",
         "quote": "Llega con tus propias herramientas básicas. Pedir prestado en obra da mala impresión.",
-        "tags": ["ESENCIAL", "TODOS LOS OFICIOS", "PRINCIPIANTE"],
+        "tags": [
+          "ESENCIAL",
+          "TODOS LOS OFICIOS",
+          "PRINCIPIANTE"
+        ],
         "cta": "Ver Guía de Equipo",
         "url": "/learn/safety-equipment",
         "image": "/images/kit-tools.webp"
@@ -183,7 +219,10 @@
         "title": "Kit Madera & Estructura",
         "desc": "Escuadra rápida para ángulos, martillo de carpintero, sierra circular, cinta métrica y sacaclavos. Los cinco esenciales del carpintero.",
         "quote": "Una buena escuadra y un martillo de 25oz — así empieza todo carpintero.",
-        "tags": ["MADERA", "ESTRUCTURA"],
+        "tags": [
+          "MADERA",
+          "ESTRUCTURA"
+        ],
         "cta": "Carrera en Carpintería",
         "url": "/learn/trades-guide",
         "image": "/images/kit-wood.webp"
@@ -192,7 +231,10 @@
         "title": "Kit Yeso & Acabado",
         "desc": "Espátulas para cinta (6\", 10\", 12\"), bandeja para mezcla, sierra para yeso, escuadra en T y esponja para lijar. Paredes limpias empiezan con buenas herramientas.",
         "quote": "El yeso es 90% preparación. Buenas espátulas hacen toda la diferencia.",
-        "tags": ["YESO", "ACABADO"],
+        "tags": [
+          "YESO",
+          "ACABADO"
+        ],
         "cta": "Carrera en Acabados",
         "url": "/learn/trades-guide",
         "image": "/images/kit-drywall.webp"
@@ -201,7 +243,10 @@
         "title": "Kit Electricidad",
         "desc": "Pelacables, detector de voltaje sin contacto, alicates de electricista, cinta pasacables y dobladora de conduit. Herramientas de seguridad para un oficio regulado.",
         "quote": "Nunca trabajes en un circuito sin probarlo. El detector de voltaje es tu herramienta más importante.",
-        "tags": ["ELECTRICIDAD", "REGULADO"],
+        "tags": [
+          "ELECTRICIDAD",
+          "REGULADO"
+        ],
         "cta": "Carrera en Electricidad",
         "url": "/learn/trades-guide",
         "image": "/images/kit-electrical.webp"
@@ -210,7 +255,10 @@
         "title": "Kit Plomería & Climatización",
         "desc": "Llave para tubos, cortador de tubería, cinta teflón, crimpadora PEX y llave de lavabo. Cortar, sellar y conectar — el día a día del plomero.",
         "quote": "Lleva cinta teflón extra. Vas a usar más de lo que piensas.",
-        "tags": ["PLOMERÍA", "CLIMATIZACIÓN"],
+        "tags": [
+          "PLOMERÍA",
+          "CLIMATIZACIÓN"
+        ],
         "cta": "Carrera en Plomería",
         "url": "/learn/trades-guide",
         "image": "/images/kit-plumbing.webp"
@@ -219,7 +267,10 @@
         "title": "Kit Concreto & Albañilería",
         "desc": "Llana flotadora, llana de acabado, bordeadora, vibrador de concreto y tablas para rodillas. Vaciar, nivelar y acabar — el tiempo lo es todo.",
         "quote": "El concreto no espera. Ten tus herramientas listas antes de empezar a vaciar.",
-        "tags": ["CONCRETO", "ALBAÑILERÍA"],
+        "tags": [
+          "CONCRETO",
+          "ALBAÑILERÍA"
+        ],
         "cta": "Carrera en Concreto",
         "url": "/learn/trades-guide",
         "image": "/images/kit-concrete.webp"
@@ -497,14 +548,14 @@
       "content": "<h2>Acuerdo</h2><p>Al usar la Calculadora OnSite, aceptas estos términos.</p><h2>Descripción del servicio</h2><p>Herramienta de cálculo para construcción. Nivel gratuito con funciones básicas. Pro ($9.99 CAD/mes) con voz, cálculos guardados y funciones avanzadas.</p><h2>Uso aceptable</h2><p>No descompilar la aplicación ni usarla para fines ilegales.</p><h2>Pagos</h2><p>Suscripciones Pro mensuales. Cancelación en cualquier momento. Reembolso dentro de los 7 días de la compra inicial.</p><h2>Aviso legal</h2><p><strong>La Calculadora es una herramienta de conveniencia. Los cálculos deben verificarse antes de usarse en construcción.</strong></p><h2>Limitación de responsabilidad</h2><p>OnSite Club no será responsable por daños indirectos. Nuestra responsabilidad total no excederá lo pagado en los últimos 12 meses.</p><h2>Ley aplicable</h2><p>Leyes de la provincia de Ontario, Canadá.</p><h2>Contacto</h2><p><a href='mailto:legal@onsiteclub.ca'>legal@onsiteclub.ca</a><br/>OnSite Club, Ontario, Canadá.</p>"
     },
     "timekeeper-privacy": {
-      "title": "Timekeeper OnSite — Política de Privacidad",
-      "updated": "Última actualización: febrero 2026",
-      "content": "<h2>Introducción</h2><p>OnSite Club opera la aplicación OnSite Timekeeper. Esta política explica cómo recopilamos y protegemos tu información, especialmente datos de ubicación.</p><h2>Información recopilada</h2><p><strong>Datos de ubicación:</strong> Timekeeper usa GPS para detectar entrada/salida de zonas de obra. No rastreamos tus movimientos completos. Los datos GPS se almacenan localmente.</p><p><strong>Registros horarios:</strong> Almacenados localmente. Los usuarios Pro pueden sincronizar con nuestros servidores.</p><p><strong>Datos de cuenta:</strong> Email y pago (Stripe) para cuentas Pro.</p><h2>Uso</h2><p>Seguimiento de tiempo por geovalla, reportes semanales, pagos Pro. <strong>Nunca vendemos tus datos de ubicación.</strong></p><h2>Almacenamiento</h2><p>Datos locales por defecto. Servidores seguros en Canadá para sincronización Pro. Cifrado AES-256.</p><h2>Modo sin conexión</h2><p>Timekeeper funciona completamente sin conexión. Los datos se sincronizan al recuperar conectividad.</p><h2>Tus derechos</h2><p>Exportar registros, eliminar cuenta, desactivar ubicación. Contacto: <a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a>.</p><h2>Contacto</h2><p><a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a><br/>OnSite Club, Ontario, Canadá.</p>"
+      "title": "OnSite Timekeeper — Privacy Policy",
+      "updated": "Last updated: February 19, 2026",
+      "content": "<p>OnSite Club (\"we,\" \"our,\" or \"us\") operates the OnSite Timekeeper mobile application (the \"App\"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App.</p><h2>1. Information We Collect</h2><h3>1.1 Personal Information</h3><p>When you create an account, we collect:</p><ul><li><strong>Email address</strong> — Used for authentication and account recovery</li><li><strong>Name and surname</strong> — Used to identify you within the App</li><li><strong>User ID</strong> — A unique identifier assigned to your account</li></ul><h3>1.2 Location Data</h3><p>Our App collects location data to provide its core functionality:</p><ul><li><strong>Precise GPS coordinates</strong> — Collected when you use the map feature or when geofencing is enabled</li><li><strong>Background location</strong> — With your explicit permission, we collect location data even when the App is closed or not in use. This is essential for automatically detecting when you arrive at or leave your work location, recording accurate work entry and exit times, and providing geofence-based time tracking.</li></ul><p>We use geofencing technology, NOT continuous GPS tracking. Location is only processed when you enter or exit a defined work zone.</p><h3>1.3 Work Session Data</h3><ul><li>Entry and exit timestamps</li><li>Work location names</li><li>Session duration and break times</li><li>Notes attached to work sessions</li></ul><h3>1.4 Device and Usage Information</h3><ul><li>Device type and operating system version</li><li>App version</li><li>Timezone settings</li><li>Anonymous usage analytics (features used, session duration)</li><li>Crash reports and error logs (via Sentry — no PII included)</li></ul><h2>2. How We Use Your Information</h2><p>We use the collected information for the following purposes:</p><ul><li><strong>Account Management</strong> — Email, name, user ID</li><li><strong>Time Tracking</strong> — Location data, timestamps</li><li><strong>Geofencing</strong> — Background location, work locations</li><li><strong>Work Reports</strong> — Session data, timestamps</li><li><strong>App Improvement</strong> — Anonymous usage data, crash reports</li><li><strong>Customer Support</strong> — Email, session data</li></ul><p>We do <strong>NOT</strong> use your data for advertising or marketing to third parties, selling to data brokers, tracking your movements outside of work-related geofences, or building advertising profiles.</p><h2>3. Location Data — Detailed Disclosure</h2><h3>3.1 Why We Need Background Location</h3><p>OnSite Timekeeper is a work time tracking application. The geofencing feature requires detecting when you physically arrive at or leave your designated work location. This functionality requires background location access because you may arrive at work with your phone in your pocket (App not open), you may leave work without manually opening the App, and automatic time tracking requires continuous geofence monitoring.</p><blockquote><strong>IMPORTANT:</strong> Background location is ONLY required for the premium geofencing feature. The free tier (manual time entry) does NOT require any location access.</blockquote><h3>3.2 How Background Location Works</h3><ul><li>We use geofencing technology (not continuous GPS tracking)</li><li>Location is only processed when you enter or exit a defined work zone</li><li>We do NOT track your location continuously throughout the day</li><li>Location data is processed locally on your device first</li><li>Only entry/exit events are recorded and optionally synced</li></ul><h3>3.3 Your Control Over Location</h3><p>You can at any time:</p><ul><li>Disable background location in your device settings</li><li>Remove work locations from the App</li><li>Switch to manual time entry mode (no location required)</li><li>Delete all stored location data</li><li>Revoke location permission entirely (manual entry still works)</li></ul><h2>4. Data Storage and Security</h2><h3>4.1 Local Storage (Offline-First)</h3><p>Your data is stored locally on your device using SQLite database for offline functionality and secure storage for authentication tokens. Your data is NEVER lost, even without internet connection.</p><h3>4.2 Cloud Storage (Optional Sync)</h3><p>When you are online, data may sync to our cloud servers:</p><ul><li><strong>Provider:</strong> Supabase (hosted on AWS)</li><li><strong>Location:</strong> United States / Canada</li><li><strong>Encryption:</strong> TLS 1.3 in transit, AES-256 at rest</li><li><strong>Access Control:</strong> Row Level Security (RLS) ensures you can only access your own data</li></ul><h3>4.3 Security Measures</h3><ul><li>All data transmission uses HTTPS/TLS encryption</li><li>Authentication tokens are stored in device secure storage</li><li>Database access requires authentication</li><li>Row-level security on all cloud tables</li><li>We implement industry-standard security practices</li></ul><h2>5. Data Sharing and Disclosure</h2><h3>5.1 We Do NOT Sell Your Data</h3><p>We do not sell, trade, or rent your personal information to third parties.</p><h3>5.2 Limited Sharing</h3><p>We may share your data only in these circumstances:</p><ul><li><strong>Your Employer/Manager</strong> — Only if you explicitly grant access via the Team Sharing feature (work hours and session times only)</li><li><strong>Service Providers</strong> — Infrastructure and hosting (encrypted data only)</li><li><strong>Legal Authorities</strong> — If required by law or valid legal process</li></ul><h3>5.3 Team Sharing Feature</h3><p>If you choose to share your timesheet with a manager or employer:</p><ul><li>You explicitly grant access via a sharing code or QR code</li><li>You can revoke access at any time</li><li>Shared data includes: work hours, entry/exit times, location names</li><li>Shared data does NOT include: precise GPS coordinates, personal device info</li></ul><h2>6. Third-Party Services</h2><p>Our App uses the following third-party services:</p><ul><li><strong>Supabase</strong> — Authentication, database, and cloud sync</li><li><strong>Google Maps</strong> — Map display and geocoding</li><li><strong>Expo</strong> — App framework and push notifications</li><li><strong>Sentry</strong> — Error monitoring and crash reporting (no PII collected)</li></ul><p>Each third-party provider has their own privacy policy. We require that all third-party partners provide equivalent or greater data protection.</p><h2>7. Data Retention</h2><ul><li><strong>Account information</strong> — Until you delete your account</li><li><strong>Work session records</strong> — 2 years (for legal/tax compliance)</li><li><strong>Location audit logs</strong> — 90 days</li><li><strong>Error logs and crash reports</strong> — 30 days</li><li><strong>Anonymous analytics</strong> — 12 months</li></ul><p>After these periods, data is automatically deleted from our servers.</p><h2>8. Account Deletion</h2><p>You can delete your account at any time through:</p><ul><li><strong>In-App:</strong> Settings &gt; Account &gt; Delete Account</li><li><strong>Email:</strong> <a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a></li></ul><p>Upon deletion, your account is permanently deactivated, all personal data is deleted from our servers within 30 days, local data on your device is cleared immediately, anonymized aggregated data may be retained for analytics, and shared access (Team Sharing) is automatically revoked.</p><h2>9. Your Rights</h2><h3>9.1 Under GDPR (European Users)</h3><p>Legal basis for processing: Consent (location data), Legitimate Interest (service provision), Contract (account management). You have the right to:</p><ul><li><strong>Access</strong> — Request a copy of your data</li><li><strong>Rectification</strong> — Correct inaccurate data</li><li><strong>Erasure</strong> — Request deletion of your data (\"right to be forgotten\")</li><li><strong>Portability</strong> — Export your data in a standard format (PDF, CSV)</li><li><strong>Restriction</strong> — Limit how we process your data</li><li><strong>Objection</strong> — Object to certain processing activities</li><li><strong>Withdraw Consent</strong> — Revoke previously given consent at any time</li></ul><h3>9.2 Under CCPA (California Users)</h3><p>You have the right to know what personal information we collect, request deletion of your personal information, opt-out of the sale of personal information (we don't sell data), and non-discrimination for exercising your rights.</p><h3>9.3 Under LGPD (Brazilian Users)</h3><p>You have equivalent rights to access, correct, delete, and port your data, as well as the right to information about data sharing and the identity of the data protection officer.</p><h3>9.4 How to Exercise Your Rights</h3><p>Contact us at:</p><ul><li><strong>Email:</strong> <a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a></li><li><strong>In-App:</strong> Settings &gt; Privacy &gt; Request Data / Delete Account</li></ul><p>We will respond to your request within 30 days.</p><h2>10. Children's Privacy</h2><p>OnSite Timekeeper is not intended for use by children under 16 years of age. We do not knowingly collect personal information from children. If you believe we have collected data from a child, please contact us immediately at <a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a>.</p><h2>11. Changes to This Privacy Policy</h2><p>We may update this Privacy Policy from time to time. We will notify you of changes by posting the new Privacy Policy in the App, updating the \"Last Updated\" date, and sending an email notification for significant changes.</p><p>Your continued use of the App after changes constitutes acceptance of the updated policy.</p><h2>12. Contact Us</h2><p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us:</p><p><strong>OnSite Club</strong></p><ul><li><strong>Privacy:</strong> <a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a></li><li><strong>Support:</strong> <a href='mailto:support@onsiteclub.ca'>support@onsiteclub.ca</a></li><li><strong>Website:</strong> <a href='https://onsiteclub.ca'>https://onsiteclub.ca</a></li></ul><p>Located in Ontario, Canada.</p><h2>13. Consent</h2><p>By using OnSite Timekeeper, you consent to the collection and use of your information as described in this Privacy Policy. For location data, we request explicit consent through your device's permission system before any collection begins. You may withdraw consent at any time by disabling permissions in your device settings.</p>"
     },
     "timekeeper-terms": {
-      "title": "Timekeeper OnSite — Términos de Servicio",
-      "updated": "Última actualización: febrero 2026",
-      "content": "<h2>Acuerdo</h2><p>Al usar OnSite Timekeeper, aceptas estos términos.</p><h2>Descripción</h2><p>App de seguimiento de tiempo por GPS para trabajadores de construcción. Gratuito con 1 zona. Pro ($9.99 CAD/mes) con zonas ilimitadas, exportación PDF y sincronización.</p><h2>Servicios de ubicación</h2><p>Timekeeper requiere permiso de ubicación. Puedes revocarlo en cualquier momento. <strong>No rastreamos tu ubicación fuera de las zonas definidas.</strong></p><h2>Uso aceptable</h2><p>No rastrear a otras personas sin consentimiento, no falsificar registros horarios.</p><h2>Pagos</h2><p>Pro mensual. Cancelación en cualquier momento. Reembolso dentro de 7 días.</p><h2>Aviso legal</h2><p><strong>Timekeeper es una herramienta de conveniencia. La precisión GPS varía según el dispositivo.</strong> No somos responsables de disputas salariales basadas en datos de Timekeeper.</p><h2>Propiedad de datos</h2><p>Tus registros te pertenecen. Exportación en PDF y CSV. Eliminación completa en 30 días tras eliminar la cuenta.</p><h2>Ley aplicable</h2><p>Leyes de la provincia de Ontario, Canadá.</p><h2>Contacto</h2><p><a href='mailto:legal@onsiteclub.ca'>legal@onsiteclub.ca</a><br/>OnSite Club, Ontario, Canadá.</p>"
+      "title": "OnSite Timekeeper — Terms of Service",
+      "updated": "Last updated: February 19, 2026",
+      "content": "<p>Please read these Terms of Service (\"Terms,\" \"Agreement\") carefully before using the OnSite Timekeeper mobile application (\"App\") operated by OnSite Club (\"Company,\" \"we,\" \"our,\" or \"us\").</p><p>By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.</p><h2>1. Acceptance of Terms</h2><h3>1.1 Agreement to Terms</h3><p>By accessing or using OnSite Timekeeper, you confirm that:</p><ul><li>You are at least 16 years of age</li><li>You have the legal capacity to enter into this Agreement</li><li>You will comply with these Terms and all applicable laws</li><li>If using on behalf of an organization, you have authority to bind that organization</li></ul><h3>1.2 Additional Policies</h3><p>These Terms incorporate by reference our Privacy Policy and any additional guidelines or rules posted within the App.</p><h2>2. Description of Service</h2><h3>2.1 What OnSite Timekeeper Does</h3><p>OnSite Timekeeper is a mobile application designed to help users track their work hours. The App provides:</p><ul><li><strong>Manual time entry</strong> — Record work hours by manually entering start and end times</li><li><strong>Location-based tracking</strong> — Save work locations for quick access</li><li><strong>Geofencing (Premium)</strong> — Automatically detect arrival and departure from work locations using background location</li><li><strong>Reports and exports</strong> — Generate timesheets in PDF and CSV formats</li><li><strong>Team sharing</strong> — Share your timesheet with employers or managers</li></ul><h3>2.2 Service Tiers</h3><p><strong>Free Tier:</strong></p><ul><li>Manual time entry and editing</li><li>Work session history and calendar view</li><li>Basic reports</li><li>Local data storage (offline-first)</li><li>Cloud backup and sync</li></ul><p><strong>Premium Tier (Geofencing):</strong></p><ul><li>All Free features plus:</li><li>Automatic entry/exit detection via GPS geofencing</li><li>Multiple work location zones</li><li>Background location monitoring</li><li>Location audit trail</li></ul><h3>2.3 Service Availability</h3><p>We strive to maintain continuous service availability. However, we do not guarantee that the App will be available at all times without interruption, free from errors, bugs, or security vulnerabilities, or compatible with all devices or operating systems.</p><h2>3. User Accounts</h2><h3>3.1 Account Creation</h3><p>To use OnSite Timekeeper, you must create an account by providing a valid email address, a secure password, and your name (optional but recommended).</p><h3>3.2 Account Responsibilities</h3><p>You are responsible for:</p><ul><li>Maintaining the confidentiality of your login credentials</li><li>All activities that occur under your account</li><li>Notifying us immediately of any unauthorized access</li><li>Ensuring your account information is accurate and current</li></ul><h3>3.3 Account Security</h3><p>We implement industry-standard security measures, but you acknowledge that no system is completely secure. We are not liable for any loss resulting from unauthorized access to your account due to your failure to protect your credentials.</p><h3>3.4 Account Deletion</h3><p>You may delete your account at any time through:</p><ul><li><strong>In-App:</strong> Settings &gt; Account &gt; Delete Account</li><li><strong>Email:</strong> <a href='mailto:privacy@onsiteclub.ca'>privacy@onsiteclub.ca</a></li></ul><p>Upon deletion, your data will be permanently removed within 30 days. See our Privacy Policy for full details.</p><h2>4. Service Plans and Pricing</h2><h3>4.1 Current Offering</h3><p>OnSite Timekeeper offers both free and premium features. The free tier includes manual time entry, reports, and cloud sync. Premium geofencing features may require a subscription.</p><h3>4.2 Future Changes</h3><p>We reserve the right to modify pricing or introduce new subscription plans. If we do, we will provide at least 30 days notice. Features that were free at the time you started using them will be communicated clearly if any changes apply.</p><h3>4.3 Payments and Refunds</h3><p>If applicable, subscriptions are processed through the Apple App Store or Google Play Store. Refund policies follow the respective store's policies. You may cancel your subscription at any time.</p><h2>5. Acceptable Use</h2><h3>5.1 Permitted Uses</h3><p>You may use OnSite Timekeeper to track your own work hours, generate personal timesheets and reports, share your data with authorized parties (employers, managers), and export your data for personal or professional use.</p><h3>5.2 Prohibited Uses</h3><p>You agree <strong>NOT</strong> to:</p><ul><li>Use the App for any illegal purpose</li><li>Falsify time records or location data</li><li>Attempt to circumvent security features</li><li>Reverse engineer, decompile, or disassemble the App</li><li>Use automated systems to access the App (bots, scrapers)</li><li>Interfere with or disrupt the App's functionality</li><li>Impersonate another person or entity</li><li>Share your account credentials with others</li><li>Use the App to track other people without their consent</li></ul><h3>5.3 Consequences of Violation</h3><p>Violation of these terms may result in suspension or termination of your account, loss of access to premium features without refund, and legal action if applicable.</p><h2>6. Location Services and Geofencing</h2><h3>6.1 Location Data Collection</h3><p>When you enable location features, you understand and agree that the App collects precise GPS coordinates, background location may be collected when the App is not in use, location data is used to detect arrival/departure from work locations, you can disable location services at any time in your device settings, and location access is NOT required for manual time entry (free tier).</p><h3>6.2 Background Location Disclosure</h3><p>The App uses background location access to automatically detect when you arrive at or leave a work site, even when the App is closed or not in use. This data is used exclusively for geofence-based time tracking. Your location is never shared with advertisers or third parties. You can disable this at any time in your device settings.</p><h3>6.3 Geofencing Limitations</h3><p>You acknowledge that geofencing technology has inherent limitations:</p><ul><li><strong>GPS Accuracy</strong> — Location accuracy varies based on device, environment, and signal strength</li><li><strong>Timing Delays</strong> — Entry/exit detection may be delayed by several minutes</li><li><strong>False Triggers</strong> — Occasional false positives or negatives may occur</li><li><strong>Battery Impact</strong> — Background location services consume battery</li><li><strong>Indoor Accuracy</strong> — GPS may be less accurate inside buildings</li></ul><h3>6.4 No Guarantee of Accuracy</h3><blockquote><strong>IMPORTANT:</strong> OnSite Timekeeper is a tool to assist with time tracking, NOT an official timekeeping system. You are responsible for verifying the accuracy of recorded times, making manual corrections when necessary, maintaining your own official records if required by law or employer, and reviewing time records before submission to employers.</blockquote><p>We are NOT liable for any disputes, losses, or damages arising from inaccurate time records.</p><h2>7. Data and Content</h2><h3>7.1 Your Data</h3><p>You retain ownership of all data you input into the App, including work session records, location names and addresses, and personal information.</p><h3>7.2 License to Use Your Data</h3><p>By using the App, you grant us a limited license to store your data on our servers, process your data to provide the service, back up your data for recovery purposes, and display your data to you within the App.</p><h3>7.3 Data Export</h3><p>You may export your data at any time through the App's export features. We provide data in standard formats (PDF, CSV) for your convenience.</p><h3>7.4 Data Deletion</h3><p>You may delete your data and account at any time. Upon deletion, your account will be permanently deactivated, personal data will be deleted from servers within 30 days, local data on your device is cleared immediately, and anonymized, aggregated data may be retained for analytics.</p><h2>8. Intellectual Property</h2><h3>8.1 Our Property</h3><p>OnSite Timekeeper and its original content, features, and functionality are owned by OnSite Club and are protected by copyright, trademark, and other intellectual property rights.</p><h3>8.2 Restrictions</h3><p>You may not copy, modify, or distribute the App, use our trademarks without permission, create derivative works based on the App, or remove any copyright or proprietary notices.</p><h3>8.3 Feedback</h3><p>If you provide suggestions, ideas, or feedback about the App, you grant us the right to use such feedback without compensation or attribution.</p><h2>9. Third-Party Services</h2><h3>9.1 Third-Party Integrations</h3><p>The App may integrate with third-party services including:</p><ul><li><strong>Google Maps</strong> (map display and geocoding)</li><li><strong>Supabase</strong> (authentication and data storage)</li><li><strong>Sentry</strong> (error monitoring)</li><li><strong>App Store / Google Play</strong> (distribution and payments)</li></ul><h3>9.2 Third-Party Terms</h3><p>Your use of third-party services is subject to their respective terms and privacy policies. We are not responsible for third-party services.</p><h3>9.3 Links</h3><p>The App may contain links to external websites or services. We do not endorse or control these external resources.</p><h2>10. Disclaimers</h2><h3>10.1 \"As Is\" Basis</h3><p><strong>THE APP IS PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR ACCURACY OR RELIABILITY.</strong></p><h3>10.2 No Professional Advice</h3><p>OnSite Timekeeper is a time tracking tool, not a substitute for professional HR or payroll systems, legal compliance systems, or official timekeeping required by law. Consult appropriate professionals for employment, legal, or tax matters.</p><h3>10.3 Service Interruptions</h3><p>We do not warrant that the App will be uninterrupted or error-free, that defects will be corrected, or that the App is free of viruses or harmful components.</p><h2>11. Limitation of Liability</h2><h3>11.1 Exclusion of Damages</h3><p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW, ONSITE CLUB SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, LOSS OF PROFITS, REVENUE, OR DATA, BUSINESS INTERRUPTION, OR DAMAGES ARISING FROM USE OR INABILITY TO USE THE APP.</strong></p><h3>11.2 Maximum Liability</h3><p><strong>OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE 12 MONTHS PRECEDING THE CLAIM, OR $100 CAD, WHICHEVER IS GREATER.</strong></p><h3>11.3 Exceptions</h3><p>Some jurisdictions do not allow limitation of liability for certain damages. In such cases, our liability is limited to the maximum extent permitted by law.</p><h2>12. Indemnification</h2><p>You agree to indemnify and hold harmless OnSite Club, its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including legal fees) arising from your use of the App, your violation of these Terms, your violation of any third-party rights, and any dispute between you and your employer regarding time records.</p><h2>13. Termination</h2><h3>13.1 Termination by You</h3><p>You may stop using the App and delete your account at any time.</p><h3>13.2 Termination by Us</h3><p>We may suspend or terminate your account if you violate these Terms, your account is inactive for more than 24 months, we discontinue the App (with reasonable notice), or if required by law.</p><h3>13.3 Effect of Termination</h3><p>Upon termination, your right to use the App ceases immediately, we may delete your data (subject to legal retention requirements), and provisions that should survive termination will remain in effect.</p><h2>14. Dispute Resolution</h2><h3>14.1 Informal Resolution</h3><p>Before filing a formal dispute, you agree to contact us at <a href='mailto:legal@onsiteclub.ca'>legal@onsiteclub.ca</a> to attempt informal resolution.</p><h3>14.2 Governing Law</h3><p>These Terms are governed by the laws of the <strong>Province of Ontario, Canada</strong>, without regard to conflict of law principles.</p><h3>14.3 Jurisdiction</h3><p>Any disputes shall be resolved in the courts located in Ontario, Canada. You consent to the personal jurisdiction of such courts.</p><h3>14.4 Class Action Waiver</h3><p><strong>YOU AGREE TO RESOLVE DISPUTES ONLY ON AN INDIVIDUAL BASIS AND NOT AS PART OF ANY CLASS OR REPRESENTATIVE ACTION.</strong></p><h2>15. Changes to Terms</h2><h3>15.1 Modifications</h3><p>We reserve the right to modify these Terms at any time. Changes become effective when posted unless otherwise specified.</p><h3>15.2 Notification</h3><p>We will notify you of material changes through in-app notification, email to your registered address, and notice on our website.</p><h3>15.3 Continued Use</h3><p>Your continued use of the App after changes constitutes acceptance of the modified Terms. If you do not agree, you must stop using the App.</p><h2>16. General Provisions</h2><h3>16.1 Entire Agreement</h3><p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and OnSite Club regarding the App.</p><h3>16.2 Severability</h3><p>If any provision of these Terms is found invalid or unenforceable, the remaining provisions remain in full effect.</p><h3>16.3 Waiver</h3><p>Our failure to enforce any provision does not constitute a waiver of that provision or any other provision.</p><h3>16.4 Assignment</h3><p>You may not assign your rights under these Terms. We may assign our rights to any affiliate or successor.</p><h3>16.5 Force Majeure</h3><p>We are not liable for delays or failures due to circumstances beyond our reasonable control (natural disasters, war, government actions, etc.).</p><h2>17. Contact Information</h2><p>For questions about these Terms, please contact us:</p><p><strong>OnSite Club</strong></p><ul><li><strong>Legal:</strong> <a href='mailto:legal@onsiteclub.ca'>legal@onsiteclub.ca</a></li><li><strong>Support:</strong> <a href='mailto:support@onsiteclub.ca'>support@onsiteclub.ca</a></li><li><strong>Website:</strong> <a href='https://onsiteclub.ca'>https://onsiteclub.ca</a></li></ul><p>Located in Ontario, Canada.</p><h2>18. Acknowledgment</h2><p><strong>BY USING ONSITE TIMEKEEPER, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE.</strong></p><p>If you do not agree to these Terms, please do not use the App.</p>"
     }
   }
 }
