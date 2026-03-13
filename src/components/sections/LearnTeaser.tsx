@@ -5,10 +5,10 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
 const LEARN_CARDS = [
-  { slug: 'construction-steps', image: '/images/learn.png', key: 'card_steps' },
-  { slug: 'safety-equipment', image: '/images/epis.png', key: 'card_safety' },
-  { slug: 'trades-guide', image: '/images/trades.png', key: 'card_trades' },
-  { slug: 'starter-kit', image: '/images/kit-tools.webp', key: 'card_kit' },
+  { slug: 'construction-steps', image: '/images/learn.png', key: 'card_steps', alt: 'Construction career pathway guide' },
+  { slug: 'safety-equipment', image: '/images/epis.png', key: 'card_safety', alt: 'Construction safety equipment and PPE' },
+  { slug: 'trades-guide', image: '/images/trades.png', key: 'card_trades', alt: 'Construction trades overview' },
+  { slug: 'starter-kit', image: '/images/kit-tools.webp', key: 'card_kit', alt: 'Construction starter toolkit' },
 ] as const;
 
 export default function LearnTeaser() {
@@ -29,7 +29,7 @@ export default function LearnTeaser() {
             className={`learn-teaser-card assemble delay-${i + 2}`}
           >
             <div className="learn-teaser-img">
-              <Image src={card.image} alt="" fill sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src={card.image} alt={card.alt} fill sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
             <div className="learn-teaser-body">
               <span className="learn-teaser-title">{t(card.key)}</span>

@@ -19,6 +19,13 @@ const AccessibilityToolbar = dynamic(
 
 const SITE_URL = 'https://www.onsiteclub.ca';
 
+const OG_LOCALE_MAP: Record<string, string> = {
+  en: 'en_CA',
+  fr: 'fr_CA',
+  es: 'es_419',
+  pt: 'pt_BR',
+};
+
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-body',
@@ -45,24 +52,30 @@ export async function generateMetadata({
   const canonicalUrl = locale === routing.defaultLocale ? SITE_URL : `${SITE_URL}/${locale}`;
 
   return {
-    title,
+    title: {
+      template: '%s | OnSite Club',
+      default: title,
+    },
     description,
     metadataBase: new URL(SITE_URL),
     alternates: {
       canonical: canonicalUrl,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [
-          l,
-          l === routing.defaultLocale ? SITE_URL : `${SITE_URL}/${l}`,
-        ])
-      ),
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((l) => [
+            l,
+            l === routing.defaultLocale ? SITE_URL : `${SITE_URL}/${l}`,
+          ])
+        ),
+        'x-default': SITE_URL,
+      },
     },
     openGraph: {
       title,
       description,
       url: canonicalUrl,
       siteName: 'OnSite Club',
-      locale,
+      locale: OG_LOCALE_MAP[locale] || 'en_CA',
       type: 'website',
     },
     twitter: {

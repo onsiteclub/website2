@@ -37,6 +37,12 @@ const jsonLd = {
         'https://www.instagram.com/onsite.club/',
         'https://www.facebook.com/onsiteclub',
       ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'customer service',
+        email: 'contact@onsiteclub.ca',
+        availableLanguage: ['English', 'French', 'Spanish', 'Portuguese'],
+      },
     },
     /* ── WebSite ── */
     {
@@ -80,49 +86,6 @@ const jsonLd = {
         description: 'Free with 1 zone. Pro at CA$9.99/month for unlimited zones and PDF exports.',
       },
       author: { '@id': `${SITE_URL}/#organization` },
-    },
-    /* ── Products ── */
-    {
-      '@type': 'Product',
-      name: 'T-Shirt — The Jump',
-      description: "Men's construction lifestyle tee featuring a skyline graphic. Part of OnSite Club's construction workwear line.",
-      image: `${SITE_URL}/images/product-men.webp`,
-      brand: { '@id': `${SITE_URL}/#organization` },
-      offers: {
-        '@type': 'Offer',
-        price: '38.00',
-        priceCurrency: 'CAD',
-        availability: 'https://schema.org/InStock',
-        url: 'https://shop.onsiteclub.ca',
-      },
-    },
-    {
-      '@type': 'Product',
-      name: 'T-Shirt — Mascot',
-      description: 'Unisex graphic tee with the OnSite Club mascot. Construction lifestyle apparel.',
-      image: `${SITE_URL}/images/product-women.webp`,
-      brand: { '@id': `${SITE_URL}/#organization` },
-      offers: {
-        '@type': 'Offer',
-        price: '38.00',
-        priceCurrency: 'CAD',
-        availability: 'https://schema.org/InStock',
-        url: 'https://shop.onsiteclub.ca',
-      },
-    },
-    {
-      '@type': 'Product',
-      name: 'T-Shirt — Classic',
-      description: 'Members-only branded tee exclusive to OnSite Club members.',
-      image: `${SITE_URL}/images/product-members.webp`,
-      brand: { '@id': `${SITE_URL}/#organization` },
-      offers: {
-        '@type': 'Offer',
-        price: '45.00',
-        priceCurrency: 'CAD',
-        availability: 'https://schema.org/InStock',
-        url: 'https://shop.onsiteclub.ca',
-      },
     },
     /* ── FAQPage (expanded to 10 questions) ── */
     {

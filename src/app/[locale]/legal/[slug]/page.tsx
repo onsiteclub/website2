@@ -34,14 +34,26 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'legal' });
   const title = t(`${slug}.title`);
 
+  const canonicalPath = `/legal/${slug}`;
   return {
-    title: `${title} | OnSite Club`,
+    title,
     robots: { index: true, follow: true },
     alternates: {
       canonical:
         locale === routing.defaultLocale
-          ? `${SITE_URL}/legal/${slug}`
-          : `${SITE_URL}/${locale}/legal/${slug}`,
+          ? `${SITE_URL}${canonicalPath}`
+          : `${SITE_URL}/${locale}${canonicalPath}`,
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((l) => [
+            l,
+            l === routing.defaultLocale
+              ? `${SITE_URL}${canonicalPath}`
+              : `${SITE_URL}/${l}${canonicalPath}`,
+          ])
+        ),
+        'x-default': `${SITE_URL}${canonicalPath}`,
+      },
     },
   };
 }
@@ -62,10 +74,24 @@ export default async function LegalPage({
   const content = t.raw(`${slug}.content`) as string;
   const updated = t(`${slug}.updated`);
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Legal' },
+      { '@type': 'ListItem', position: 3, name: title },
+    ],
+  };
+
   return (
     <>
       <Navbar />
       <main className="learn-article">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+        />
         <article className="learn-container">
           <a
             href={`/${locale === routing.defaultLocale ? '' : locale}#contact`}

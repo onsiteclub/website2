@@ -12,6 +12,13 @@ const COURSE_SLUGS = ['construction-steps', 'safety-equipment', 'trades-guide', 
 
 const SITE_URL = 'https://www.onsiteclub.ca';
 
+const OG_LOCALE_MAP: Record<string, string> = {
+  en: 'en_CA',
+  fr: 'fr_CA',
+  es: 'es_419',
+  pt: 'pt_BR',
+};
+
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     LEARN_SLUGS.map((slug) => ({ locale, slug }))
@@ -37,25 +44,28 @@ export async function generateMetadata({
       : `${SITE_URL}/${locale}${canonicalPath}`;
 
   return {
-    title: `${title} | OnSite Club`,
+    title,
     description,
     alternates: {
       canonical: canonicalUrl,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [
-          l,
-          l === routing.defaultLocale
-            ? `${SITE_URL}${canonicalPath}`
-            : `${SITE_URL}/${l}${canonicalPath}`,
-        ])
-      ),
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((l) => [
+            l,
+            l === routing.defaultLocale
+              ? `${SITE_URL}${canonicalPath}`
+              : `${SITE_URL}/${l}${canonicalPath}`,
+          ])
+        ),
+        'x-default': `${SITE_URL}${canonicalPath}`,
+      },
     },
     openGraph: {
       title,
       description,
       url: canonicalUrl,
       siteName: 'OnSite Club',
-      locale,
+      locale: OG_LOCALE_MAP[locale] || 'en_CA',
       type: 'article',
     },
   };
@@ -99,6 +109,8 @@ export default async function LearnArticlePage({
     headline: title,
     description: t(`${slug}.meta_desc`),
     url: canonicalUrl,
+    datePublished: '2025-11-01',
+    dateModified: '2026-03-12',
     author: {
       '@type': 'Organization',
       name: 'OnSite Club',
@@ -112,6 +124,16 @@ export default async function LearnArticlePage({
     inLanguage: locale,
   };
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Learn', item: `${SITE_URL}/learn/construction-steps` },
+      { '@type': 'ListItem', position: 3, name: title },
+    ],
+  };
+
   return (
     <>
       <Navbar />
@@ -119,6 +141,10 @@ export default async function LearnArticlePage({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
         />
 
         <article className={hasCourses ? 'learn-container learn-container-wide' : 'learn-container'}>
