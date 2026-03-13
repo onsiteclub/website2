@@ -36,6 +36,11 @@
     "title": "Ropa que representa el <highlight>oficio</highlight>",
     "see_all": "Ver toda la coleccion"
   },
+  "reviews": {
+    "label": "OPINIONES",
+    "title": "Lo que dicen los <highlight>constructores</highlight>",
+    "verified": "Comprador verificado"
+  },
   "manifesto": {
     "line1": "Los edificios no recuerdan quien los construyo.",
     "line2": "Nosotros si."

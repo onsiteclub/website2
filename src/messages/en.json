@@ -36,6 +36,11 @@
     "title": "Gear that reps the <highlight>trade</highlight>",
     "see_all": "See Full Collection"
   },
+  "reviews": {
+    "label": "REVIEWS",
+    "title": "What builders <highlight>say</highlight>",
+    "verified": "Verified Buyer"
+  },
   "manifesto": {
     "line1": "Buildings don't remember who built them.",
     "line2": "We do."

@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="section-label assemble">
-        <span className="num">05</span> <span>{t('label')}</span>
+        <span className="num">06</span> <span>{t('label')}</span>
       </div>
       <h2 className="section-title assemble delay-1">
         {t.rich('title', richTags)}

@@ -36,6 +36,11 @@
     "title": "Du gear qui represente le <highlight>metier</highlight>",
     "see_all": "Voir toute la collection"
   },
+  "reviews": {
+    "label": "AVIS",
+    "title": "Ce que disent les <highlight>batisseurs</highlight>",
+    "verified": "Acheteur verifie"
+  },
   "manifesto": {
     "line1": "Les batiments ne se souviennent pas de qui les a construits.",
     "line2": "Nous, oui."

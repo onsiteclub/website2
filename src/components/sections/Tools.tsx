@@ -75,7 +75,7 @@ export default function Tools() {
   return (
     <section id="tools">
       <div className="section-label assemble">
-        <span className="num">03</span> <span>{t('label')}</span>
+        <span className="num">04</span> <span>{t('label')}</span>
       </div>
       <h2 className="section-title section-title-logo assemble delay-1">
         <Image

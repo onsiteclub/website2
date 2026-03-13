@@ -963,6 +963,126 @@ section {
 
 
 /* ═══════════════════════════════════
+   REVIEWS SECTION
+   ═══════════════════════════════════ */
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.review-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+  font-size: 1rem;
+}
+
+.review-stars .star {
+  color: var(--border);
+}
+
+.review-stars .star.filled {
+  color: var(--accent);
+}
+
+.review-text {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.review-name {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.review-title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.review-product {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-top: auto;
+}
+
+.review-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+@media (max-width: 900px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 16px;
+    padding-bottom: 8px;
+  }
+
+  .review-card {
+    min-width: 280px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+}
+
+
+/* ═══════════════════════════════════
    TOOLS SECTION
    ═══════════════════════════════════ */
 

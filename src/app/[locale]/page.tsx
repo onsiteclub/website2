@@ -7,6 +7,7 @@ import Interactions from '@/components/global/Interactions';
 import Hero from '@/components/sections/Hero';
 import Tools from '@/components/sections/Tools';
 import Gear from '@/components/sections/Gear';
+import Reviews from '@/components/sections/Reviews';
 import Manifesto from '@/components/sections/Manifesto';
 import LearnTeaser from '@/components/sections/LearnTeaser';
 import Contact from '@/components/sections/Contact';
@@ -198,6 +199,7 @@ export default function Home() {
         <Hero />
         <Manifesto />
         <Gear />
+        <Reviews />
         <Tools />
         <LearnTeaser />
         <Contact />

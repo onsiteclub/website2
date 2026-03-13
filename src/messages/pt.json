@@ -36,6 +36,11 @@
     "title": "Roupas que representam o <highlight>oficio</highlight>",
     "see_all": "Ver toda a colecao"
   },
+  "reviews": {
+    "label": "AVALIACOES",
+    "title": "O que dizem os <highlight>construtores</highlight>",
+    "verified": "Comprador verificado"
+  },
   "manifesto": {
     "line1": "Os predios nao lembram quem os construiu.",
     "line2": "Nos lembramos."

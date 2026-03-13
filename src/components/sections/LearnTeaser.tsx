@@ -17,7 +17,7 @@ export default function LearnTeaser() {
   return (
     <section id="learn">
       <div className="section-label assemble">
-        <span className="num">04</span> <span>{t('label')}</span>
+        <span className="num">05</span> <span>{t('label')}</span>
       </div>
       <h2 className="section-title assemble delay-1">{t('heading')}</h2>
 
