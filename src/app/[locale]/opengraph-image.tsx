@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'OnSite Club — Wear What You Build';
+export const alt = 'OnSite Club — Built for Those Who Build';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -92,7 +92,7 @@ export default async function Image() {
             marginBottom: '16px',
           }}
         >
-          Wear What You{' '}
+          Built for Those Who{' '}
           <span style={{ color: '#F6C343' }}>Build</span>
         </div>
 
