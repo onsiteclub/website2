@@ -89,7 +89,7 @@ export default function Tools() {
       </h2>
       <p className="section-desc assemble delay-2">{t('description')}</p>
 
-      {/* Available Now — full-featured cards */}
+      {/* Top row — Calculator & Timekeeper */}
       <div className="tools-grid">
         <div className="tool-card assemble delay-1">
           <div className="tool-card-header">
@@ -122,6 +122,10 @@ export default function Tools() {
             <Image src="/images/timekeeper-men.png" alt="OnSite Timekeeper" fill sizes="(max-width:768px) 100vw, 50vw" style={{ objectPosition: '50% 35%' }} />
           </div>
         </div>
+      </div>
+
+      {/* Bottom row — Checklist & Agenda */}
+      <div className="tools-grid">
         <div className="tool-card assemble delay-3">
           <div className="tool-card-header">
             <a href={CHECKLIST_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link">
@@ -133,11 +137,11 @@ export default function Tools() {
             </div>
           </div>
           <span className="tool-availability">{t('available')}</span>
+          <div className="tool-card-img">
+            <Image src="/images/tool-checklist.png" alt="OnSite Checklist" fill sizes="(max-width:768px) 100vw, 50vw" style={{ objectPosition: '50% 50%' }} />
+          </div>
         </div>
-      </div>
 
-      {/* Coming Soon — compact secondary cards */}
-      <div className="tools-coming-soon">
         <div className="tool-card coming-soon assemble delay-4">
           <div className="tool-card-header">
             <div className="tool-icon"><AgendaIcon /></div>
