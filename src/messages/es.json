@@ -299,9 +299,8 @@
     },
     "checklist": {
       "name": "Lista de Tareas por Obra",
-      "description": "Lista de verificacion por trabajo. Pronto con sugerencias de IA para pasos y materiales.",
-      "tag": "Proximamente",
-      "cta": "Proximamente"
+      "description": "Lista de verificacion por trabajo con sugerencias de IA para pasos y materiales.",
+      "cta": "Abrir Checklist →"
     },
     "agenda": {
       "name": "OnSite Agenda",

@@ -248,9 +248,8 @@
     },
     "checklist": {
       "name": "Job Checklist",
-      "description": "Checklist per job. Soon with AI suggestions for steps and materials.",
-      "tag": "Coming Soon",
-      "cta": "Coming Soon"
+      "description": "Checklist per job with AI suggestions for steps and materials.",
+      "cta": "Open Checklist →"
     },
     "agenda": {
       "name": "OnSite Agenda",

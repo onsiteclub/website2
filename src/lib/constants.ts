@@ -117,5 +117,6 @@ export const SHOP_URL = 'https://shop.onsiteclub.ca';
 export const DASHBOARD_URL = 'https://dashboard.onsiteclub.ca';
 export const CALCULATOR_URL = 'https://calculator.onsiteclub.ca';
 export const TIMEKEEPER_URL = 'https://timekeeperweb.onsiteclub.ca';
+export const CHECKLIST_URL = 'https://checklist.onsiteclub.ca/self';
 export const FACEBOOK_URL = 'https://facebook.com/onsiteclub';
 export const INSTAGRAM_URL = 'https://www.instagram.com/onsite.club/';

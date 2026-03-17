@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { richTags } from '@/lib/richText';
-import { CALCULATOR_URL, TIMEKEEPER_URL } from '@/lib/constants';
+import { CALCULATOR_URL, TIMEKEEPER_URL, CHECKLIST_URL } from '@/lib/constants';
 
 /* ── SVG Icon Components ── */
 function CalculatorIcon() {
@@ -122,21 +122,22 @@ export default function Tools() {
             <Image src="/images/timekeeper-men.png" alt="OnSite Timekeeper" fill sizes="(max-width:768px) 100vw, 50vw" style={{ objectPosition: '50% 35%' }} />
           </div>
         </div>
-      </div>
-
-      {/* Coming Soon — compact secondary cards */}
-      <div className="tools-coming-soon">
-        <div className="tool-card coming-soon assemble delay-3">
+        <div className="tool-card assemble delay-3">
           <div className="tool-card-header">
-            <div className="tool-icon"><ChecklistIcon /></div>
+            <a href={CHECKLIST_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link">
+              <div className="tool-icon"><ChecklistIcon /></div>
+            </a>
             <div className="tool-card-text">
               <h3>{t('checklist.name')}</h3>
               <p>{t('checklist.description')}</p>
             </div>
           </div>
-          <span className="tool-tag">{t('checklist.tag')}</span>
+          <span className="tool-availability">{t('available')}</span>
         </div>
+      </div>
 
+      {/* Coming Soon — compact secondary cards */}
+      <div className="tools-coming-soon">
         <div className="tool-card coming-soon assemble delay-4">
           <div className="tool-card-header">
             <div className="tool-icon"><AgendaIcon /></div>

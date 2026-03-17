@@ -299,9 +299,8 @@
     },
     "checklist": {
       "name": "Checklist de Obra",
-      "description": "Checklist por obra. Em breve com sugestoes de IA para etapas e materiais.",
-      "tag": "Em Breve",
-      "cta": "Em Breve"
+      "description": "Checklist por obra com sugestoes de IA para etapas e materiais.",
+      "cta": "Abrir Checklist →"
     },
     "agenda": {
       "name": "OnSite Agenda",
