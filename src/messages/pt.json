@@ -306,7 +306,10 @@
       "name": "OnSite Agenda",
       "description": "Agende obras, turnos e equipe. Um calendario pra toda a obra.",
       "tag": "Em Breve",
-      "cta": "Em Breve"
+      "cta": "Em Breve",
+      "notify_placeholder": "Email para acesso antecipado",
+      "notify_btn": "Avise-me",
+      "notify_done": "Vamos te avisar!"
     }
   },
   "pathway": {
@@ -401,6 +404,9 @@
     "email_placeholder": "voce@exemplo.com",
     "message_placeholder": "Como podemos ajudar?",
     "submit": "Enviar Mensagem",
+    "sending": "Enviando...",
+    "success": "Mensagem enviada! Retornaremos em breve.",
+    "error": "Algo deu errado. Tente novamente ou envie um email diretamente.",
     "note": "Retornaremos o mais rapido possivel.",
     "info_location_label": "Localizacao",
     "info_location": "Ontario, Canada",

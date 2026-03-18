@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { richTags } from '@/lib/richText';
@@ -167,17 +168,57 @@ export default function Tools() {
           </div>
         </div>
 
-        <div className="tool-card coming-soon assemble delay-4">
-          <div className="tool-card-header">
-            <div className="tool-icon"><AgendaIcon /></div>
-            <div className="tool-card-text">
-              <h3>{t('agenda.name')}</h3>
-              <p>{t('agenda.description')}</p>
-            </div>
-          </div>
-          <span className="tool-tag">{t('agenda.tag')}</span>
-        </div>
+        <AgendaCard t={t} />
       </div>
     </section>
+  );
+}
+
+const FORMSPREE_NOTIFY_ID = process.env.NEXT_PUBLIC_FORMSPREE_NOTIFY_ID || 'YOUR_NOTIFY_ID';
+
+function AgendaCard({ t }: { t: ReturnType<typeof useTranslations<'tools'>> }) {
+  const [status, setStatus] = useState<'idle' | 'sending' | 'done'>('idle');
+
+  const handleNotify = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('sending');
+    const data = new FormData(e.currentTarget);
+    try {
+      await fetch(`https://formspree.io/f/${FORMSPREE_NOTIFY_ID}`, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      });
+    } catch { /* silent */ }
+    setStatus('done');
+  };
+
+  return (
+    <div className="tool-card coming-soon assemble delay-4">
+      <div className="tool-card-header">
+        <div className="tool-icon"><AgendaIcon /></div>
+        <div className="tool-card-text">
+          <h3>{t('agenda.name')}</h3>
+          <p>{t('agenda.description')}</p>
+        </div>
+      </div>
+      <span className="tool-tag">{t('agenda.tag')}</span>
+      {status === 'done' ? (
+        <p className="tool-notify-done">{t('agenda.notify_done') ?? 'We\'ll let you know!'}</p>
+      ) : (
+        <form className="tool-notify" onSubmit={handleNotify}>
+          <input
+            type="email"
+            name="email"
+            placeholder={t('agenda.notify_placeholder') ?? 'Email for early access'}
+            required
+            className="tool-notify-input"
+          />
+          <button type="submit" className="tool-notify-btn" disabled={status === 'sending'}>
+            {t('agenda.notify_btn') ?? 'Notify me'}
+          </button>
+        </form>
+      )}
+    </div>
   );
 }

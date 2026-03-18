@@ -1,12 +1,41 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { richTags } from '@/lib/richText';
 import { FACEBOOK_URL, INSTAGRAM_URL } from '@/lib/constants';
 
+const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || 'YOUR_FORM_ID';
+
 export default function Contact() {
   const t = useTranslations('contact');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      });
+
+      if (res.ok) {
+        setStatus('sent');
+        form.reset();
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
+  };
 
   return (
     <section id="contact">
@@ -20,31 +49,37 @@ export default function Contact() {
 
       <div className="contact-grid">
         <div className="assemble delay-3">
-          <form className="contact-form" onSubmit={(e) => {
-            e.preventDefault();
-            const formData = new FormData(e.currentTarget);
-            const name = formData.get('name') || '';
-            const email = formData.get('email') || '';
-            const message = formData.get('message') || '';
-            const subject = encodeURIComponent(`Contact from ${name}`);
-            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-            window.location.href = `mailto:contact@onsiteclub.ca?subject=${subject}&body=${body}`;
-          }}>
-            <div className="form-group">
-              <label htmlFor="contact-name">{t('name_label')}</label>
-              <input type="text" id="contact-name" name="name" placeholder={t('name_placeholder')} required />
+          {status === 'sent' ? (
+            <div className="contact-success">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              <p>{t('success') ?? 'Message sent! We\'ll get back to you soon.'}</p>
             </div>
-            <div className="form-group">
-              <label htmlFor="contact-email">{t('email_label')}</label>
-              <input type="email" id="contact-email" name="email" placeholder={t('email_placeholder')} required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="contact-message">{t('message_label')}</label>
-              <textarea id="contact-message" name="message" placeholder={t('message_placeholder')} required />
-            </div>
-            <button type="submit" className="btn-primary">{t('submit')}</button>
-            <span className="form-note">{t('note')}</span>
-          </form>
+          ) : (
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="contact-name">{t('name_label')}</label>
+                <input type="text" id="contact-name" name="name" placeholder={t('name_placeholder')} required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="contact-email">{t('email_label')}</label>
+                <input type="email" id="contact-email" name="email" placeholder={t('email_placeholder')} required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="contact-message">{t('message_label')}</label>
+                <textarea id="contact-message" name="message" placeholder={t('message_placeholder')} required />
+              </div>
+              <button type="submit" className="btn-primary" disabled={status === 'sending'}>
+                {status === 'sending' ? (t('sending') ?? 'Sending...') : t('submit')}
+              </button>
+              {status === 'error' && (
+                <span className="form-error">{t('error') ?? 'Something went wrong. Try again or email us directly.'}</span>
+              )}
+              <span className="form-note">{t('note')}</span>
+            </form>
+          )}
         </div>
 
         <div className="assemble delay-4">

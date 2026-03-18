@@ -255,7 +255,10 @@
       "name": "OnSite Agenda",
       "description": "Schedule jobs, shifts, and crew. One calendar for the whole site.",
       "tag": "Coming Soon",
-      "cta": "Coming Soon"
+      "cta": "Coming Soon",
+      "notify_placeholder": "Email for early access",
+      "notify_btn": "Notify me",
+      "notify_done": "We'll let you know!"
     }
   },
   "pathway": {
@@ -350,6 +353,9 @@
     "email_placeholder": "you@example.com",
     "message_placeholder": "How can we help?",
     "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent! We'll get back to you soon.",
+    "error": "Something went wrong. Try again or email us directly.",
     "note": "We'll get back to you as soon as possible.",
     "info_location_label": "Location",
     "info_location": "Ontario, Canada",

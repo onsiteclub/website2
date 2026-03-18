@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
-import { Link, usePathname } from '@/i18n/routing';
+import { useTranslations, useLocale } from 'next-intl';
+import { Link, usePathname, useRouter, routing } from '@/i18n/routing';
 import {
   SHOP_URL,
   DASHBOARD_URL,
@@ -12,15 +12,31 @@ import {
   INSTAGRAM_URL,
 } from '@/lib/constants';
 
+const LANG_LABELS: Record<string, string> = {
+  en: 'English',
+  fr: 'Fran\u00e7ais',
+  es: 'Espa\u00f1ol',
+  pt: 'Portugu\u00eas',
+};
+
 export default function Footer() {
   const s = useTranslations('sitemap');
   const f = useTranslations('footer');
-  const [sitemapOpen, setSitemapOpen] = useState(false);
+  const locale = useLocale();
+  const router = useRouter();
   const pathname = usePathname();
+  const [sitemapOpen, setSitemapOpen] = useState(false);
   const isHome = pathname === '/';
 
   /* Build href for section anchors — on homepage scroll, on other pages navigate home */
   const sectionHref = (hash: string) => (isHome ? hash : `/${hash}`);
+
+  const handleLangChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const lang = e.target.value;
+    if (lang !== locale) {
+      router.replace(pathname, { locale: lang });
+    }
+  };
 
   return (
     <>
@@ -86,7 +102,21 @@ export default function Footer() {
           >
             {f('sitemap')}
           </button>
-          <div className="footer-center">{f('tagline')}</div>
+          <div className="footer-center">
+            <span>{f('tagline')}</span>
+            <select
+              className="footer-lang"
+              value={locale}
+              onChange={handleLangChange}
+              aria-label="Language"
+            >
+              {routing.locales.map((loc) => (
+                <option key={loc} value={loc}>
+                  {LANG_LABELS[loc] ?? loc.toUpperCase()}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
       </footer>
     </>

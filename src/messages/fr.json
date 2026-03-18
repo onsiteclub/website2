@@ -306,7 +306,10 @@
       "name": "OnSite Agenda",
       "description": "Planifie tes projets, quarts et Ã©quipes. Un seul calendrier pour tout le chantier.",
       "tag": "BientÃ´t disponible",
-      "cta": "BientÃ´t disponible"
+      "cta": "BientÃ´t disponible",
+      "notify_placeholder": "Email pour accès anticipé",
+      "notify_btn": "M'avertir",
+      "notify_done": "On te tiendra au courant!"
     }
   },
   "pathway": {
@@ -401,6 +404,9 @@
     "email_placeholder": "toi@exemple.com",
     "message_placeholder": "Comment peut-on t'aider?",
     "submit": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyée! On te revient bientôt.",
+    "error": "Un problème est survenu. Réessaie ou écris-nous directement.",
     "note": "On te revient le plus vite possible.",
     "info_location_label": "Emplacement",
     "info_location": "Ontario, Canada",
