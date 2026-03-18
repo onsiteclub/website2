@@ -102,10 +102,30 @@ export default function Tools() {
             </div>
           </div>
           <span className="tool-availability">{t('available')}</span>
-          <div className="tool-store-links">
-            <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="tool-store-link">Web App</a>
-            <a href={CALCULATOR_IOS_URL} target="_blank" rel="noopener noreferrer" className="tool-store-link">App Store</a>
-            <a href={CALCULATOR_ANDROID_URL} target="_blank" rel="noopener noreferrer" className="tool-store-link">Google Play</a>
+          <div className="tool-store-badges">
+            <a href={CALCULATOR_IOS_URL} target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+              <svg viewBox="0 0 120 40" className="store-badge">
+                <rect width="120" height="40" rx="5" fill="#000" />
+                <text x="42" y="12" fill="#fff" fontSize="6" fontFamily="system-ui,sans-serif">Download on the</text>
+                <text x="42" y="26" fill="#fff" fontSize="12" fontWeight="600" fontFamily="system-ui,sans-serif">App Store</text>
+                <g transform="translate(10,6) scale(0.55)" fill="#fff">
+                  <path d="M24.769 20.3a4.949 4.949 0 0 1 2.356-4.151 5.066 5.066 0 0 0-3.99-2.158c-1.68-.176-3.308 1.005-4.164 1.005-.872 0-2.19-.988-3.608-.958a5.315 5.315 0 0 0-4.473 2.728c-1.934 3.348-.491 8.269 1.361 10.976.927 1.325 2.01 2.805 3.428 2.753 1.387-.058 1.905-.885 3.58-.885 1.658 0 2.144.885 3.59.852 1.489-.025 2.426-1.332 3.32-2.669a10.962 10.962 0 0 0 1.52-3.092 4.782 4.782 0 0 1-2.92-4.4zM22.037 12.21a4.872 4.872 0 0 0 1.115-3.49 4.957 4.957 0 0 0-3.208 1.66 4.636 4.636 0 0 0-1.144 3.36 4.1 4.1 0 0 0 3.237-1.53z" />
+                </g>
+              </svg>
+            </a>
+            <a href={CALCULATOR_ANDROID_URL} target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
+              <svg viewBox="0 0 135 40" className="store-badge">
+                <rect width="135" height="40" rx="5" fill="#000" />
+                <text x="50" y="12" fill="#fff" fontSize="6" fontFamily="system-ui,sans-serif">GET IT ON</text>
+                <text x="50" y="27" fill="#fff" fontSize="13" fontWeight="500" fontFamily="system-ui,sans-serif">Google Play</text>
+                <g transform="translate(10,8)">
+                  <path d="M4 0L20 12L4 24V0Z" fill="#4285F4" />
+                  <path d="M4 0L16 8L4 16V0Z" fill="#34A853" />
+                  <path d="M4 8L16 16L4 24V8Z" fill="#EA4335" />
+                  <path d="M4 0L4 24L16 12L4 0Z" fill="#FBBC04" opacity="0.5" />
+                </g>
+              </svg>
+            </a>
           </div>
           <div className="tool-card-img">
             <Image src="/images/tool-calculator-woman.png" alt="OnSite Calculator" fill sizes="(max-width:768px) 100vw, 50vw" style={{ objectPosition: '50% 50%' }} />
