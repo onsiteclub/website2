@@ -2543,6 +2543,31 @@ section {
   align-self: flex-start;
 }
 
+.tool-store-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.tool-store-link {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tool-store-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 /* ═══════════════════════════════════
    TOOLS — COMING SOON ROW
    ═══════════════════════════════════ */

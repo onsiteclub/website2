@@ -116,6 +116,8 @@ export type LearnSlug = (typeof LEARN_SLUGS)[number];
 export const SHOP_URL = 'https://shop.onsiteclub.ca';
 export const DASHBOARD_URL = 'https://dashboard.onsiteclub.ca';
 export const CALCULATOR_URL = 'https://calculator.onsiteclub.ca';
+export const CALCULATOR_IOS_URL = 'https://apps.apple.com/us/app/onsite-calculator/id6758554794';
+export const CALCULATOR_ANDROID_URL = 'https://play.google.com/store/apps/details?id=ca.onsiteclub.calculator';
 export const TIMEKEEPER_URL = 'https://timekeeperweb.onsiteclub.ca';
 export const CHECKLIST_URL = 'https://checklist.onsiteclub.ca/self';
 export const FACEBOOK_URL = 'https://facebook.com/onsiteclub';

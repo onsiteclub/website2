@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { richTags } from '@/lib/richText';
-import { CALCULATOR_URL, TIMEKEEPER_URL, CHECKLIST_URL } from '@/lib/constants';
+import { CALCULATOR_URL, CALCULATOR_IOS_URL, CALCULATOR_ANDROID_URL, TIMEKEEPER_URL, CHECKLIST_URL } from '@/lib/constants';
 
 /* ── SVG Icon Components ── */
 function CalculatorIcon() {
@@ -102,6 +102,11 @@ export default function Tools() {
             </div>
           </div>
           <span className="tool-availability">{t('available')}</span>
+          <div className="tool-store-links">
+            <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="tool-store-link">Web App</a>
+            <a href={CALCULATOR_IOS_URL} target="_blank" rel="noopener noreferrer" className="tool-store-link">App Store</a>
+            <a href={CALCULATOR_ANDROID_URL} target="_blank" rel="noopener noreferrer" className="tool-store-link">Google Play</a>
+          </div>
           <div className="tool-card-img">
             <Image src="/images/tool-calculator-woman.png" alt="OnSite Calculator" fill sizes="(max-width:768px) 100vw, 50vw" style={{ objectPosition: '50% 50%' }} />
           </div>

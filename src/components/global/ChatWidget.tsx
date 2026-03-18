@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 import {
   SHOP_URL,
   DASHBOARD_URL,
-  CALCULATOR_URL,
   TIMEKEEPER_URL,
   FACEBOOK_URL,
   INSTAGRAM_URL,
@@ -32,8 +31,8 @@ interface ChatAction {
 const EXTERNAL_URLS: Record<string, string> = {
   shop: SHOP_URL,
   dashboard: DASHBOARD_URL,
-  calculator_android: 'https://play.google.com/store/apps/details?id=com.onsiteclub.calculator',
-  calculator_ios: CALCULATOR_URL,
+  calculator_android: 'https://play.google.com/store/apps/details?id=ca.onsiteclub.calculator',
+  calculator_ios: 'https://apps.apple.com/us/app/onsite-calculator/id6758554794',
   timekeeper_android: 'https://play.google.com/store/apps/details?id=com.onsiteclub.timekeeper',
   timekeeper_ios: TIMEKEEPER_URL,
   facebook: FACEBOOK_URL,

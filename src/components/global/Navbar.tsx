@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, useRouter, usePathname, routing } from '@/i18n/routing';
-import { CALCULATOR_URL, TIMEKEEPER_URL } from '@/lib/constants';
+import { CALCULATOR_URL, CALCULATOR_IOS_URL, CALCULATOR_ANDROID_URL, TIMEKEEPER_URL } from '@/lib/constants';
 import SearchDropdown from '@/components/global/SearchDropdown';
 
 const TradeSelector = dynamic(() => import('@/components/global/TradeSelector'), { ssr: false });
@@ -166,8 +166,8 @@ export default function Navbar() {
             {toolOpen === 'calc' && (
               <ul className="tool-dropdown">
                 <li><a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer">Web App</a></li>
-                <li><span className="tool-dropdown-soon">iOS (soon)</span></li>
-                <li><span className="tool-dropdown-soon">Android (soon)</span></li>
+                <li><a href={CALCULATOR_IOS_URL} target="_blank" rel="noopener noreferrer">App Store</a></li>
+                <li><a href={CALCULATOR_ANDROID_URL} target="_blank" rel="noopener noreferrer">Google Play</a></li>
               </ul>
             )}
           </div>
