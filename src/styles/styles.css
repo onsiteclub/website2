@@ -950,7 +950,7 @@ section {
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--text-primary);
 }
 
 .gear-card-price {
@@ -3087,7 +3087,7 @@ section {
   right: 24px;
   width: 440px;
   height: min(560px, calc(100vh - 80px));
-  background: #1A1A1A;
+  background: var(--bg-secondary);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -3164,7 +3164,7 @@ section {
   line-height: 1.5;
 }
 .chat-msg-assistant .chat-msg-content {
-  background: #2A2A2A;
+  background: var(--bg-elevated);
   color: #FFFFFF;
   border-radius: 12px 12px 12px 2px;
   padding: 10px 14px;
@@ -3242,7 +3242,7 @@ section {
 }
 .chat-input {
   flex: 1;
-  background: #2A2A2A;
+  background: var(--bg-elevated);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 8px;
   padding: 10px 12px;
@@ -3274,7 +3274,7 @@ section {
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background: #2A2A2A;
+  background: var(--bg-elevated);
   color: rgba(255,255,255,0.6);
   border: 1px solid rgba(255,255,255,0.08);
   cursor: pointer;
