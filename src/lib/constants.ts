@@ -119,6 +119,7 @@ export const CALCULATOR_URL = 'https://calculator.onsiteclub.ca';
 export const CALCULATOR_IOS_URL = 'https://apps.apple.com/us/app/onsite-calculator/id6758554794';
 export const CALCULATOR_ANDROID_URL = 'https://play.google.com/store/apps/details?id=ca.onsiteclub.calculator';
 export const TIMEKEEPER_URL = 'https://timekeeperweb.onsiteclub.ca';
+export const TIMEKEEPER_ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.onsiteclub.timekeeper&pcampaignid=web_share';
 export const CHECKLIST_URL = 'https://checklist.onsiteclub.ca/self';
 export const FACEBOOK_URL = 'https://facebook.com/onsiteclub';
 export const INSTAGRAM_URL = 'https://www.instagram.com/onsite.club/';

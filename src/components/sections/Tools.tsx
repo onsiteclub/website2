@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { richTags } from '@/lib/richText';
-import { CALCULATOR_URL, CALCULATOR_IOS_URL, CALCULATOR_ANDROID_URL, TIMEKEEPER_URL, CHECKLIST_URL } from '@/lib/constants';
+import { CALCULATOR_URL, CALCULATOR_IOS_URL, CALCULATOR_ANDROID_URL, TIMEKEEPER_URL, TIMEKEEPER_ANDROID_URL, CHECKLIST_URL } from '@/lib/constants';
 
 /* ── SVG Icon Components ── */
 function CalculatorIcon() {
@@ -53,25 +53,55 @@ function ChecklistIcon() {
   );
 }
 
-function AgendaIcon() {
+/* ── Small CTA icons ── */
+function AppleIcon() {
   return (
-    <svg viewBox="0 0 64 64">
-      <rect x="10" y="6" width="44" height="52" rx="3" style={{ '--pl': 192 } as React.CSSProperties} strokeDasharray="192" strokeDashoffset="192" className="fill-after" />
-      <line x1="22" y1="2" x2="22" y2="12" style={{ '--pl': 10 } as React.CSSProperties} strokeDasharray="10" strokeDashoffset="10" />
-      <line x1="42" y1="2" x2="42" y2="12" style={{ '--pl': 10 } as React.CSSProperties} strokeDasharray="10" strokeDashoffset="10" />
-      <line x1="10" y1="18" x2="54" y2="18" style={{ '--pl': 44 } as React.CSSProperties} strokeDasharray="44" strokeDashoffset="44" />
-      <rect x="18" y="24" width="8" height="7" rx="1" style={{ '--pl': 30 } as React.CSSProperties} strokeDasharray="30" strokeDashoffset="30" />
-      <rect x="30" y="24" width="8" height="7" rx="1" style={{ '--pl': 30 } as React.CSSProperties} strokeDasharray="30" strokeDashoffset="30" />
-      <rect x="42" y="24" width="8" height="7" rx="1" className="detail" style={{ '--pl': 30 } as React.CSSProperties} strokeDasharray="30" strokeDashoffset="30" />
-      <rect x="18" y="36" width="8" height="7" rx="1" style={{ '--pl': 30 } as React.CSSProperties} strokeDasharray="30" strokeDashoffset="30" />
-      <rect x="30" y="36" width="8" height="7" rx="1" className="detail" style={{ '--pl': 30 } as React.CSSProperties} strokeDasharray="30" strokeDashoffset="30" />
-      <rect x="42" y="36" width="8" height="7" rx="1" className="detail" style={{ '--pl': 30 } as React.CSSProperties} strokeDasharray="30" strokeDashoffset="30" />
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+    </svg>
+  );
+}
+
+function PlayIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.6 3 21.09 3 20.5M16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12M20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81M6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z" />
+    </svg>
+  );
+}
+
+function WebIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" />
+      <line x1="2" y1="12" x2="22" y2="12" />
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    </svg>
+  );
+}
+
+function OpenIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      <polyline points="15 3 21 3 21 9" />
+      <line x1="10" y1="14" x2="21" y2="3" />
     </svg>
   );
 }
 
 export default function Tools() {
   const t = useTranslations('tools');
+  const [expandedCard, setExpandedCard] = useState<string | null>(null);
+
+  const handleCardTap = (cardId: string) => {
+    if (window.innerWidth > 768) return;
+    if (cardId === 'checklist') {
+      window.open(CHECKLIST_URL, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    setExpandedCard((prev) => (prev === cardId ? null : cardId));
+  };
 
   return (
     <section id="tools">
@@ -90,11 +120,14 @@ export default function Tools() {
       </h2>
       <p className="section-desc assemble delay-2">{t('description')}</p>
 
-      {/* Top row — Calculator & Timekeeper */}
       <div className="tools-grid">
-        <div className="tool-card assemble delay-1">
+        {/* Calculator */}
+        <div
+          className={`tool-card assemble delay-1${expandedCard === 'calculator' ? ' tool-card-expanded' : ''}`}
+          onClick={() => handleCardTap('calculator')}
+        >
           <div className="tool-card-header">
-            <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link">
+            <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link" onClick={(e) => e.stopPropagation()}>
               <div className="tool-icon"><CalculatorIcon /></div>
             </a>
             <div className="tool-card-text">
@@ -103,39 +136,40 @@ export default function Tools() {
             </div>
           </div>
           <span className="tool-availability">{t('available')}</span>
-          <div className="tool-store-badges">
-            <a href={CALCULATOR_IOS_URL} target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
-              <svg viewBox="0 0 120 40" className="store-badge">
-                <rect width="120" height="40" rx="5" fill="#000" />
-                <text x="42" y="12" fill="#fff" fontSize="6" fontFamily="system-ui,sans-serif">Download on the</text>
-                <text x="42" y="26" fill="#fff" fontSize="12" fontWeight="600" fontFamily="system-ui,sans-serif">App Store</text>
-                <g transform="translate(10,6) scale(0.55)" fill="#fff">
-                  <path d="M24.769 20.3a4.949 4.949 0 0 1 2.356-4.151 5.066 5.066 0 0 0-3.99-2.158c-1.68-.176-3.308 1.005-4.164 1.005-.872 0-2.19-.988-3.608-.958a5.315 5.315 0 0 0-4.473 2.728c-1.934 3.348-.491 8.269 1.361 10.976.927 1.325 2.01 2.805 3.428 2.753 1.387-.058 1.905-.885 3.58-.885 1.658 0 2.144.885 3.59.852 1.489-.025 2.426-1.332 3.32-2.669a10.962 10.962 0 0 0 1.52-3.092 4.782 4.782 0 0 1-2.92-4.4zM22.037 12.21a4.872 4.872 0 0 0 1.115-3.49 4.957 4.957 0 0 0-3.208 1.66 4.636 4.636 0 0 0-1.144 3.36 4.1 4.1 0 0 0 3.237-1.53z" />
-                </g>
-              </svg>
+          <div className="tool-actions">
+            <a href={CALCULATOR_IOS_URL} target="_blank" rel="noopener noreferrer" className="tool-cta-btn" onClick={(e) => e.stopPropagation()}>
+              <AppleIcon /> {t('cta_appstore')}
             </a>
-            <a href={CALCULATOR_ANDROID_URL} target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
-              <svg viewBox="0 0 135 40" className="store-badge">
-                <rect width="135" height="40" rx="5" fill="#000" />
-                <text x="50" y="12" fill="#fff" fontSize="6" fontFamily="system-ui,sans-serif">GET IT ON</text>
-                <text x="50" y="27" fill="#fff" fontSize="13" fontWeight="500" fontFamily="system-ui,sans-serif">Google Play</text>
-                <g transform="translate(10,8)">
-                  <path d="M4 0L20 12L4 24V0Z" fill="#4285F4" />
-                  <path d="M4 0L16 8L4 16V0Z" fill="#34A853" />
-                  <path d="M4 8L16 16L4 24V8Z" fill="#EA4335" />
-                  <path d="M4 0L4 24L16 12L4 0Z" fill="#FBBC04" opacity="0.5" />
-                </g>
-              </svg>
+            <a href={CALCULATOR_ANDROID_URL} target="_blank" rel="noopener noreferrer" className="tool-cta-btn" onClick={(e) => e.stopPropagation()}>
+              <PlayIcon /> {t('cta_googleplay')}
+            </a>
+            <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="tool-cta-btn" onClick={(e) => e.stopPropagation()}>
+              <WebIcon /> {t('cta_web')}
+            </a>
+          </div>
+          <div className="tool-mobile-options">
+            <a href={CALCULATOR_IOS_URL} target="_blank" rel="noopener noreferrer" className="tool-mobile-btn" onClick={(e) => e.stopPropagation()}>
+              <AppleIcon /> App Store
+            </a>
+            <a href={CALCULATOR_ANDROID_URL} target="_blank" rel="noopener noreferrer" className="tool-mobile-btn" onClick={(e) => e.stopPropagation()}>
+              <PlayIcon /> Google Play
+            </a>
+            <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="tool-mobile-btn" onClick={(e) => e.stopPropagation()}>
+              <WebIcon /> Web App
             </a>
           </div>
           <div className="tool-card-img">
-            <Image src="/images/tool-calculator-woman.png" alt="OnSite Calculator" fill sizes="(max-width:768px) 100vw, 50vw" style={{ objectPosition: '50% 50%' }} />
+            <Image src="/images/tool-calculator-woman.png" alt="OnSite Calculator" fill sizes="(max-width:768px) 100vw, 33vw" style={{ objectPosition: '50% 50%' }} />
           </div>
         </div>
 
-        <div className="tool-card assemble delay-2">
+        {/* Timekeeper */}
+        <div
+          className={`tool-card assemble delay-2${expandedCard === 'timekeeper' ? ' tool-card-expanded' : ''}`}
+          onClick={() => handleCardTap('timekeeper')}
+        >
           <div className="tool-card-header">
-            <a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link">
+            <a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link" onClick={(e) => e.stopPropagation()}>
               <div className="tool-icon"><ClockIcon /></div>
             </a>
             <div className="tool-card-text">
@@ -144,17 +178,34 @@ export default function Tools() {
             </div>
           </div>
           <span className="tool-availability">{t('available')}</span>
+          <div className="tool-actions">
+            <a href={TIMEKEEPER_ANDROID_URL} target="_blank" rel="noopener noreferrer" className="tool-cta-btn" onClick={(e) => e.stopPropagation()}>
+              <PlayIcon /> {t('cta_googleplay')}
+            </a>
+            <a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer" className="tool-cta-btn" onClick={(e) => e.stopPropagation()}>
+              <WebIcon /> {t('cta_web')}
+            </a>
+          </div>
+          <div className="tool-mobile-options">
+            <a href={TIMEKEEPER_ANDROID_URL} target="_blank" rel="noopener noreferrer" className="tool-mobile-btn" onClick={(e) => e.stopPropagation()}>
+              <PlayIcon /> Google Play
+            </a>
+            <a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer" className="tool-mobile-btn" onClick={(e) => e.stopPropagation()}>
+              <WebIcon /> Web App
+            </a>
+          </div>
           <div className="tool-card-img">
-            <Image src="/images/timekeeper-men.png" alt="OnSite Timekeeper" fill sizes="(max-width:768px) 100vw, 50vw" style={{ objectPosition: '50% 35%' }} />
+            <Image src="/images/timekeeper-men.png" alt="OnSite Timekeeper" fill sizes="(max-width:768px) 100vw, 33vw" style={{ objectPosition: '50% 35%' }} />
           </div>
         </div>
-      </div>
 
-      {/* Bottom row — Checklist & Agenda */}
-      <div className="tools-grid">
-        <div className="tool-card assemble delay-3">
+        {/* Checklist */}
+        <div
+          className="tool-card assemble delay-3"
+          onClick={() => handleCardTap('checklist')}
+        >
           <div className="tool-card-header">
-            <a href={CHECKLIST_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link">
+            <a href={CHECKLIST_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link" onClick={(e) => e.stopPropagation()}>
               <div className="tool-icon"><ChecklistIcon /></div>
             </a>
             <div className="tool-card-text">
@@ -163,62 +214,16 @@ export default function Tools() {
             </div>
           </div>
           <span className="tool-availability">{t('available')}</span>
+          <div className="tool-actions">
+            <a href={CHECKLIST_URL} target="_blank" rel="noopener noreferrer" className="tool-cta-btn" onClick={(e) => e.stopPropagation()}>
+              <OpenIcon /> {t('cta_open')}
+            </a>
+          </div>
           <div className="tool-card-img">
-            <Image src="/images/tool-checklist.png" alt="OnSite Checklist" fill sizes="(max-width:768px) 100vw, 50vw" style={{ objectPosition: '50% 50%' }} />
+            <Image src="/images/tool-checklist.png" alt="OnSite Checklist" fill sizes="(max-width:768px) 100vw, 33vw" style={{ objectPosition: '50% 50%' }} />
           </div>
         </div>
-
-        <AgendaCard t={t} />
       </div>
     </section>
-  );
-}
-
-const FORMSPREE_NOTIFY_ID = process.env.NEXT_PUBLIC_FORMSPREE_NOTIFY_ID || 'YOUR_NOTIFY_ID';
-
-function AgendaCard({ t }: { t: ReturnType<typeof useTranslations<'tools'>> }) {
-  const [status, setStatus] = useState<'idle' | 'sending' | 'done'>('idle');
-
-  const handleNotify = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus('sending');
-    const data = new FormData(e.currentTarget);
-    try {
-      await fetch(`https://formspree.io/f/${FORMSPREE_NOTIFY_ID}`, {
-        method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
-      });
-    } catch { /* silent */ }
-    setStatus('done');
-  };
-
-  return (
-    <div className="tool-card coming-soon assemble delay-4">
-      <div className="tool-card-header">
-        <div className="tool-icon"><AgendaIcon /></div>
-        <div className="tool-card-text">
-          <h3>{t('agenda.name')}</h3>
-          <p>{t('agenda.description')}</p>
-        </div>
-      </div>
-      <span className="tool-tag">{t('agenda.tag')}</span>
-      {status === 'done' ? (
-        <p className="tool-notify-done">{t('agenda.notify_done') ?? 'We\'ll let you know!'}</p>
-      ) : (
-        <form className="tool-notify" onSubmit={handleNotify}>
-          <input
-            type="email"
-            name="email"
-            placeholder={t('agenda.notify_placeholder') ?? 'Email for early access'}
-            required
-            className="tool-notify-input"
-          />
-          <button type="submit" className="tool-notify-btn" disabled={status === 'sending'}>
-            {t('agenda.notify_btn') ?? 'Notify me'}
-          </button>
-        </form>
-      )}
-    </div>
   );
 }
