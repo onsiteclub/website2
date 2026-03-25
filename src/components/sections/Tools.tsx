@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { richTags } from '@/lib/richText';
@@ -92,15 +91,20 @@ function OpenIcon() {
 
 export default function Tools() {
   const t = useTranslations('tools');
-  const [expandedCard, setExpandedCard] = useState<string | null>(null);
 
-  const handleCardTap = (cardId: string) => {
+  const handleCardTap = (e: React.MouseEvent<HTMLDivElement>, cardId: string) => {
     if (window.innerWidth > 768) return;
     if (cardId === 'checklist') {
       window.open(CHECKLIST_URL, '_blank', 'noopener,noreferrer');
       return;
     }
-    setExpandedCard((prev) => (prev === cardId ? null : cardId));
+    const card = e.currentTarget;
+    const wasExpanded = card.classList.contains('tool-card-expanded');
+    // Close any other expanded card
+    document.querySelectorAll('.tool-card-expanded').forEach((el) => {
+      el.classList.remove('tool-card-expanded');
+    });
+    if (!wasExpanded) card.classList.add('tool-card-expanded');
   };
 
   return (
@@ -123,8 +127,8 @@ export default function Tools() {
       <div className="tools-grid">
         {/* Calculator */}
         <div
-          className={`tool-card assemble delay-1${expandedCard === 'calculator' ? ' tool-card-expanded' : ''}`}
-          onClick={() => handleCardTap('calculator')}
+          className="tool-card assemble delay-1"
+          onClick={(e) => handleCardTap(e, 'calculator')}
         >
           <div className="tool-card-header">
             <a href={CALCULATOR_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link" onClick={(e) => e.stopPropagation()}>
@@ -165,8 +169,8 @@ export default function Tools() {
 
         {/* Timekeeper */}
         <div
-          className={`tool-card assemble delay-2${expandedCard === 'timekeeper' ? ' tool-card-expanded' : ''}`}
-          onClick={() => handleCardTap('timekeeper')}
+          className="tool-card assemble delay-2"
+          onClick={(e) => handleCardTap(e, 'timekeeper')}
         >
           <div className="tool-card-header">
             <a href={TIMEKEEPER_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link" onClick={(e) => e.stopPropagation()}>
@@ -202,7 +206,7 @@ export default function Tools() {
         {/* Checklist */}
         <div
           className="tool-card assemble delay-3"
-          onClick={() => handleCardTap('checklist')}
+          onClick={(e) => handleCardTap(e, 'checklist')}
         >
           <div className="tool-card-header">
             <a href={CHECKLIST_URL} target="_blank" rel="noopener noreferrer" className="tool-icon-link" onClick={(e) => e.stopPropagation()}>
