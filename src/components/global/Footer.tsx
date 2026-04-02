@@ -9,6 +9,7 @@ import {
   CALCULATOR_URL,
   TIMEKEEPER_URL,
   FACEBOOK_URL,
+  FACEBOOK_COMMUNITY_URL,
   INSTAGRAM_URL,
 } from '@/lib/constants';
 
@@ -83,6 +84,7 @@ export default function Footer() {
           <div className="sitemap-col">
             <h5>{s('connect_heading')}</h5>
             <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">{s('facebook')}</a>
+            <a href={FACEBOOK_COMMUNITY_URL} target="_blank" rel="noopener noreferrer">{s('facebook_community')}</a>
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{s('instagram')}</a>
             <a href="mailto:contact@onsiteclub.ca">{s('email_us')}</a>
           </div>

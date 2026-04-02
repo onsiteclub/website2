@@ -2,108 +2,104 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { richTags } from '@/lib/richText';
-import { PRODUCTS, SHOP_URL } from '@/lib/constants';
-import { useTrade, TRADES } from '@/providers/TradeProvider';
-import { getTradeText } from '@/data/tradeContent';
+import { SHOP_URL } from '@/lib/constants';
 
-interface ShopProduct {
+interface GearProduct {
   name: string;
+  slug: string;
   price: number;
   image: string;
-  url: string;
+  sku: string;
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+const FALLBACK_PRODUCTS: GearProduct[] = [
+  { name: 'The Jump', slug: 'the-jump', price: 38, image: '/images/product-men.webp', sku: 'CTEE-FR001' },
+  { name: 'Mascot', slug: 'mascot', price: 38, image: '/images/product-women.webp', sku: 'STEE-GR001' },
+  { name: 'Classic', slug: 'classic', price: 45, image: '/images/product-members.webp', sku: 'CTEE-FR002' },
+];
 
 export default function Gear() {
   const t = useTranslations('gear');
-  const locale = useLocale();
-  const { trade } = useTrade();
-  const slogan = getTradeText(trade, 'shop_slogan', locale);
-
-  const [products, setProducts] = useState<ShopProduct[] | null>(null);
+  const [products, setProducts] = useState<GearProduct[]>(FALLBACK_PRODUCTS);
 
   useEffect(() => {
-    fetch('https://shop.onsiteclub.ca/api/featured')
+    fetch('/api/products/random')
       .then((r) => r.json())
       .then((data) => {
-        if (data.products?.length) {
-          setProducts(shuffle(data.products));
-        }
+        if (data.products?.length >= 3) setProducts(data.products);
       })
-      .catch(() => {
-        // fallback handled by render below
-      });
+      .catch(() => { /* keep fallbacks */ });
   }, []);
-
-  // Fallback to hardcoded products
-  const fallback = PRODUCTS.map((p) => ({
-    name: p.name,
-    price: p.price,
-    image: p.image,
-    url: SHOP_URL,
-    isLocal: true,
-  }));
-
-  const items = products
-    ? products.map((p) => ({ ...p, price: `CA$${p.price.toFixed(2)}`, isLocal: false }))
-    : fallback.map((p) => ({ ...p, price: p.price, isLocal: true }));
 
   return (
     <section id="gear">
-      <div className="shop-title assemble">
-        <div className="section-label">
-          <span className="num">02</span> <span>{t('label')}</span>
+      <div className="section-label assemble">
+        <span className="num">02</span> <span>{t('label')}</span>
+      </div>
+      <h2 className="section-title assemble delay-1">
+        {t.rich('title', richTags)}
+      </h2>
+      <p className="section-desc assemble delay-2">{t('subtitle')}</p>
+
+      <div className="gear-banner assemble delay-3">
+        {/* Background image */}
+        <div className="gear-banner-bg">
+          <Image
+            src="/images/banner-shop.png"
+            alt=""
+            fill
+            sizes="(max-width:768px) 100vw, 1200px"
+            style={{ objectFit: 'cover', objectPosition: 'center 25%' }}
+            priority={false}
+          />
         </div>
-        <h2 className="section-title assemble delay-1">
-          {t.rich('title', richTags)}
-        </h2>
-      </div>
 
-      <div className="gear-bar assemble delay-2">
-        {slogan && (
-          <span className="gear-slogan">
-            {slogan} &mdash; {TRADES[trade].name} Collection
-          </span>
-        )}
-        <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="gear-collection-link">
-          {t('see_all')} &rarr;
-        </a>
-      </div>
+        <div className="gear-banner-inner">
+          {/* Left: Tag + Title + Desc + CTA */}
+          <div className="gear-banner-content">
+            <span className="gear-banner-tag">{t('label')}</span>
+            <h3 className="gear-banner-title">{t.rich('title', richTags)}</h3>
+            <p className="gear-banner-desc">{t('subtitle')}</p>
+            <a
+              href={SHOP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gear-cta-btn"
+            >
+              {t('cta')}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
 
-      <div className="gear-grid assemble delay-2">
-        {items.map((product) => (
-          <a
-            key={product.name}
-            href={product.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="gear-card"
-          >
-            <div className="gear-card-image">
-              <Image
-                src={product.image}
-                alt={product.name}
-                width={600}
-                height={600}
-                {...(!product.isLocal && { unoptimized: true })}
-              />
-            </div>
-            <div className="gear-card-info">
-              <span className="gear-card-name">{product.name}</span>
-              <span className="gear-card-price">{product.price}</span>
-            </div>
-          </a>
-        ))}
+          {/* Right: Product thumbnails (dynamic from Supabase) */}
+          <div className="gear-product-cards">
+            {products.map((p) => (
+              <a
+                key={p.sku || p.slug}
+                href={`${SHOP_URL}/product/${p.slug}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gear-product-card"
+              >
+                <div className="gear-product-img">
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    width={120}
+                    height={120}
+                    unoptimized={p.image.startsWith('http')}
+                  />
+                </div>
+                <span className="gear-product-name">{p.name}</span>
+                <span className="gear-product-price">CA${p.price}</span>
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -8,8 +8,9 @@ import Hero from '@/components/sections/Hero';
 import Tools from '@/components/sections/Tools';
 import Gear from '@/components/sections/Gear';
 import Reviews from '@/components/sections/Reviews';
+import ManifestoStrip from '@/components/sections/ManifestoStrip';
 import Manifesto from '@/components/sections/Manifesto';
-import LearnTeaser from '@/components/sections/LearnTeaser';
+import CoursesBadge from '@/components/sections/CoursesBadge';
 import Contact from '@/components/sections/Contact';
 
 const SITE_URL = 'https://www.onsiteclub.ca';
@@ -197,11 +198,12 @@ export default function Home() {
 
       <main>
         <Hero />
-        <Manifesto />
+        <ManifestoStrip />
+        <Tools />
         <Gear />
         <Reviews />
-        <Tools />
-        <LearnTeaser />
+        <CoursesBadge />
+        <Manifesto />
         <Contact />
       </main>
 

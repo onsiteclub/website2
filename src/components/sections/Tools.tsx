@@ -110,7 +110,7 @@ export default function Tools() {
   return (
     <section id="tools">
       <div className="section-label assemble">
-        <span className="num">04</span> <span>{t('label')}</span>
+        <span className="num">01</span> <span>{t('label')}</span>
       </div>
       <h2 className="section-title section-title-logo assemble delay-1">
         <Image
@@ -124,10 +124,11 @@ export default function Tools() {
       </h2>
       <p className="section-desc assemble delay-2">{t('description')}</p>
 
+      <div className="tools-wrapper assemble delay-1">
       <div className="tools-grid">
         {/* Calculator */}
         <div
-          className="tool-card assemble delay-1"
+          className="tool-card"
           onClick={(e) => handleCardTap(e, 'calculator')}
         >
           <div className="tool-card-header">
@@ -139,7 +140,7 @@ export default function Tools() {
               <p>{t('calculator.description')}</p>
             </div>
           </div>
-          <span className="tool-availability">{t('available')}</span>
+          <span className="tool-tap-hint">Tap for options</span>
           <div className="tool-actions">
             <a href={CALCULATOR_IOS_URL} target="_blank" rel="noopener noreferrer" className="tool-cta-btn" onClick={(e) => e.stopPropagation()}>
               <AppleIcon /> {t('cta_appstore')}
@@ -169,7 +170,7 @@ export default function Tools() {
 
         {/* Timekeeper */}
         <div
-          className="tool-card assemble delay-2"
+          className="tool-card"
           onClick={(e) => handleCardTap(e, 'timekeeper')}
         >
           <div className="tool-card-header">
@@ -181,7 +182,7 @@ export default function Tools() {
               <p>{t('timekeeper.description')}</p>
             </div>
           </div>
-          <span className="tool-availability">{t('available')}</span>
+          <span className="tool-tap-hint">Tap for options</span>
           <div className="tool-actions">
             <a href={TIMEKEEPER_ANDROID_URL} target="_blank" rel="noopener noreferrer" className="tool-cta-btn" onClick={(e) => e.stopPropagation()}>
               <PlayIcon /> {t('cta_googleplay')}
@@ -205,7 +206,7 @@ export default function Tools() {
 
         {/* Checklist */}
         <div
-          className="tool-card assemble delay-3"
+          className="tool-card"
           onClick={(e) => handleCardTap(e, 'checklist')}
         >
           <div className="tool-card-header">
@@ -217,7 +218,6 @@ export default function Tools() {
               <p>{t('checklist.description')}</p>
             </div>
           </div>
-          <span className="tool-availability">{t('available')}</span>
           <div className="tool-actions">
             <a href={CHECKLIST_URL} target="_blank" rel="noopener noreferrer" className="tool-cta-btn" onClick={(e) => e.stopPropagation()}>
               <OpenIcon /> {t('cta_open')}
@@ -227,6 +227,8 @@ export default function Tools() {
             <Image src="/images/tool-checklist.png" alt="OnSite Checklist" fill sizes="(max-width:768px) 100vw, 33vw" style={{ objectPosition: '50% 50%' }} />
           </div>
         </div>
+      </div>
+
       </div>
     </section>
   );

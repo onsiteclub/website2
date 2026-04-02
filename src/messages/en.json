@@ -25,7 +25,7 @@
     "subtitle_plumbing": "For plumbers and HVAC techs — the ones behind the walls.",
     "subtitle_concrete": "For concrete workers and masons who build from the ground up.",
     "cta_shop": "Shop Now",
-    "cta_explore": "Choose Your Trade"
+    "cta_explore": "See Our Tools"
   },
   "shop": {
     "label": "THE SHOP",
@@ -33,8 +33,9 @@
   },
   "gear": {
     "label": "THE GEAR",
-    "title": "Gear that reps the <highlight>trade</highlight>",
-    "see_all": "See Full Collection"
+    "title": "Rep Your <highlight>Trade</highlight>.",
+    "subtitle": "Tees, hoodies, and jobsite essentials. Built for those who build.",
+    "cta": "Shop Now"
   },
   "reviews": {
     "label": "REVIEWS",
@@ -44,6 +45,21 @@
   "manifesto": {
     "line1": "Buildings don't remember who built them.",
     "line2": "We do."
+  },
+  "courses_badge": {
+    "label": "ONSITE LEARN",
+    "tag": "ONSITE LEARN",
+    "title": "Construction Courses & Certifications",
+    "desc": "Ontario's mandatory certifications, trade skills, and career pathways. Start your journey.",
+    "cta": "Explore Courses",
+    "card_certifications": "Required Certifications",
+    "card_certifications_desc": "Free government-mandated safety courses for Ontario construction workers.",
+    "card_safety": "Safety Equipment Guide",
+    "card_safety_desc": "PPE requirements, CSA standards, and what to buy for your first day.",
+    "card_careers": "Trade Career Paths",
+    "card_careers_desc": "Carpentry, electrical, plumbing, HVAC — find your specialty.",
+    "card_courses": "Online Courses",
+    "card_courses_desc": "Interactive trade skill training. Bite-sized lessons for the jobsite."
   },
   "learn_teaser": {
     "label": "CERTIFICATIONS",
@@ -284,16 +300,20 @@
   },
   "tools": {
     "label": "DIGITAL TOOLKIT",
-    "title": "<highlight>Tools</highlight>",
+    "title": "Tools That Work as Hard as <highlight>You Do</highlight>",
     "description": "Built for jobsite speed. No noise. Just things that work.",
     "available": "Available Now",
     "cta_appstore": "App Store",
     "cta_googleplay": "Google Play",
     "cta_web": "Web App",
     "cta_open": "Open Checklist",
+    "tech_tag": "ONSITE TECH",
+    "tech_title": "We build custom apps for your company.",
+    "tech_desc": "Need a tool built for your crew? We design and develop custom SaaS solutions tailored to your construction workflow.",
+    "tech_cta": "Talk to Us",
     "calculator": {
       "name": "Voice Inch Calculator",
-      "description": "Add, split and convert inch measurements just by speaking. No hands needed.",
+      "description": "Add, split and convert inch measurements just by speaking.",
       "cta": "Open Calculator →"
     },
     "timekeeper": {
@@ -375,12 +395,9 @@
     "label": "CONNECT",
     "title": "Join the <highlight>Crew</highlight>",
     "description": "Follow the movement. Share your builds. Be part of the culture.",
+    "manifesto_strip": "Buildings don't remember who built them. <highlight>We do.</highlight>",
     "manifesto_lead": "Buildings don't remember who built them. We do.",
     "manifesto_body": "This city didn't build itself. Somebody woke up before the sun, scraped ice, put on boots that already hurt, and made something real. OnSite Club exists because that somebody deserves more than a paycheck. They deserve a name on what they built. We make gear, tools, and a crew for the people whose work everyone sees but nobody credits. If you've ever looked at a skyline and known your hands are in it — this is your club.",
-    "stat_members": "Members",
-    "stat_downloads": "Downloads",
-    "stat_sold": "Items Sold",
-    "stat_trades": "Trades",
     "fb_title": "Be the Voice",
     "fb_desc": "Join our Facebook community. Share your trade, your crew, your story.",
     "fb_cta": "Join Group →",
@@ -452,6 +469,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "facebook": "Facebook",
+    "facebook_community": "Community Group",
     "instagram": "Instagram",
     "email_us": "Email Us",
     "learn_heading": "Learn",

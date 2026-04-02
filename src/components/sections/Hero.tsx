@@ -100,12 +100,9 @@ export default function Hero() {
       <p className="hero-sub assemble delay-3">{subtitle}</p>
 
       <div className="hero-cta assemble delay-4">
-        <button
-          className="hero-btn-primary"
-          onClick={() => document.dispatchEvent(new Event('open-trade-selector'))}
-        >
+        <a href="#tools" className="hero-btn-primary">
           {t('cta_explore')}
-        </button>
+        </a>
         <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="hero-btn-ghost">
           {t('cta_shop')}
         </a>

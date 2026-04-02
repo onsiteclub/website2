@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/routing';
 import { CALCULATOR_URL, TIMEKEEPER_URL } from '@/lib/constants';
 import SearchDropdown from '@/components/global/SearchDropdown';
+import LangSwitcher from '@/components/global/LangSwitcher';
 
 const TradeSelector = dynamic(() => import('@/components/global/TradeSelector'), { ssr: false });
 
@@ -130,6 +131,9 @@ export default function Navbar() {
           >
             {t('member_area')}
           </a>
+
+          {/* Language switcher (desktop) */}
+          <LangSwitcher />
         </div>
 
         {/* Mobile hamburger — hidden on desktop */}
@@ -199,6 +203,8 @@ export default function Navbar() {
             </svg>
             Timekeeper
           </a>
+          <div className="nav-dropdown-divider" />
+          <LangSwitcher inline />
           <div className="nav-dropdown-divider" />
           <a
             href="https://dashboard.onsiteclub.ca"

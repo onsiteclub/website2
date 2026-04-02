@@ -22,10 +22,10 @@ export const TRADE_CONTENT: Record<
   /* ── Default (All Trades) ── */
   default: {
     hero_subtitle: {
-      en: 'Tools, gear, and a crew that gets it.',
-      fr: 'Outils, gear et un crew qui comprend.',
-      es: 'Herramientas, equipo y un crew que entiende.',
-      pt: 'Ferramentas, gear e um crew que entende.',
+      en: 'Gear, tools, and a crew for the people who actually build this country.',
+      fr: 'Équipement, outils et un crew pour ceux qui construisent vraiment ce pays.',
+      es: 'Equipo, herramientas y un crew para la gente que realmente construye este país.',
+      pt: 'Equipamento, ferramentas e um crew pra quem realmente constrói esse país.',
     },
   },
 

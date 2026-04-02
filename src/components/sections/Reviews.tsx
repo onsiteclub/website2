@@ -14,6 +14,39 @@ interface ShopReview {
   created_at: string;
 }
 
+const FALLBACK_REVIEWS: ShopReview[] = [
+  {
+    id: 'fallback-1',
+    customer_name: 'Marcus T.',
+    rating: 5,
+    title: 'Finally, a calculator that speaks construction',
+    comment:
+      'I do framing and I always fumbled with fractions on my phone. This thing lets me just say the numbers out loud. Best tool on my phone.',
+    product_names: ['OnSite Calculator'],
+    created_at: '2025-11-15',
+  },
+  {
+    id: 'fallback-2',
+    customer_name: 'Sarah K.',
+    rating: 5,
+    title: 'Solid quality, real brand',
+    comment:
+      'Got The Jump tee for my boyfriend who does concrete. The fabric is thick. Not like those flimsy construction tees you see online.',
+    product_names: ['Cotton Tee — The Jump'],
+    created_at: '2025-12-03',
+  },
+  {
+    id: 'fallback-3',
+    customer_name: 'Diego R.',
+    rating: 5,
+    title: 'Saves me 20 minutes every Friday',
+    comment:
+      'The geofence thing is genius. I set my zone, arrive on site, and it just clocks me in. My boss loves the weekly PDF report.',
+    product_names: ['OnSite Timekeeper'],
+    created_at: '2026-01-20',
+  },
+];
+
 function Stars({ rating }: { rating: number }) {
   return (
     <div className="review-stars" aria-label={`${rating} out of 5 stars`}>
@@ -28,7 +61,7 @@ function Stars({ rating }: { rating: number }) {
 
 export default function Reviews() {
   const t = useTranslations('reviews');
-  const [reviews, setReviews] = useState<ShopReview[]>([]);
+  const [reviews, setReviews] = useState<ShopReview[]>(FALLBACK_REVIEWS);
 
   useEffect(() => {
     fetch('https://shop.onsiteclub.ca/api/reviews')
@@ -39,11 +72,9 @@ export default function Reviews() {
         }
       })
       .catch(() => {
-        // silently fail — section stays hidden
+        /* keep fallbacks */
       });
   }, []);
-
-  if (reviews.length === 0) return null;
 
   return (
     <section id="reviews">

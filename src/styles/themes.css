@@ -7,22 +7,22 @@
 :root,
 html[data-trade="default"] {
   /* Core colors — cool charcoal with blue undertone */
-  --bg-primary: #0E1117;
-  --bg-secondary: #161B22;
-  --bg-card: #1C2128;
-  --bg-elevated: #252B35;
+  --bg-primary: #181C24;
+  --bg-secondary: #1E2530;
+  --bg-card: #262D38;
+  --bg-elevated: #2F3744;
   --text-primary: #F0F3F6;
-  --text-secondary: #8B949E;
-  --text-muted: #585F6A;
+  --text-secondary: #9BA4AE;
+  --text-muted: #6B7480;
   --accent: #F6C343;
   --accent-hover: #FFD466;
   --accent-text: #000000;
-  --border: #2D333B;
-  --border-hover: #444C56;
+  --border: #3A4250;
+  --border-hover: #515B6A;
 
   /* RGB triplets for computed opacity */
   --accent-rgb: 246, 195, 67;
-  --bg-primary-rgb: 14, 17, 23;
+  --bg-primary-rgb: 24, 28, 36;
   --text-primary-rgb: 240, 243, 246;
 
   /* Accent opacity levels */
@@ -37,18 +37,18 @@ html[data-trade="default"] {
   --border-radius: 8px;
 
   /* Navigation */
-  --nav-bg: rgba(14, 17, 23, 0.85);
-  --nav-bg-scrolled: rgba(14, 17, 23, 0.95);
+  --nav-bg: rgba(24, 28, 36, 0.85);
+  --nav-bg-scrolled: rgba(24, 28, 36, 0.95);
   --nav-shadow: none;
   --nav-shadow-scrolled: none;
 
   /* Card gradients */
-  --card-gradient-start: #252B35;
-  --card-gradient-mid: #1C2128;
-  --card-gradient-end: #161B22;
-  --card-gradient-hover-start: #2D333B;
-  --card-gradient-hover-mid: #252B35;
-  --card-gradient-hover-end: #1A2030;
+  --card-gradient-start: #2F3744;
+  --card-gradient-mid: #262D38;
+  --card-gradient-end: #1E2530;
+  --card-gradient-hover-start: #3A4250;
+  --card-gradient-hover-mid: #2F3744;
+  --card-gradient-hover-end: #263040;
 
   /* Effects */
   --shadow-color: rgba(0, 0, 0, 0.40);

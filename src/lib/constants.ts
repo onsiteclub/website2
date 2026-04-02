@@ -121,5 +121,8 @@ export const CALCULATOR_ANDROID_URL = 'https://play.google.com/store/apps/detail
 export const TIMEKEEPER_URL = 'https://timekeeperweb.onsiteclub.ca';
 export const TIMEKEEPER_ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.onsiteclub.timekeeper&pcampaignid=web_share';
 export const CHECKLIST_URL = 'https://checklist.onsiteclub.ca/self';
-export const FACEBOOK_URL = 'https://facebook.com/onsiteclub';
+export const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61574383500621';
+export const FACEBOOK_COMMUNITY_URL = 'https://www.facebook.com/groups/919479544305679';
 export const INSTAGRAM_URL = 'https://www.instagram.com/onsite.club/';
+export const LEARN_URL = 'https://learn.onsiteclub.ca';
+export const TECH_URL = 'https://tech.onsiteclub.ca';
